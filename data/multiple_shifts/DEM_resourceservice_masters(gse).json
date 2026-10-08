@@ -1,0 +1,80 @@
+{
+  "resources": {
+    "DRL": {
+      "resource": "DRL",
+      "services": ["DRL"],
+      "group": "drivers"
+    },
+    "MDL": {
+      "resource": "MDL",
+      "services": ["MDL"],
+      "group": null
+    },
+    "BFL": {
+      "resource": "BFL",
+      "services": ["BFL"],
+      "group": null
+    },
+    "CHO": {
+      "resource": "CHO",
+      "services": ["CHO"],
+      "group": null
+    },
+    "CNT": {
+      "resource": "CNT",
+      "services": ["CNT"],
+      "group": null
+    },
+    "PAL": {
+      "resource": "PAL",
+      "services": ["PAL"],
+      "group": null
+    },
+    "PBN": {
+      "resource": "PBN",
+      "services": ["PBN"],
+      "group": null
+    },
+    "PBW": {
+      "resource": "PBW",
+      "services": ["PBW"],
+      "group": null
+    },
+    "STP": {
+      "resource": "STP",
+      "services": ["STP"],
+      "group": null
+    },
+    "TRO": {
+      "resource": "TRO",
+      "services": ["TRO"],
+      "group": null
+    }
+  },
+  "downranking_groups": {
+    "drivers": {
+      "group": "drivers",
+      "resources": ["DRA", "DRB", "DRC", "DRD"],
+      "matrix": {
+        "DRA": ["DRA", "DRB", "DRC", "DRD"],
+        "DRB": ["DRB", "DRC", "DRD"],
+        "DRC": ["DRC", "DRD"],
+        "DRD": ["DRD"]
+      }
+    },
+    "supervisors": {
+      "group": "supervisors",
+      "resources": ["CLC", "RED"],
+      "matrix": {
+        "CLC": ["CLC", "RED"],
+        "RED": ["RED"]
+      }
+    }
+  },
+  "cross_utilization_groups": {
+    "utility_hands": {
+      "group": "utility_hands",
+      "resources": ["LDR", "CLN"]
+    }
+  }
+}

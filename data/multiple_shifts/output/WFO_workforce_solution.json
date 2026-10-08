@@ -1,0 +1,512 @@
+{
+  "CTL": [
+    {
+      "workpatternid": 1,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        10,
+        10,
+        "OFF",
+        "OFF",
+        9,
+        9,
+        10
+      ],
+      "week_start_date": "2026-09-07",
+      "week_end_date": "2026-09-13",
+      "Mon": {
+        "start": "06:00",
+        "end": "16:00"
+      },
+      "Tue": {
+        "start": "20:00",
+        "end": "06:00"
+      },
+      "Wed": "OFF",
+      "Thu": "OFF",
+      "Fri": {
+        "start": "20:30",
+        "end": "05:30"
+      },
+      "Sat": {
+        "start": "21:00",
+        "end": "06:00"
+      },
+      "Sun": {
+        "start": "20:00",
+        "end": "06:00"
+      }
+    },
+    {
+      "workpatternid": 2,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        10,
+        "OFF",
+        10,
+        9,
+        9,
+        10,
+        "OFF"
+      ],
+      "week_start_date": "2026-09-07",
+      "week_end_date": "2026-09-13",
+      "Mon": {
+        "start": "12:30",
+        "end": "22:30"
+      },
+      "Tue": "OFF",
+      "Wed": {
+        "start": "08:00",
+        "end": "18:00"
+      },
+      "Thu": {
+        "start": "06:00",
+        "end": "15:00"
+      },
+      "Fri": {
+        "start": "06:00",
+        "end": "15:00"
+      },
+      "Sat": {
+        "start": "12:00",
+        "end": "22:00"
+      },
+      "Sun": "OFF"
+    },
+    {
+      "workpatternid": 3,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        10,
+        "OFF",
+        10,
+        9,
+        "OFF",
+        9,
+        10
+      ],
+      "week_start_date": "2026-09-07",
+      "week_end_date": "2026-09-13",
+      "Mon": {
+        "start": "18:30",
+        "end": "04:30"
+      },
+      "Tue": "OFF",
+      "Wed": {
+        "start": "06:00",
+        "end": "16:00"
+      },
+      "Thu": {
+        "start": "06:00",
+        "end": "15:00"
+      },
+      "Fri": "OFF",
+      "Sat": {
+        "start": "06:00",
+        "end": "15:00"
+      },
+      "Sun": {
+        "start": "12:30",
+        "end": "22:30"
+      }
+    },
+    {
+      "workpatternid": 4,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        9.5,
+        9.5,
+        9.5,
+        10,
+        "OFF",
+        "OFF",
+        9.5
+      ],
+      "week_start_date": "2026-09-07",
+      "week_end_date": "2026-09-13",
+      "Mon": {
+        "start": "12:30",
+        "end": "22:00"
+      },
+      "Tue": {
+        "start": "12:30",
+        "end": "22:00"
+      },
+      "Wed": {
+        "start": "12:30",
+        "end": "22:00"
+      },
+      "Thu": {
+        "start": "18:30",
+        "end": "04:30"
+      },
+      "Fri": "OFF",
+      "Sat": "OFF",
+      "Sun": {
+        "start": "06:00",
+        "end": "15:30"
+      }
+    },
+    {
+      "workpatternid": 5,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        "OFF",
+        9.5,
+        9.5,
+        10,
+        9.5,
+        "OFF",
+        9.5
+      ],
+      "week_start_date": "2026-09-07",
+      "week_end_date": "2026-09-13",
+      "Mon": "OFF",
+      "Tue": {
+        "start": "06:00",
+        "end": "15:30"
+      },
+      "Wed": {
+        "start": "06:00",
+        "end": "15:30"
+      },
+      "Thu": {
+        "start": "12:30",
+        "end": "22:30"
+      },
+      "Fri": {
+        "start": "12:00",
+        "end": "21:30"
+      },
+      "Sat": "OFF",
+      "Sun": {
+        "start": "06:00",
+        "end": "15:30"
+      }
+    },
+    {
+      "workpatternid": 6,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        "OFF",
+        10,
+        9.5,
+        "OFF",
+        9.5,
+        9.5,
+        9.5
+      ],
+      "week_start_date": "2026-09-07",
+      "week_end_date": "2026-09-13",
+      "Mon": "OFF",
+      "Tue": {
+        "start": "21:00",
+        "end": "07:00"
+      },
+      "Wed": {
+        "start": "19:00",
+        "end": "04:30"
+      },
+      "Thu": "OFF",
+      "Fri": {
+        "start": "08:30",
+        "end": "18:00"
+      },
+      "Sat": {
+        "start": "06:00",
+        "end": "15:30"
+      },
+      "Sun": {
+        "start": "06:00",
+        "end": "15:30"
+      }
+    },
+    {
+      "workpatternid": 7,
+      "week_id": "2",
+      "num_employees": 1,
+      "pattern_type": [
+        10,
+        10,
+        "OFF",
+        "OFF",
+        9,
+        9,
+        10
+      ],
+      "week_start_date": "2026-09-14",
+      "week_end_date": "2026-09-20",
+      "Mon": {
+        "start": "06:00",
+        "end": "16:00"
+      },
+      "Tue": {
+        "start": "20:00",
+        "end": "06:00"
+      },
+      "Wed": "OFF",
+      "Thu": "OFF",
+      "Fri": {
+        "start": "20:30",
+        "end": "05:30"
+      },
+      "Sat": {
+        "start": "21:00",
+        "end": "06:00"
+      },
+      "Sun": {
+        "start": "20:00",
+        "end": "06:00"
+      }
+    },
+    {
+      "workpatternid": 8,
+      "week_id": "2",
+      "num_employees": 1,
+      "pattern_type": [
+        10,
+        "OFF",
+        10,
+        9,
+        9,
+        10,
+        "OFF"
+      ],
+      "week_start_date": "2026-09-14",
+      "week_end_date": "2026-09-20",
+      "Mon": {
+        "start": "12:30",
+        "end": "22:30"
+      },
+      "Tue": "OFF",
+      "Wed": {
+        "start": "08:00",
+        "end": "18:00"
+      },
+      "Thu": {
+        "start": "06:00",
+        "end": "15:00"
+      },
+      "Fri": {
+        "start": "06:00",
+        "end": "15:00"
+      },
+      "Sat": {
+        "start": "12:00",
+        "end": "22:00"
+      },
+      "Sun": "OFF"
+    },
+    {
+      "workpatternid": 9,
+      "week_id": "2",
+      "num_employees": 1,
+      "pattern_type": [
+        10,
+        "OFF",
+        10,
+        9,
+        "OFF",
+        9,
+        10
+      ],
+      "week_start_date": "2026-09-14",
+      "week_end_date": "2026-09-20",
+      "Mon": {
+        "start": "18:30",
+        "end": "04:30"
+      },
+      "Tue": "OFF",
+      "Wed": {
+        "start": "06:00",
+        "end": "16:00"
+      },
+      "Thu": {
+        "start": "06:00",
+        "end": "15:00"
+      },
+      "Fri": "OFF",
+      "Sat": {
+        "start": "06:00",
+        "end": "15:00"
+      },
+      "Sun": {
+        "start": "12:30",
+        "end": "22:30"
+      }
+    },
+    {
+      "workpatternid": 10,
+      "week_id": "2",
+      "num_employees": 1,
+      "pattern_type": [
+        9.5,
+        9.5,
+        9.5,
+        10,
+        "OFF",
+        "OFF",
+        9.5
+      ],
+      "week_start_date": "2026-09-14",
+      "week_end_date": "2026-09-20",
+      "Mon": {
+        "start": "12:30",
+        "end": "22:00"
+      },
+      "Tue": {
+        "start": "12:30",
+        "end": "22:00"
+      },
+      "Wed": {
+        "start": "12:30",
+        "end": "22:00"
+      },
+      "Thu": {
+        "start": "18:30",
+        "end": "04:30"
+      },
+      "Fri": "OFF",
+      "Sat": "OFF",
+      "Sun": {
+        "start": "06:00",
+        "end": "15:30"
+      }
+    },
+    {
+      "workpatternid": 11,
+      "week_id": "2",
+      "num_employees": 1,
+      "pattern_type": [
+        "OFF",
+        9.5,
+        9.5,
+        10,
+        9.5,
+        "OFF",
+        9.5
+      ],
+      "week_start_date": "2026-09-14",
+      "week_end_date": "2026-09-20",
+      "Mon": "OFF",
+      "Tue": {
+        "start": "06:00",
+        "end": "15:30"
+      },
+      "Wed": {
+        "start": "06:00",
+        "end": "15:30"
+      },
+      "Thu": {
+        "start": "12:30",
+        "end": "22:30"
+      },
+      "Fri": {
+        "start": "12:00",
+        "end": "21:30"
+      },
+      "Sat": "OFF",
+      "Sun": {
+        "start": "06:00",
+        "end": "15:30"
+      }
+    },
+    {
+      "workpatternid": 12,
+      "week_id": "2",
+      "num_employees": 1,
+      "pattern_type": [
+        "OFF",
+        10,
+        9.5,
+        "OFF",
+        9.5,
+        9.5,
+        9.5
+      ],
+      "week_start_date": "2026-09-14",
+      "week_end_date": "2026-09-20",
+      "Mon": "OFF",
+      "Tue": {
+        "start": "21:00",
+        "end": "07:00"
+      },
+      "Wed": {
+        "start": "19:00",
+        "end": "04:30"
+      },
+      "Thu": "OFF",
+      "Fri": {
+        "start": "08:30",
+        "end": "18:00"
+      },
+      "Sat": {
+        "start": "06:00",
+        "end": "15:30"
+      },
+      "Sun": {
+        "start": "06:00",
+        "end": "15:30"
+      }
+    }
+  ],
+  "monthly_summary": {
+    "CTL": {
+      "headcount": {
+        "Sep-26": 6
+      },
+      "leave_adjusted_headcount": {
+        "Sep-26": 8
+      },
+      "utilization": {
+        "Sep-26": 0.1094
+      },
+      "coverage_metrics": {
+        "Sep-26": {
+          "demand_weighted_pct": 98.82,
+          "bucket_hit_rate_pct": 98.77
+        }
+      },
+      "peak_demand": {
+        "Sep-26": 2
+      }
+    }
+  },
+  "weekly_summary": {
+    "CTL": {
+      "utilization_kpis": {
+        "weekly": {
+          "1": 0.1076,
+          "2": 0.1111
+        },
+        "average": 0.1094
+      },
+      "coverage_metrics": {
+        "weeks": [
+          {
+            "week_id": "1",
+            "demand_weighted_pct": 97.64,
+            "bucket_hit_rate_pct": 97.53
+          },
+          {
+            "week_id": "2",
+            "demand_weighted_pct": 100.0,
+            "bucket_hit_rate_pct": 100.0
+          }
+        ],
+        "overall": {
+          "demand_weighted_pct": 98.82,
+          "bucket_hit_rate_pct": 98.77
+        }
+      }
+    }
+  },
+  "pipeline_errors": {}
+}

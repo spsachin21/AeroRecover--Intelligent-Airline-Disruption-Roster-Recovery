@@ -1,0 +1,515 @@
+{
+  "shifts": {
+    "8H_0700": {
+      "Shift_Start_Time": "07:00",
+      "Shift_End_Time": "15:00",
+      "Shift_Length": "8 hr"
+    },
+    "8H_0730": {
+      "Shift_Start_Time": "07:30",
+      "Shift_End_Time": "15:30",
+      "Shift_Length": "8 hr"
+    },
+    "8H_0800": {
+      "Shift_Start_Time": "08:00",
+      "Shift_End_Time": "16:00",
+      "Shift_Length": "8 hr"
+    },
+    "8H_0930": {
+      "Shift_Start_Time": "09:30",
+      "Shift_End_Time": "17:30",
+      "Shift_Length": "8 hr"
+    },
+    "8H_1000": {
+      "Shift_Start_Time": "10:00",
+      "Shift_End_Time": "18:00",
+      "Shift_Length": "8 hr"
+    },
+    "8H_1200": {
+      "Shift_Start_Time": "12:00",
+      "Shift_End_Time": "20:00",
+      "Shift_Length": "8 hr"
+    },
+    "8H_1230": {
+      "Shift_Start_Time": "12:30",
+      "Shift_End_Time": "20:30",
+      "Shift_Length": "8 hr"
+    },
+    "8H_1400": {
+      "Shift_Start_Time": "14:00",
+      "Shift_End_Time": "22:00",
+      "Shift_Length": "8 hr"
+    },
+    "8H_2030": {
+      "Shift_Start_Time": "20:30",
+      "Shift_End_Time": "04:30",
+      "Shift_Length": "8 hr"
+    },
+    "8H_2100": {
+      "Shift_Start_Time": "21:00",
+      "Shift_End_Time": "05:00",
+      "Shift_Length": "8 hr"
+    }
+  },
+  "task_details": {
+    "T1": {
+      "unique_turn_id": 8,
+      "task_id": 6,
+      "start_time": "08:00",
+      "end_time": "10:25",
+      "resources_required": 1
+    },
+    "T2": {
+      "unique_turn_id": 23,
+      "task_id": 12,
+      "start_time": "21:00",
+      "end_time": "22:05",
+      "resources_required": 1
+    },
+    "T3": {
+      "unique_turn_id": 3,
+      "task_id": 3,
+      "start_time": "01:50",
+      "end_time": "04:15",
+      "resources_required": 1
+    },
+    "T4": {
+      "unique_turn_id": 24,
+      "task_id": 12,
+      "start_time": "21:00",
+      "end_time": "22:05",
+      "resources_required": 1
+    },
+    "T5": {
+      "unique_turn_id": 4,
+      "task_id": 3,
+      "start_time": "01:50",
+      "end_time": "04:15",
+      "resources_required": 1
+    },
+    "T6": {
+      "unique_turn_id": 25,
+      "task_id": 12,
+      "start_time": "21:00",
+      "end_time": "22:05",
+      "resources_required": 1
+    },
+    "T7": {
+      "unique_turn_id": 5,
+      "task_id": 3,
+      "start_time": "01:50",
+      "end_time": "04:15",
+      "resources_required": 1
+    },
+    "T8": {
+      "unique_turn_id": 26,
+      "task_id": 12,
+      "start_time": "21:00",
+      "end_time": "22:05",
+      "resources_required": 1
+    },
+    "T9": {
+      "unique_turn_id": 6,
+      "task_id": 3,
+      "start_time": "01:50",
+      "end_time": "04:15",
+      "resources_required": 1
+    },
+    "T10": {
+      "unique_turn_id": 27,
+      "task_id": 12,
+      "start_time": "21:00",
+      "end_time": "22:05",
+      "resources_required": 1
+    },
+    "T11": {
+      "unique_turn_id": 7,
+      "task_id": 3,
+      "start_time": "01:50",
+      "end_time": "04:15",
+      "resources_required": 1
+    },
+    "T12": {
+      "unique_turn_id": 15,
+      "task_id": 9,
+      "start_time": "14:00",
+      "end_time": "16:10",
+      "resources_required": 1
+    },
+    "T13": {
+      "unique_turn_id": 16,
+      "task_id": 9,
+      "start_time": "14:00",
+      "end_time": "16:10",
+      "resources_required": 1
+    },
+    "T14": {
+      "unique_turn_id": 17,
+      "task_id": 9,
+      "start_time": "14:00",
+      "end_time": "16:10",
+      "resources_required": 1
+    },
+    "T15": {
+      "unique_turn_id": 18,
+      "task_id": 9,
+      "start_time": "14:00",
+      "end_time": "16:10",
+      "resources_required": 1
+    },
+    "T16": {
+      "unique_turn_id": 19,
+      "task_id": 9,
+      "start_time": "14:00",
+      "end_time": "16:10",
+      "resources_required": 1
+    },
+    "T17": {
+      "unique_turn_id": 28,
+      "task_id": 12,
+      "start_time": "21:00",
+      "end_time": "22:05",
+      "resources_required": 1
+    },
+    "T18": {
+      "unique_turn_id": 22,
+      "task_id": 12,
+      "start_time": "21:00",
+      "end_time": "22:05",
+      "resources_required": 1
+    },
+    "T19": {
+      "unique_turn_id": 2,
+      "task_id": 3,
+      "start_time": "01:50",
+      "end_time": "04:15",
+      "resources_required": 1
+    },
+    "T20": {
+      "unique_turn_id": 10,
+      "task_id": 6,
+      "start_time": "08:00",
+      "end_time": "10:25",
+      "resources_required": 1
+    },
+    "T21": {
+      "unique_turn_id": 11,
+      "task_id": 6,
+      "start_time": "08:00",
+      "end_time": "10:25",
+      "resources_required": 1
+    },
+    "T22": {
+      "unique_turn_id": 12,
+      "task_id": 6,
+      "start_time": "08:00",
+      "end_time": "10:25",
+      "resources_required": 1
+    },
+    "T23": {
+      "unique_turn_id": 13,
+      "task_id": 6,
+      "start_time": "08:00",
+      "end_time": "10:25",
+      "resources_required": 1
+    },
+    "T24": {
+      "unique_turn_id": 14,
+      "task_id": 6,
+      "start_time": "08:00",
+      "end_time": "10:25",
+      "resources_required": 1
+    },
+    "T25": {
+      "unique_turn_id": 9,
+      "task_id": 6,
+      "start_time": "08:00",
+      "end_time": "10:25",
+      "resources_required": 1
+    },
+    "T26": {
+      "unique_turn_id": 20,
+      "task_id": 9,
+      "start_time": "14:00",
+      "end_time": "16:10",
+      "resources_required": 1
+    },
+    "T27": {
+      "unique_turn_id": 21,
+      "task_id": 9,
+      "start_time": "14:00",
+      "end_time": "16:10",
+      "resources_required": 1
+    }
+  },
+  "rosters": {
+    "RED": {
+      "resource": "RED",
+      "planning_horizon_start": "2026-03-29",
+      "planning_horizon_end": "2026-04-04",
+      "headcount": 4,
+      "rosters": [
+        {
+          "roster_id": 1,
+          "employee_code": null,
+          "days": [
+            {
+              "date": "2026-03-29",
+              "day": "Mon",
+              "shift_id": "8H_0800",
+              "task_list": [
+                "T1"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-03-30",
+              "day": "Tue",
+              "shift_id": "8H_2100",
+              "task_list": [
+                "T2",
+                "T3"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-03-31",
+              "day": "Wed",
+              "shift_id": "8H_2100",
+              "task_list": [
+                "T4",
+                "T5"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-01",
+              "day": "Thu",
+              "shift_id": "8H_2100",
+              "task_list": [
+                "T6",
+                "T7"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-02",
+              "day": "Fri",
+              "shift_id": "8H_2100",
+              "task_list": [
+                "T8",
+                "T9"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-03",
+              "day": "Sat",
+              "shift_id": "8H_2100",
+              "task_list": [
+                "T10",
+                "T11"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-04",
+              "day": "Sun",
+              "shift_id": "OFF"
+            }
+          ]
+        },
+        {
+          "roster_id": 2,
+          "employee_code": null,
+          "days": [
+            {
+              "date": "2026-03-29",
+              "day": "Mon",
+              "shift_id": "8H_1400",
+              "task_list": [
+                "T12"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-03-30",
+              "day": "Tue",
+              "shift_id": "8H_1400",
+              "task_list": [
+                "T13"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-03-31",
+              "day": "Wed",
+              "shift_id": "8H_1400",
+              "task_list": [
+                "T14"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-01",
+              "day": "Thu",
+              "shift_id": "8H_1400",
+              "task_list": [
+                "T15"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-02",
+              "day": "Fri",
+              "shift_id": "8H_1400",
+              "task_list": [
+                "T16"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-03",
+              "day": "Sat",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-04-04",
+              "day": "Sun",
+              "shift_id": "8H_2100",
+              "task_list": [
+                "T17"
+              ],
+              "ot_hours": 0
+            }
+          ]
+        },
+        {
+          "roster_id": 3,
+          "employee_code": null,
+          "days": [
+            {
+              "date": "2026-03-29",
+              "day": "Mon",
+              "shift_id": "8H_2100",
+              "task_list": [
+                "T18",
+                "T19"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-03-30",
+              "day": "Tue",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-03-31",
+              "day": "Wed",
+              "shift_id": "8H_0800",
+              "task_list": [
+                "T20"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-01",
+              "day": "Thu",
+              "shift_id": "8H_0800",
+              "task_list": [
+                "T21"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-02",
+              "day": "Fri",
+              "shift_id": "8H_0800",
+              "task_list": [
+                "T22"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-03",
+              "day": "Sat",
+              "shift_id": "8H_0800",
+              "task_list": [
+                "T23"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-04",
+              "day": "Sun",
+              "shift_id": "8H_0800",
+              "task_list": [
+                "T24"
+              ],
+              "ot_hours": 0
+            }
+          ]
+        },
+        {
+          "roster_id": 4,
+          "employee_code": null,
+          "days": [
+            {
+              "date": "2026-03-29",
+              "day": "Mon",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-03-30",
+              "day": "Tue",
+              "shift_id": "8H_0800",
+              "task_list": [
+                "T25"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-03-31",
+              "day": "Wed",
+              "shift_id": "8H_0800",
+              "task_list": [],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-01",
+              "day": "Thu",
+              "shift_id": "8H_0800",
+              "task_list": [],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-02",
+              "day": "Fri",
+              "shift_id": "8H_0800",
+              "task_list": [],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-03",
+              "day": "Sat",
+              "shift_id": "8H_1400",
+              "task_list": [
+                "T26"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-04-04",
+              "day": "Sun",
+              "shift_id": "8H_1400",
+              "task_list": [
+                "T27"
+              ],
+              "ot_hours": 0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

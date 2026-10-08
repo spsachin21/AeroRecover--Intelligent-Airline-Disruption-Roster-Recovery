@@ -1,0 +1,471 @@
+{
+  "RED_assigned": {
+    "2026-03-29": [
+      {
+        "Shift_Start_Time": "08:00",
+        "Shift_End_Time": "16:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 8,
+                "task_id": 6,
+                "start_time": "08:00",
+                "end_time": "10:25",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "14:00",
+        "Shift_End_Time": "22:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 15,
+                "task_id": 9,
+                "start_time": "14:00",
+                "end_time": "16:10",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "21:00",
+        "Shift_End_Time": "05:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 22,
+                "task_id": 12,
+                "start_time": "21:00",
+                "end_time": "22:05",
+                "resources_required": 1
+              },
+              {
+                "unique_turn_id": 2,
+                "task_id": 3,
+                "start_time": "01:50",
+                "end_time": "04:15",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "2026-03-30": [
+      {
+        "Shift_Start_Time": "08:00",
+        "Shift_End_Time": "16:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 9,
+                "task_id": 6,
+                "start_time": "08:00",
+                "end_time": "10:25",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "14:00",
+        "Shift_End_Time": "22:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 16,
+                "task_id": 9,
+                "start_time": "14:00",
+                "end_time": "16:10",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "21:00",
+        "Shift_End_Time": "05:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 23,
+                "task_id": 12,
+                "start_time": "21:00",
+                "end_time": "22:05",
+                "resources_required": 1
+              },
+              {
+                "unique_turn_id": 3,
+                "task_id": 3,
+                "start_time": "01:50",
+                "end_time": "04:15",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "2026-03-31": [
+      {
+        "Shift_Start_Time": "08:00",
+        "Shift_End_Time": "16:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 10,
+                "task_id": 6,
+                "start_time": "08:00",
+                "end_time": "10:25",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "14:00",
+        "Shift_End_Time": "22:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 17,
+                "task_id": 9,
+                "start_time": "14:00",
+                "end_time": "16:10",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "21:00",
+        "Shift_End_Time": "05:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 24,
+                "task_id": 12,
+                "start_time": "21:00",
+                "end_time": "22:05",
+                "resources_required": 1
+              },
+              {
+                "unique_turn_id": 4,
+                "task_id": 3,
+                "start_time": "01:50",
+                "end_time": "04:15",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "2026-04-01": [
+      {
+        "Shift_Start_Time": "08:00",
+        "Shift_End_Time": "16:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 11,
+                "task_id": 6,
+                "start_time": "08:00",
+                "end_time": "10:25",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "14:00",
+        "Shift_End_Time": "22:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 18,
+                "task_id": 9,
+                "start_time": "14:00",
+                "end_time": "16:10",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "21:00",
+        "Shift_End_Time": "05:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 25,
+                "task_id": 12,
+                "start_time": "21:00",
+                "end_time": "22:05",
+                "resources_required": 1
+              },
+              {
+                "unique_turn_id": 5,
+                "task_id": 3,
+                "start_time": "01:50",
+                "end_time": "04:15",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "2026-04-02": [
+      {
+        "Shift_Start_Time": "08:00",
+        "Shift_End_Time": "16:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 12,
+                "task_id": 6,
+                "start_time": "08:00",
+                "end_time": "10:25",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "14:00",
+        "Shift_End_Time": "22:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 19,
+                "task_id": 9,
+                "start_time": "14:00",
+                "end_time": "16:10",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "21:00",
+        "Shift_End_Time": "05:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 26,
+                "task_id": 12,
+                "start_time": "21:00",
+                "end_time": "22:05",
+                "resources_required": 1
+              },
+              {
+                "unique_turn_id": 6,
+                "task_id": 3,
+                "start_time": "01:50",
+                "end_time": "04:15",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "2026-04-03": [
+      {
+        "Shift_Start_Time": "08:00",
+        "Shift_End_Time": "16:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 13,
+                "task_id": 6,
+                "start_time": "08:00",
+                "end_time": "10:25",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "14:00",
+        "Shift_End_Time": "22:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 20,
+                "task_id": 9,
+                "start_time": "14:00",
+                "end_time": "16:10",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "21:00",
+        "Shift_End_Time": "05:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 27,
+                "task_id": 12,
+                "start_time": "21:00",
+                "end_time": "22:05",
+                "resources_required": 1
+              },
+              {
+                "unique_turn_id": 7,
+                "task_id": 3,
+                "start_time": "01:50",
+                "end_time": "04:15",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "2026-04-04": [
+      {
+        "Shift_Start_Time": "08:00",
+        "Shift_End_Time": "16:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 14,
+                "task_id": 6,
+                "start_time": "08:00",
+                "end_time": "10:25",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "14:00",
+        "Shift_End_Time": "22:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 21,
+                "task_id": 9,
+                "start_time": "14:00",
+                "end_time": "16:10",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Shift_Start_Time": "21:00",
+        "Shift_End_Time": "05:00",
+        "Shift_Length": "8 hr",
+        "instances": [
+          {
+            "instance": 1,
+            "tasks": [
+              {
+                "unique_turn_id": 28,
+                "task_id": 12,
+                "start_time": "21:00",
+                "end_time": "22:05",
+                "resources_required": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "RED_unassigned": {
+    "2026-03-29": [
+      {
+        "unique_turn_id": 1,
+        "task_id": 3,
+        "start_time": "01:50",
+        "end_time": "04:15",
+        "resources_required": 1,
+        "num_covered": 0
+      }
+    ]
+  }
+}

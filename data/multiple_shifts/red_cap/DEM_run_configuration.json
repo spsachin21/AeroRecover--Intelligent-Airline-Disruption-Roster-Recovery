@@ -1,0 +1,7 @@
+{
+  "PlanningHorizonStart": "2026-09-07T00:00:00",
+  "PlanningHorizonEnd": "2026-09-20T23:55:00",
+  "enable_teaming": false,
+  "resources": ["RED"]
+}
+

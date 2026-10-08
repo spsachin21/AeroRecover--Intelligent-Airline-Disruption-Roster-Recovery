@@ -1,0 +1,3645 @@
+{
+  "shifts": {
+    "9H_2030": {
+      "Shift_Start_Time": "20:30",
+      "Shift_End_Time": "05:30",
+      "Shift_Length": "9 hr"
+    },
+    "10H_2000": {
+      "Shift_Start_Time": "20:00",
+      "Shift_End_Time": "06:00",
+      "Shift_Length": "10 hr"
+    },
+    "10H_1830": {
+      "Shift_Start_Time": "18:30",
+      "Shift_End_Time": "04:30",
+      "Shift_Length": "10 hr"
+    },
+    "10H_2100": {
+      "Shift_Start_Time": "21:00",
+      "Shift_End_Time": "07:00",
+      "Shift_Length": "10 hr"
+    },
+    "9H_0600": {
+      "Shift_Start_Time": "06:00",
+      "Shift_End_Time": "15:00",
+      "Shift_Length": "9 hr"
+    },
+    "10H_1200": {
+      "Shift_Start_Time": "12:00",
+      "Shift_End_Time": "22:00",
+      "Shift_Length": "10 hr"
+    },
+    "10H_0800": {
+      "Shift_Start_Time": "08:00",
+      "Shift_End_Time": "18:00",
+      "Shift_Length": "10 hr"
+    },
+    "10H_0600": {
+      "Shift_Start_Time": "06:00",
+      "Shift_End_Time": "16:00",
+      "Shift_Length": "10 hr"
+    },
+    "10H_1230": {
+      "Shift_Start_Time": "12:30",
+      "Shift_End_Time": "22:30",
+      "Shift_Length": "10 hr"
+    },
+    "9H_2100": {
+      "Shift_Start_Time": "21:00",
+      "Shift_End_Time": "06:00",
+      "Shift_Length": "9 hr"
+    },
+    "9.5H_1200": {
+      "Shift_Start_Time": "12:00",
+      "Shift_End_Time": "21:30",
+      "Shift_Length": "9.5 hr"
+    },
+    "9.5H_0600": {
+      "Shift_Start_Time": "06:00",
+      "Shift_End_Time": "15:30",
+      "Shift_Length": "9.5 hr"
+    },
+    "9.5H_1230": {
+      "Shift_Start_Time": "12:30",
+      "Shift_End_Time": "22:00",
+      "Shift_Length": "9.5 hr"
+    },
+    "9.5H_1900": {
+      "Shift_Start_Time": "19:00",
+      "Shift_End_Time": "04:30",
+      "Shift_Length": "9.5 hr"
+    },
+    "9.5H_0830": {
+      "Shift_Start_Time": "08:30",
+      "Shift_End_Time": "18:00",
+      "Shift_Length": "9.5 hr"
+    }
+  },
+  "tasks_details": {
+    "T223": {
+      "unique_turn_id": 3,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 0,
+      "status": "UNASSIGNED"
+    },
+    "T224": {
+      "unique_turn_id": 27,
+      "task_id": 3,
+      "turn_id": "SG5114/5113",
+      "service": "CTL",
+      "start_time": "02:45",
+      "end_time": "03:15",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 0,
+      "status": "UNASSIGNED"
+    },
+    "T1": {
+      "unique_turn_id": 47,
+      "task_id": 6,
+      "turn_id": "SG510/5060",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:46",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T_Sachin": {
+      "unique_turn_id": 479,
+      "task_id": 6000,
+      "turn_id": "SG515/5069",
+      "service": "CTL",
+      "start_time": "06:42",
+      "end_time": "06:50",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    }, 
+    "T2": {
+      "unique_turn_id": 59,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T3": {
+      "unique_turn_id": 93,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T4": {
+      "unique_turn_id": 97,
+      "task_id": 13,
+      "turn_id": "SG682/811",
+      "service": "CTL",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T5": {
+      "unique_turn_id": 121,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T6": {
+      "unique_turn_id": 131,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T53": {
+      "unique_turn_id": 145,
+      "task_id": 16,
+      "turn_id": "SG812/813",
+      "service": "CTL",
+      "start_time": "16:30",
+      "end_time": "16:45",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T54": {
+      "unique_turn_id": 151,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T42": {
+      "unique_turn_id": 171,
+      "task_id": 18,
+      "turn_id": "SG555/555",
+      "service": "CTL",
+      "start_time": "20:45",
+      "end_time": "21:00",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T30": {
+      "unique_turn_id": 181,
+      "task_id": 19,
+      "turn_id": "SG814/511",
+      "service": "CTL",
+      "start_time": "21:00",
+      "end_time": "21:15",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T55": {
+      "unique_turn_id": 195,
+      "task_id": 21,
+      "turn_id": "SG476/476",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T43": {
+      "unique_turn_id": 217,
+      "task_id": 24,
+      "turn_id": "SG800/801",
+      "service": "CTL",
+      "start_time": "22:50",
+      "end_time": "23:05",
+      "date": "2026-09-07",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T44": {
+      "unique_turn_id": 11,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T45": {
+      "unique_turn_id": 23,
+      "task_id": 2,
+      "turn_id": "SG369/252",
+      "service": "CTL",
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T69": {
+      "unique_turn_id": 43,
+      "task_id": 5,
+      "turn_id": "SG510/681",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:25",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T70": {
+      "unique_turn_id": 63,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T71": {
+      "unique_turn_id": 77,
+      "task_id": 9,
+      "turn_id": "SG5023/5113",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T72": {
+      "unique_turn_id": 83,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T73": {
+      "unique_turn_id": 103,
+      "task_id": 13,
+      "turn_id": "SG682/811",
+      "service": "CTL",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T74": {
+      "unique_turn_id": 117,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T75": {
+      "unique_turn_id": 125,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T56": {
+      "unique_turn_id": 147,
+      "task_id": 16,
+      "turn_id": "SG812/813",
+      "service": "CTL",
+      "start_time": "16:30",
+      "end_time": "16:45",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T57": {
+      "unique_turn_id": 161,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T58": {
+      "unique_turn_id": 169,
+      "task_id": 18,
+      "turn_id": "SG555/555",
+      "service": "CTL",
+      "start_time": "20:45",
+      "end_time": "21:00",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T59": {
+      "unique_turn_id": 175,
+      "task_id": 19,
+      "turn_id": "SG814/511",
+      "service": "CTL",
+      "start_time": "21:00",
+      "end_time": "21:15",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T7": {
+      "unique_turn_id": 191,
+      "task_id": 21,
+      "turn_id": "SG476/476",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-08",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T8": {
+      "unique_turn_id": 7,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T9": {
+      "unique_turn_id": 21,
+      "task_id": 2,
+      "turn_id": "SG369/252",
+      "service": "CTL",
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T10": {
+      "unique_turn_id": 31,
+      "task_id": 4,
+      "turn_id": "SG5114/5060",
+      "service": "CTL",
+      "start_time": "02:45",
+      "end_time": "03:15",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T76": {
+      "unique_turn_id": 49,
+      "task_id": 5,
+      "turn_id": "SG510/681",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:25",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T77": {
+      "unique_turn_id": 53,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T46": {
+      "unique_turn_id": 67,
+      "task_id": 8,
+      "turn_id": "SG9610/9605",
+      "service": "CTL",
+      "start_time": "08:35",
+      "end_time": "09:05",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T78": {
+      "unique_turn_id": 71,
+      "task_id": 9,
+      "turn_id": "SG5023/5113",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T79": {
+      "unique_turn_id": 89,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T80": {
+      "unique_turn_id": 109,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T81": {
+      "unique_turn_id": 127,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T31": {
+      "unique_turn_id": 157,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T90": {
+      "unique_turn_id": 165,
+      "task_id": 18,
+      "turn_id": "SG555/555",
+      "service": "CTL",
+      "start_time": "20:45",
+      "end_time": "21:00",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T91": {
+      "unique_turn_id": 187,
+      "task_id": 20,
+      "turn_id": "SG476/511",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T92": {
+      "unique_turn_id": 203,
+      "task_id": 23,
+      "turn_id": "SG162/164",
+      "service": "CTL",
+      "start_time": "22:25",
+      "end_time": "22:40",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T93": {
+      "unique_turn_id": 215,
+      "task_id": 24,
+      "turn_id": "SG800/801",
+      "service": "CTL",
+      "start_time": "22:50",
+      "end_time": "23:05",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T94": {
+      "unique_turn_id": 221,
+      "task_id": 25,
+      "turn_id": "SG9091/678",
+      "service": "CTL",
+      "start_time": "23:10",
+      "end_time": "23:25",
+      "date": "2026-09-09",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T95": {
+      "unique_turn_id": 5,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T96": {
+      "unique_turn_id": 17,
+      "task_id": 2,
+      "turn_id": "SG369/252",
+      "service": "CTL",
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T97": {
+      "unique_turn_id": 29,
+      "task_id": 4,
+      "turn_id": "SG5114/5060",
+      "service": "CTL",
+      "start_time": "02:45",
+      "end_time": "03:15",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T32": {
+      "unique_turn_id": 51,
+      "task_id": 5,
+      "turn_id": "SG510/681",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:25",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T47": {
+      "unique_turn_id": 57,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T33": {
+      "unique_turn_id": 79,
+      "task_id": 11,
+      "turn_id": "SG5023/9401",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T34": {
+      "unique_turn_id": 95,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T35": {
+      "unique_turn_id": 99,
+      "task_id": 13,
+      "turn_id": "SG682/811",
+      "service": "CTL",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T48": {
+      "unique_turn_id": 119,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T82": {
+      "unique_turn_id": 129,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T83": {
+      "unique_turn_id": 143,
+      "task_id": 16,
+      "turn_id": "SG812/813",
+      "service": "CTL",
+      "start_time": "16:30",
+      "end_time": "16:45",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T84": {
+      "unique_turn_id": 149,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T60": {
+      "unique_turn_id": 173,
+      "task_id": 18,
+      "turn_id": "SG555/555",
+      "service": "CTL",
+      "start_time": "20:45",
+      "end_time": "21:00",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T61": {
+      "unique_turn_id": 183,
+      "task_id": 19,
+      "turn_id": "SG814/511",
+      "service": "CTL",
+      "start_time": "21:00",
+      "end_time": "21:15",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T85": {
+      "unique_turn_id": 199,
+      "task_id": 21,
+      "turn_id": "SG476/476",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T62": {
+      "unique_turn_id": 209,
+      "task_id": 23,
+      "turn_id": "SG162/164",
+      "service": "CTL",
+      "start_time": "22:25",
+      "end_time": "22:40",
+      "date": "2026-09-10",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T63": {
+      "unique_turn_id": 9,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T64": {
+      "unique_turn_id": 19,
+      "task_id": 2,
+      "turn_id": "SG369/252",
+      "service": "CTL",
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T65": {
+      "unique_turn_id": 33,
+      "task_id": 4,
+      "turn_id": "SG5114/5060",
+      "service": "CTL",
+      "start_time": "02:45",
+      "end_time": "03:15",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T36": {
+      "unique_turn_id": 39,
+      "task_id": 5,
+      "turn_id": "SG510/681",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:25",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T37": {
+      "unique_turn_id": 65,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T98": {
+      "unique_turn_id": 69,
+      "task_id": 9,
+      "turn_id": "SG5023/5113",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T99": {
+      "unique_turn_id": 91,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T100": {
+      "unique_turn_id": 101,
+      "task_id": 13,
+      "turn_id": "SG682/811",
+      "service": "CTL",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T101": {
+      "unique_turn_id": 111,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T102": {
+      "unique_turn_id": 123,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T103": {
+      "unique_turn_id": 141,
+      "task_id": 16,
+      "turn_id": "SG812/813",
+      "service": "CTL",
+      "start_time": "16:30",
+      "end_time": "16:45",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T104": {
+      "unique_turn_id": 155,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T11": {
+      "unique_turn_id": 167,
+      "task_id": 18,
+      "turn_id": "SG555/555",
+      "service": "CTL",
+      "start_time": "20:45",
+      "end_time": "21:00",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T86": {
+      "unique_turn_id": 185,
+      "task_id": 19,
+      "turn_id": "SG814/511",
+      "service": "CTL",
+      "start_time": "21:00",
+      "end_time": "21:15",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T12": {
+      "unique_turn_id": 189,
+      "task_id": 21,
+      "turn_id": "SG476/476",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T13": {
+      "unique_turn_id": 201,
+      "task_id": 22,
+      "turn_id": "SG9731/555",
+      "service": "CTL",
+      "start_time": "21:45",
+      "end_time": "22:00",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T14": {
+      "unique_turn_id": 205,
+      "task_id": 23,
+      "turn_id": "SG162/164",
+      "service": "CTL",
+      "start_time": "22:25",
+      "end_time": "22:40",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T15": {
+      "unique_turn_id": 219,
+      "task_id": 24,
+      "turn_id": "SG800/801",
+      "service": "CTL",
+      "start_time": "22:50",
+      "end_time": "23:05",
+      "date": "2026-09-11",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T16": {
+      "unique_turn_id": 1,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T17": {
+      "unique_turn_id": 15,
+      "task_id": 2,
+      "turn_id": "SG369/252",
+      "service": "CTL",
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T18": {
+      "unique_turn_id": 37,
+      "task_id": 4,
+      "turn_id": "SG5114/5060",
+      "service": "CTL",
+      "start_time": "02:45",
+      "end_time": "03:15",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T105": {
+      "unique_turn_id": 45,
+      "task_id": 5,
+      "turn_id": "SG510/681",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:25",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T106": {
+      "unique_turn_id": 55,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T107": {
+      "unique_turn_id": 73,
+      "task_id": 9,
+      "turn_id": "SG5023/5113",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T108": {
+      "unique_turn_id": 85,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T109": {
+      "unique_turn_id": 105,
+      "task_id": 13,
+      "turn_id": "SG682/811",
+      "service": "CTL",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T38": {
+      "unique_turn_id": 113,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T110": {
+      "unique_turn_id": 133,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T39": {
+      "unique_turn_id": 139,
+      "task_id": 16,
+      "turn_id": "SG812/813",
+      "service": "CTL",
+      "start_time": "16:30",
+      "end_time": "16:45",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T40": {
+      "unique_turn_id": 153,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T41": {
+      "unique_turn_id": 177,
+      "task_id": 19,
+      "turn_id": "SG814/511",
+      "service": "CTL",
+      "start_time": "21:00",
+      "end_time": "21:15",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T19": {
+      "unique_turn_id": 193,
+      "task_id": 21,
+      "turn_id": "SG476/476",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T20": {
+      "unique_turn_id": 211,
+      "task_id": 23,
+      "turn_id": "SG162/164",
+      "service": "CTL",
+      "start_time": "22:25",
+      "end_time": "22:40",
+      "date": "2026-09-12",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T21": {
+      "unique_turn_id": 13,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T22": {
+      "unique_turn_id": 25,
+      "task_id": 2,
+      "turn_id": "SG369/252",
+      "service": "CTL",
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T23": {
+      "unique_turn_id": 35,
+      "task_id": 4,
+      "turn_id": "SG5114/5060",
+      "service": "CTL",
+      "start_time": "02:45",
+      "end_time": "03:15",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T87": {
+      "unique_turn_id": 41,
+      "task_id": 5,
+      "turn_id": "SG510/681",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:25",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T88": {
+      "unique_turn_id": 61,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T66": {
+      "unique_turn_id": 81,
+      "task_id": 9,
+      "turn_id": "SG5023/5113",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T89": {
+      "unique_turn_id": 75,
+      "task_id": 10,
+      "turn_id": "SG5023/9606",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T111": {
+      "unique_turn_id": 87,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T112": {
+      "unique_turn_id": 107,
+      "task_id": 13,
+      "turn_id": "SG682/811",
+      "service": "CTL",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T67": {
+      "unique_turn_id": 115,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T68": {
+      "unique_turn_id": 135,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T49": {
+      "unique_turn_id": 137,
+      "task_id": 16,
+      "turn_id": "SG812/813",
+      "service": "CTL",
+      "start_time": "16:30",
+      "end_time": "16:45",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T50": {
+      "unique_turn_id": 159,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T51": {
+      "unique_turn_id": 163,
+      "task_id": 18,
+      "turn_id": "SG555/555",
+      "service": "CTL",
+      "start_time": "20:45",
+      "end_time": "21:00",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T24": {
+      "unique_turn_id": 179,
+      "task_id": 19,
+      "turn_id": "SG814/511",
+      "service": "CTL",
+      "start_time": "21:00",
+      "end_time": "21:15",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T52": {
+      "unique_turn_id": 197,
+      "task_id": 21,
+      "turn_id": "SG476/476",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T25": {
+      "unique_turn_id": 207,
+      "task_id": 23,
+      "turn_id": "SG162/164",
+      "service": "CTL",
+      "start_time": "22:25",
+      "end_time": "22:40",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T26": {
+      "unique_turn_id": 213,
+      "task_id": 24,
+      "turn_id": "SG800/801",
+      "service": "CTL",
+      "start_time": "22:50",
+      "end_time": "23:05",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T27": {
+      "unique_turn_id": 224,
+      "task_id": 26,
+      "turn_id": "SG9601/5060",
+      "service": "CTL",
+      "start_time": "23:45",
+      "end_time": "00:15",
+      "date": "2026-09-13",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T28": {
+      "unique_turn_id": 4,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T29": {
+      "unique_turn_id": 28,
+      "task_id": 3,
+      "turn_id": "SG5114/5113",
+      "service": "CTL",
+      "start_time": "02:45",
+      "end_time": "03:15",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T113": {
+      "unique_turn_id": 48,
+      "task_id": 6,
+      "turn_id": "SG510/5060",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:40",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T114": {
+      "unique_turn_id": 60,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T115": {
+      "unique_turn_id": 94,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T116": {
+      "unique_turn_id": 98,
+      "task_id": 13,
+      "turn_id": "SG682/811",
+      "service": "CTL",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T117": {
+      "unique_turn_id": 122,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T118": {
+      "unique_turn_id": 132,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T166": {
+      "unique_turn_id": 146,
+      "task_id": 16,
+      "turn_id": "SG812/813",
+      "service": "CTL",
+      "start_time": "16:30",
+      "end_time": "16:45",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T167": {
+      "unique_turn_id": 152,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T156": {
+      "unique_turn_id": 172,
+      "task_id": 18,
+      "turn_id": "SG555/555",
+      "service": "CTL",
+      "start_time": "20:45",
+      "end_time": "21:00",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T138": {
+      "unique_turn_id": 182,
+      "task_id": 19,
+      "turn_id": "SG814/511",
+      "service": "CTL",
+      "start_time": "21:00",
+      "end_time": "21:15",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T168": {
+      "unique_turn_id": 196,
+      "task_id": 21,
+      "turn_id": "SG476/476",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T157": {
+      "unique_turn_id": 218,
+      "task_id": 24,
+      "turn_id": "SG800/801",
+      "service": "CTL",
+      "start_time": "22:50",
+      "end_time": "23:05",
+      "date": "2026-09-14",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T158": {
+      "unique_turn_id": 12,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T159": {
+      "unique_turn_id": 24,
+      "task_id": 2,
+      "turn_id": "SG369/252",
+      "service": "CTL",
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T182": {
+      "unique_turn_id": 44,
+      "task_id": 5,
+      "turn_id": "SG510/681",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:25",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T183": {
+      "unique_turn_id": 64,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T184": {
+      "unique_turn_id": 78,
+      "task_id": 9,
+      "turn_id": "SG5023/5113",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T185": {
+      "unique_turn_id": 84,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T186": {
+      "unique_turn_id": 104,
+      "task_id": 13,
+      "turn_id": "SG682/811",
+      "service": "CTL",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T187": {
+      "unique_turn_id": 118,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T188": {
+      "unique_turn_id": 126,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T169": {
+      "unique_turn_id": 148,
+      "task_id": 16,
+      "turn_id": "SG812/813",
+      "service": "CTL",
+      "start_time": "16:30",
+      "end_time": "16:45",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T170": {
+      "unique_turn_id": 162,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T119": {
+      "unique_turn_id": 170,
+      "task_id": 18,
+      "turn_id": "SG555/555",
+      "service": "CTL",
+      "start_time": "20:45",
+      "end_time": "21:00",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T120": {
+      "unique_turn_id": 176,
+      "task_id": 19,
+      "turn_id": "SG814/511",
+      "service": "CTL",
+      "start_time": "21:00",
+      "end_time": "21:15",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T171": {
+      "unique_turn_id": 192,
+      "task_id": 21,
+      "turn_id": "SG476/476",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-15",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T201": {
+      "unique_turn_id": 8,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T202": {
+      "unique_turn_id": 22,
+      "task_id": 2,
+      "turn_id": "SG369/252",
+      "service": "CTL",
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T203": {
+      "unique_turn_id": 32,
+      "task_id": 4,
+      "turn_id": "SG5114/5060",
+      "service": "CTL",
+      "start_time": "02:45",
+      "end_time": "03:15",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T189": {
+      "unique_turn_id": 50,
+      "task_id": 5,
+      "turn_id": "SG510/681",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:25",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T190": {
+      "unique_turn_id": 54,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T160": {
+      "unique_turn_id": 68,
+      "task_id": 8,
+      "turn_id": "SG9610/9605",
+      "service": "CTL",
+      "start_time": "08:35",
+      "end_time": "09:05",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T191": {
+      "unique_turn_id": 72,
+      "task_id": 9,
+      "turn_id": "SG5023/5113",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T192": {
+      "unique_turn_id": 90,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T193": {
+      "unique_turn_id": 110,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T139": {
+      "unique_turn_id": 128,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T140": {
+      "unique_turn_id": 158,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T204": {
+      "unique_turn_id": 166,
+      "task_id": 18,
+      "turn_id": "SG555/555",
+      "service": "CTL",
+      "start_time": "20:45",
+      "end_time": "21:00",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T205": {
+      "unique_turn_id": 188,
+      "task_id": 20,
+      "turn_id": "SG476/511",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T206": {
+      "unique_turn_id": 204,
+      "task_id": 23,
+      "turn_id": "SG162/164",
+      "service": "CTL",
+      "start_time": "22:25",
+      "end_time": "22:40",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T207": {
+      "unique_turn_id": 216,
+      "task_id": 24,
+      "turn_id": "SG800/801",
+      "service": "CTL",
+      "start_time": "22:50",
+      "end_time": "23:05",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T208": {
+      "unique_turn_id": 222,
+      "task_id": 25,
+      "turn_id": "SG9091/678",
+      "service": "CTL",
+      "start_time": "23:10",
+      "end_time": "23:25",
+      "date": "2026-09-16",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T209": {
+      "unique_turn_id": 6,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T210": {
+      "unique_turn_id": 18,
+      "task_id": 2,
+      "turn_id": "SG369/252",
+      "service": "CTL",
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T211": {
+      "unique_turn_id": 30,
+      "task_id": 4,
+      "turn_id": "SG5114/5060",
+      "service": "CTL",
+      "start_time": "02:45",
+      "end_time": "03:15",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T141": {
+      "unique_turn_id": 52,
+      "task_id": 5,
+      "turn_id": "SG510/681",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:25",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T142": {
+      "unique_turn_id": 58,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T143": {
+      "unique_turn_id": 80,
+      "task_id": 11,
+      "turn_id": "SG5023/9401",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T144": {
+      "unique_turn_id": 96,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T145": {
+      "unique_turn_id": 100,
+      "task_id": 13,
+      "turn_id": "SG682/811",
+      "service": "CTL",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T161": {
+      "unique_turn_id": 120,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T194": {
+      "unique_turn_id": 130,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T195": {
+      "unique_turn_id": 144,
+      "task_id": 16,
+      "turn_id": "SG812/813",
+      "service": "CTL",
+      "start_time": "16:30",
+      "end_time": "16:45",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T196": {
+      "unique_turn_id": 150,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T172": {
+      "unique_turn_id": 174,
+      "task_id": 18,
+      "turn_id": "SG555/555",
+      "service": "CTL",
+      "start_time": "20:45",
+      "end_time": "21:00",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T173": {
+      "unique_turn_id": 184,
+      "task_id": 19,
+      "turn_id": "SG814/511",
+      "service": "CTL",
+      "start_time": "21:00",
+      "end_time": "21:15",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T197": {
+      "unique_turn_id": 200,
+      "task_id": 21,
+      "turn_id": "SG476/476",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T174": {
+      "unique_turn_id": 210,
+      "task_id": 23,
+      "turn_id": "SG162/164",
+      "service": "CTL",
+      "start_time": "22:25",
+      "end_time": "22:40",
+      "date": "2026-09-17",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T175": {
+      "unique_turn_id": 10,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T176": {
+      "unique_turn_id": 20,
+      "task_id": 2,
+      "turn_id": "SG369/252",
+      "service": "CTL",
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T177": {
+      "unique_turn_id": 34,
+      "task_id": 4,
+      "turn_id": "SG5114/5060",
+      "service": "CTL",
+      "start_time": "02:45",
+      "end_time": "03:15",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T146": {
+      "unique_turn_id": 40,
+      "task_id": 5,
+      "turn_id": "SG510/681",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:25",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T147": {
+      "unique_turn_id": 66,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T148": {
+      "unique_turn_id": 70,
+      "task_id": 9,
+      "turn_id": "SG5023/5113",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T149": {
+      "unique_turn_id": 92,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T150": {
+      "unique_turn_id": 102,
+      "task_id": 13,
+      "turn_id": "SG682/811",
+      "service": "CTL",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T151": {
+      "unique_turn_id": 112,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T212": {
+      "unique_turn_id": 124,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T213": {
+      "unique_turn_id": 142,
+      "task_id": 16,
+      "turn_id": "SG812/813",
+      "service": "CTL",
+      "start_time": "16:30",
+      "end_time": "16:45",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T214": {
+      "unique_turn_id": 156,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T121": {
+      "unique_turn_id": 168,
+      "task_id": 18,
+      "turn_id": "SG555/555",
+      "service": "CTL",
+      "start_time": "20:45",
+      "end_time": "21:00",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T198": {
+      "unique_turn_id": 186,
+      "task_id": 19,
+      "turn_id": "SG814/511",
+      "service": "CTL",
+      "start_time": "21:00",
+      "end_time": "21:15",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T122": {
+      "unique_turn_id": 190,
+      "task_id": 21,
+      "turn_id": "SG476/476",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T123": {
+      "unique_turn_id": 202,
+      "task_id": 22,
+      "turn_id": "SG9731/555",
+      "service": "CTL",
+      "start_time": "21:45",
+      "end_time": "22:00",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T124": {
+      "unique_turn_id": 206,
+      "task_id": 23,
+      "turn_id": "SG162/164",
+      "service": "CTL",
+      "start_time": "22:25",
+      "end_time": "22:40",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T125": {
+      "unique_turn_id": 220,
+      "task_id": 24,
+      "turn_id": "SG800/801",
+      "service": "CTL",
+      "start_time": "22:50",
+      "end_time": "23:05",
+      "date": "2026-09-18",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T126": {
+      "unique_turn_id": 2,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T127": {
+      "unique_turn_id": 16,
+      "task_id": 2,
+      "turn_id": "SG369/252",
+      "service": "CTL",
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T128": {
+      "unique_turn_id": 38,
+      "task_id": 4,
+      "turn_id": "SG5114/5060",
+      "service": "CTL",
+      "start_time": "02:45",
+      "end_time": "03:15",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T215": {
+      "unique_turn_id": 46,
+      "task_id": 5,
+      "turn_id": "SG510/681",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:25",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T216": {
+      "unique_turn_id": 56,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T217": {
+      "unique_turn_id": 74,
+      "task_id": 9,
+      "turn_id": "SG5023/5113",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T218": {
+      "unique_turn_id": 86,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T219": {
+      "unique_turn_id": 106,
+      "task_id": 13,
+      "turn_id": "SG682/811",
+      "service": "CTL",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T220": {
+      "unique_turn_id": 114,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T152": {
+      "unique_turn_id": 134,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T153": {
+      "unique_turn_id": 140,
+      "task_id": 16,
+      "turn_id": "SG812/813",
+      "service": "CTL",
+      "start_time": "16:30",
+      "end_time": "16:45",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T154": {
+      "unique_turn_id": 154,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T155": {
+      "unique_turn_id": 178,
+      "task_id": 19,
+      "turn_id": "SG814/511",
+      "service": "CTL",
+      "start_time": "21:00",
+      "end_time": "21:15",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T129": {
+      "unique_turn_id": 194,
+      "task_id": 21,
+      "turn_id": "SG476/476",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T130": {
+      "unique_turn_id": 212,
+      "task_id": 23,
+      "turn_id": "SG162/164",
+      "service": "CTL",
+      "start_time": "22:25",
+      "end_time": "22:40",
+      "date": "2026-09-19",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T131": {
+      "unique_turn_id": 14,
+      "task_id": 1,
+      "turn_id": "SG802/803",
+      "service": "CTL",
+      "start_time": "00:45",
+      "end_time": "01:00",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T132": {
+      "unique_turn_id": 26,
+      "task_id": 2,
+      "turn_id": "SG369/252",
+      "service": "CTL",
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T133": {
+      "unique_turn_id": 36,
+      "task_id": 4,
+      "turn_id": "SG5114/5060",
+      "service": "CTL",
+      "start_time": "02:45",
+      "end_time": "03:15",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T178": {
+      "unique_turn_id": 42,
+      "task_id": 5,
+      "turn_id": "SG510/681",
+      "service": "CTL",
+      "start_time": "06:10",
+      "end_time": "06:25",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T199": {
+      "unique_turn_id": 62,
+      "task_id": 7,
+      "turn_id": "SG115/115",
+      "service": "CTL",
+      "start_time": "06:50",
+      "end_time": "07:05",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T179": {
+      "unique_turn_id": 76,
+      "task_id": 10,
+      "turn_id": "SG5023/9606",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T200": {
+      "unique_turn_id": 82,
+      "task_id": 9,
+      "turn_id": "SG5023/5113",
+      "service": "CTL",
+      "start_time": "08:45",
+      "end_time": "09:15",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T221": {
+      "unique_turn_id": 88,
+      "task_id": 12,
+      "turn_id": "SG815/815",
+      "service": "CTL",
+      "start_time": "11:20",
+      "end_time": "11:35",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T180": {
+      "unique_turn_id": 108,
+      "task_id": 13,
+      "turn_id": "SG682/811",
+      "service": "CTL",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T222": {
+      "unique_turn_id": 116,
+      "task_id": 14,
+      "turn_id": "SG116/553",
+      "service": "CTL",
+      "start_time": "13:30",
+      "end_time": "13:45",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T181": {
+      "unique_turn_id": 136,
+      "task_id": 15,
+      "turn_id": "SG816/816",
+      "service": "CTL",
+      "start_time": "15:10",
+      "end_time": "15:25",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T162": {
+      "unique_turn_id": 138,
+      "task_id": 16,
+      "turn_id": "SG812/813",
+      "service": "CTL",
+      "start_time": "16:30",
+      "end_time": "16:45",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T163": {
+      "unique_turn_id": 160,
+      "task_id": 17,
+      "turn_id": "SG808/809",
+      "service": "CTL",
+      "start_time": "17:00",
+      "end_time": "17:15",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T164": {
+      "unique_turn_id": 164,
+      "task_id": 18,
+      "turn_id": "SG555/555",
+      "service": "CTL",
+      "start_time": "20:45",
+      "end_time": "21:00",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T134": {
+      "unique_turn_id": 180,
+      "task_id": 19,
+      "turn_id": "SG814/511",
+      "service": "CTL",
+      "start_time": "21:00",
+      "end_time": "21:15",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T165": {
+      "unique_turn_id": 198,
+      "task_id": 21,
+      "turn_id": "SG476/476",
+      "service": "CTL",
+      "start_time": "21:10",
+      "end_time": "21:25",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T135": {
+      "unique_turn_id": 208,
+      "task_id": 23,
+      "turn_id": "SG162/164",
+      "service": "CTL",
+      "start_time": "22:25",
+      "end_time": "22:40",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T136": {
+      "unique_turn_id": 214,
+      "task_id": 24,
+      "turn_id": "SG800/801",
+      "service": "CTL",
+      "start_time": "22:50",
+      "end_time": "23:05",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    },
+    "T137": {
+      "unique_turn_id": 225,
+      "task_id": 26,
+      "turn_id": "SG9601/5060",
+      "service": "CTL",
+      "start_time": "23:45",
+      "end_time": "00:15",
+      "date": "2026-09-20",
+      "demand": 1,
+      "coverage": 1,
+      "status": "COMPLETE"
+    }
+  },
+  "rosters": {
+    "CTL": {
+      "resource": "CTL",
+      "planning_horizon_start": "2026-09-07",
+      "planning_horizon_end": "2026-09-20",
+      "headcount": 6,
+      "rosters": [
+        {
+          "roster_id": 1,
+          "employee_code": null,
+          "days": [
+            {
+              "date": "2026-09-07",
+              "day": "Mon",
+              "shift_id": "10H_0600",
+              "task_list": [
+                "T1",
+                "T2",
+                "T3",
+                "T4",
+                "T5",
+                "T6",
+                "T_Sachin"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-08",
+              "day": "Tue",
+              "shift_id": "10H_2000",
+              "task_list": [
+                "T7",
+                "T8",
+                "T9",
+                "T10"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-09",
+              "day": "Wed",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-10",
+              "day": "Thu",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-11",
+              "day": "Fri",
+              "shift_id": "9H_2030",
+              "task_list": [
+                "T11",
+                "T12",
+                "T13",
+                "T14",
+                "T15",
+                "T16",
+                "T17",
+                "T18"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-12",
+              "day": "Sat",
+              "shift_id": "9H_2100",
+              "task_list": [
+                "T19",
+                "T20",
+                "T21",
+                "T22",
+                "T23"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-13",
+              "day": "Sun",
+              "shift_id": "10H_2000",
+              "task_list": [
+                "T24",
+                "T25",
+                "T26",
+                "T27",
+                "T28",
+                "T29"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-14",
+              "day": "Mon",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-15",
+              "day": "Tue",
+              "shift_id": "10H_2100",
+              "task_list": [
+                "T201",
+                "T202",
+                "T203"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-16",
+              "day": "Wed",
+              "shift_id": "9.5H_1900",
+              "task_list": [
+                "T204",
+                "T205",
+                "T206",
+                "T207",
+                "T208",
+                "T209",
+                "T210",
+                "T211"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-17",
+              "day": "Thu",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-18",
+              "day": "Fri",
+              "shift_id": "9.5H_0830",
+              "task_list": [
+                "T212",
+                "T213",
+                "T214"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-19",
+              "day": "Sat",
+              "shift_id": "9.5H_0600",
+              "task_list": [
+                "T215",
+                "T216",
+                "T217",
+                "T218",
+                "T219",
+                "T220"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-20",
+              "day": "Sun",
+              "shift_id": "9.5H_0600",
+              "task_list": [
+                "T221",
+                "T222"
+              ],
+              "ot_hours": 0
+            }
+          ]
+        },
+        {
+          "roster_id": 2,
+          "employee_code": null,
+          "days": [
+            {
+              "date": "2026-09-07",
+              "day": "Mon",
+              "shift_id": "10H_1230",
+              "task_list": [
+                "T30"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-08",
+              "day": "Tue",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-09",
+              "day": "Wed",
+              "shift_id": "10H_0800",
+              "task_list": [
+                "T31"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-10",
+              "day": "Thu",
+              "shift_id": "9H_0600",
+              "task_list": [
+                "T32",
+                "T33",
+                "T34",
+                "T35"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-11",
+              "day": "Fri",
+              "shift_id": "9H_0600",
+              "task_list": [
+                "T36",
+                "T37"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-12",
+              "day": "Sat",
+              "shift_id": "10H_1200",
+              "task_list": [
+                "T38",
+                "T39",
+                "T40",
+                "T41"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-13",
+              "day": "Sun",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-14",
+              "day": "Mon",
+              "shift_id": "10H_1830",
+              "task_list": [
+                "T156",
+                "T157",
+                "T158",
+                "T159"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-15",
+              "day": "Tue",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-16",
+              "day": "Wed",
+              "shift_id": "10H_0600",
+              "task_list": [
+                "T160"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-17",
+              "day": "Thu",
+              "shift_id": "9H_0600",
+              "task_list": [
+                "T161"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-18",
+              "day": "Fri",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-19",
+              "day": "Sat",
+              "shift_id": "9H_0600",
+              "task_list": [],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-20",
+              "day": "Sun",
+              "shift_id": "10H_1230",
+              "task_list": [
+                "T162",
+                "T163",
+                "T164",
+                "T165"
+              ],
+              "ot_hours": 0
+            }
+          ]
+        },
+        {
+          "roster_id": 3,
+          "employee_code": null,
+          "days": [
+            {
+              "date": "2026-09-07",
+              "day": "Mon",
+              "shift_id": "10H_1830",
+              "task_list": [
+                "T42",
+                "T43",
+                "T44",
+                "T45"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-08",
+              "day": "Tue",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-09",
+              "day": "Wed",
+              "shift_id": "10H_0600",
+              "task_list": [
+                "T46"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-10",
+              "day": "Thu",
+              "shift_id": "9H_0600",
+              "task_list": [
+                "T47",
+                "T48"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-11",
+              "day": "Fri",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-12",
+              "day": "Sat",
+              "shift_id": "9H_0600",
+              "task_list": [],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-13",
+              "day": "Sun",
+              "shift_id": "10H_1230",
+              "task_list": [
+                "T49",
+                "T50",
+                "T51",
+                "T52"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-14",
+              "day": "Mon",
+              "shift_id": "9.5H_1230",
+              "task_list": [
+                "T166",
+                "T167",
+                "T168"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-15",
+              "day": "Tue",
+              "shift_id": "9.5H_1230",
+              "task_list": [
+                "T169",
+                "T170",
+                "T171"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-16",
+              "day": "Wed",
+              "shift_id": "9.5H_1230",
+              "task_list": [],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-17",
+              "day": "Thu",
+              "shift_id": "10H_1830",
+              "task_list": [
+                "T172",
+                "T173",
+                "T174",
+                "T175",
+                "T176",
+                "T177"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-18",
+              "day": "Fri",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-19",
+              "day": "Sat",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-20",
+              "day": "Sun",
+              "shift_id": "9.5H_0600",
+              "task_list": [
+                "T178",
+                "T179",
+                "T180",
+                "T181"
+              ],
+              "ot_hours": 0
+            }
+          ]
+        },
+        {
+          "roster_id": 4,
+          "employee_code": null,
+          "days": [
+            {
+              "date": "2026-09-07",
+              "day": "Mon",
+              "shift_id": "9.5H_1230",
+              "task_list": [
+                "T53",
+                "T54",
+                "T55"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-08",
+              "day": "Tue",
+              "shift_id": "9.5H_1230",
+              "task_list": [
+                "T56",
+                "T57",
+                "T58",
+                "T59"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-09",
+              "day": "Wed",
+              "shift_id": "9.5H_1230",
+              "task_list": [],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-10",
+              "day": "Thu",
+              "shift_id": "10H_1830",
+              "task_list": [
+                "T60",
+                "T61",
+                "T62",
+                "T63",
+                "T64",
+                "T65"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-11",
+              "day": "Fri",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-12",
+              "day": "Sat",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-13",
+              "day": "Sun",
+              "shift_id": "9.5H_0600",
+              "task_list": [
+                "T66",
+                "T67",
+                "T68"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-14",
+              "day": "Mon",
+              "shift_id": "10H_0600",
+              "task_list": [
+                "T113",
+                "T114",
+                "T115",
+                "T116",
+                "T117",
+                "T118"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-15",
+              "day": "Tue",
+              "shift_id": "10H_2000",
+              "task_list": [
+                "T119",
+                "T120"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-16",
+              "day": "Wed",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-17",
+              "day": "Thu",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-18",
+              "day": "Fri",
+              "shift_id": "9H_2030",
+              "task_list": [
+                "T121",
+                "T122",
+                "T123",
+                "T124",
+                "T125",
+                "T126",
+                "T127",
+                "T128"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-19",
+              "day": "Sat",
+              "shift_id": "9H_2100",
+              "task_list": [
+                "T129",
+                "T130",
+                "T131",
+                "T132",
+                "T133"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-20",
+              "day": "Sun",
+              "shift_id": "10H_2000",
+              "task_list": [
+                "T134",
+                "T135",
+                "T136",
+                "T137"
+              ],
+              "ot_hours": 0
+            }
+          ]
+        },
+        {
+          "roster_id": 5,
+          "employee_code": null,
+          "days": [
+            {
+              "date": "2026-09-07",
+              "day": "Mon",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-08",
+              "day": "Tue",
+              "shift_id": "9.5H_0600",
+              "task_list": [
+                "T69",
+                "T70",
+                "T71",
+                "T72",
+                "T73",
+                "T74",
+                "T75"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-09",
+              "day": "Wed",
+              "shift_id": "9.5H_0600",
+              "task_list": [
+                "T76",
+                "T77",
+                "T78",
+                "T79",
+                "T80",
+                "T81"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-10",
+              "day": "Thu",
+              "shift_id": "10H_1230",
+              "task_list": [
+                "T82",
+                "T83",
+                "T84",
+                "T85"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-11",
+              "day": "Fri",
+              "shift_id": "9.5H_1200",
+              "task_list": [
+                "T86"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-12",
+              "day": "Sat",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-13",
+              "day": "Sun",
+              "shift_id": "9.5H_0600",
+              "task_list": [
+                "T87",
+                "T88",
+                "T89"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-14",
+              "day": "Mon",
+              "shift_id": "10H_1230",
+              "task_list": [
+                "T138"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-15",
+              "day": "Tue",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-16",
+              "day": "Wed",
+              "shift_id": "10H_0800",
+              "task_list": [
+                "T139",
+                "T140"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-17",
+              "day": "Thu",
+              "shift_id": "9H_0600",
+              "task_list": [
+                "T141",
+                "T142",
+                "T143",
+                "T144",
+                "T145"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-18",
+              "day": "Fri",
+              "shift_id": "9H_0600",
+              "task_list": [
+                "T146",
+                "T147",
+                "T148",
+                "T149",
+                "T150",
+                "T151"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-19",
+              "day": "Sat",
+              "shift_id": "10H_1200",
+              "task_list": [
+                "T152",
+                "T153",
+                "T154",
+                "T155"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-20",
+              "day": "Sun",
+              "shift_id": "OFF"
+            }
+          ]
+        },
+        {
+          "roster_id": 6,
+          "employee_code": null,
+          "days": [
+            {
+              "date": "2026-09-07",
+              "day": "Mon",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-08",
+              "day": "Tue",
+              "shift_id": "10H_2100",
+              "task_list": [],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-09",
+              "day": "Wed",
+              "shift_id": "9.5H_1900",
+              "task_list": [
+                "T90",
+                "T91",
+                "T92",
+                "T93",
+                "T94",
+                "T95",
+                "T96",
+                "T97"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-10",
+              "day": "Thu",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-11",
+              "day": "Fri",
+              "shift_id": "9.5H_0830",
+              "task_list": [
+                "T98",
+                "T99",
+                "T100",
+                "T101",
+                "T102",
+                "T103",
+                "T104"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-12",
+              "day": "Sat",
+              "shift_id": "9.5H_0600",
+              "task_list": [
+                "T105",
+                "T106",
+                "T107",
+                "T108",
+                "T109",
+                "T110"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-13",
+              "day": "Sun",
+              "shift_id": "9.5H_0600",
+              "task_list": [
+                "T111",
+                "T112"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-14",
+              "day": "Mon",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-15",
+              "day": "Tue",
+              "shift_id": "9.5H_0600",
+              "task_list": [
+                "T182",
+                "T183",
+                "T184",
+                "T185",
+                "T186",
+                "T187",
+                "T188"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-16",
+              "day": "Wed",
+              "shift_id": "9.5H_0600",
+              "task_list": [
+                "T189",
+                "T190",
+                "T191",
+                "T192",
+                "T193"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-17",
+              "day": "Thu",
+              "shift_id": "10H_1230",
+              "task_list": [
+                "T194",
+                "T195",
+                "T196",
+                "T197"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-18",
+              "day": "Fri",
+              "shift_id": "9.5H_1200",
+              "task_list": [
+                "T198"
+              ],
+              "ot_hours": 0
+            },
+            {
+              "date": "2026-09-19",
+              "day": "Sat",
+              "shift_id": "OFF"
+            },
+            {
+              "date": "2026-09-20",
+              "day": "Sun",
+              "shift_id": "9.5H_0600",
+              "task_list": [
+                "T199",
+                "T200"
+              ],
+              "ot_hours": 0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

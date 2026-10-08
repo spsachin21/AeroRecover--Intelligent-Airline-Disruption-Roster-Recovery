@@ -1,0 +1,260 @@
+{
+  "RED": [
+    {
+      "workpatternid": 1,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        "OFF"
+      ],
+      "week_start_date": "2026-03-29",
+      "week_end_date": "2026-04-04",
+      "Mon": {
+        "start": "07:00",
+        "end": "15:00"
+      },
+      "Tue": {
+        "start": "07:30",
+        "end": "15:30"
+      },
+      "Wed": {
+        "start": "07:00",
+        "end": "15:00"
+      },
+      "Thu": {
+        "start": "07:00",
+        "end": "15:00"
+      },
+      "Fri": {
+        "start": "07:00",
+        "end": "15:00"
+      },
+      "Sat": {
+        "start": "07:00",
+        "end": "15:00"
+      },
+      "Sun": "OFF"
+    },
+    {
+      "workpatternid": 2,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        "OFF",
+        8
+      ],
+      "week_start_date": "2026-03-29",
+      "week_end_date": "2026-04-04",
+      "Mon": {
+        "start": "07:00",
+        "end": "15:00"
+      },
+      "Tue": {
+        "start": "07:30",
+        "end": "15:30"
+      },
+      "Wed": {
+        "start": "07:00",
+        "end": "15:00"
+      },
+      "Thu": {
+        "start": "07:00",
+        "end": "15:00"
+      },
+      "Fri": {
+        "start": "07:00",
+        "end": "15:00"
+      },
+      "Sat": "OFF",
+      "Sun": {
+        "start": "07:30",
+        "end": "15:30"
+      }
+    },
+    {
+      "workpatternid": 3,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        "OFF",
+        8
+      ],
+      "week_start_date": "2026-03-29",
+      "week_end_date": "2026-04-04",
+      "Mon": {
+        "start": "12:30",
+        "end": "20:30"
+      },
+      "Tue": {
+        "start": "12:30",
+        "end": "20:30"
+      },
+      "Wed": {
+        "start": "12:30",
+        "end": "20:30"
+      },
+      "Thu": {
+        "start": "12:30",
+        "end": "20:30"
+      },
+      "Fri": {
+        "start": "09:30",
+        "end": "17:30"
+      },
+      "Sat": "OFF",
+      "Sun": {
+        "start": "09:30",
+        "end": "17:30"
+      }
+    },
+    {
+      "workpatternid": 4,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        8,
+        8,
+        "OFF",
+        8,
+        8,
+        8,
+        8
+      ],
+      "week_start_date": "2026-03-29",
+      "week_end_date": "2026-04-04",
+      "Mon": {
+        "start": "10:00",
+        "end": "18:00"
+      },
+      "Tue": {
+        "start": "12:00",
+        "end": "20:00"
+      },
+      "Wed": "OFF",
+      "Thu": {
+        "start": "10:00",
+        "end": "18:00"
+      },
+      "Fri": {
+        "start": "10:00",
+        "end": "18:00"
+      },
+      "Sat": {
+        "start": "10:00",
+        "end": "18:00"
+      },
+      "Sun": {
+        "start": "12:00",
+        "end": "20:00"
+      }
+    },
+    {
+      "workpatternid": 5,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        8,
+        "OFF",
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "week_start_date": "2026-03-29",
+      "week_end_date": "2026-04-04",
+      "Mon": {
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "Tue": "OFF",
+      "Wed": {
+        "start": "21:00",
+        "end": "05:00"
+      },
+      "Thu": {
+        "start": "21:00",
+        "end": "05:00"
+      },
+      "Fri": {
+        "start": "21:00",
+        "end": "05:00"
+      },
+      "Sat": {
+        "start": "21:00",
+        "end": "05:00"
+      },
+      "Sun": {
+        "start": "21:00",
+        "end": "05:00"
+      }
+    }
+  ],
+  "monthly_summary": {
+    "RED": {
+      "headcount": {
+        "Mar-26": 5
+      },
+      "leave_adjusted_headcount": {
+        "Mar-26": 7
+      },
+      "utilization": {
+        "Mar-26": 1.1792
+      },
+      "coverage_metrics": {
+        "Mar-26": {
+          "demand_weighted_pct": 61.17,
+          "bucket_hit_rate_pct": 61.17
+        },
+        "Apr-26": {
+          "demand_weighted_pct": 100.0,
+          "bucket_hit_rate_pct": 100.0
+        }
+      },
+      "peak_demand": {
+        "Mar-26": 1,
+        "Apr-26": 1
+      }
+    }
+  },
+  "weekly_summary": {
+    "RED": {
+      "utilization_kpis": {
+        "weekly": {
+          "1": 1.1792
+        },
+        "average": 1.1792
+      },
+      "coverage_metrics": {
+        "weeks": [
+          {
+            "week_id": "1",
+            "demand_weighted_pct": 83.36,
+            "bucket_hit_rate_pct": 83.36
+          }
+        ],
+        "overall": {
+          "demand_weighted_pct": 83.36,
+          "bucket_hit_rate_pct": 83.36
+        }
+      }
+    }
+  },
+  "pipeline_errors": {}
+}

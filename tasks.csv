@@ -1,0 +1,4 @@
+task_key,unique_turn_id,task_id,turn_id,service,start_time,end_time,date,demand,coverage,status
+T323,207,86,IX1178/1671,RED,16:05,17:15,2026-09-18,1,1,COMPLETE
+T324,221,99,AI4250/2245,RED,17:50,19:00,2026-09-18,1,1,COMPLETE
+T325,243,107,AI2782/2289,RED,19:00,20:10,2026-09-18,1,1,COMPLETE

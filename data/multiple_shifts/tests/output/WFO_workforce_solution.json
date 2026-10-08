@@ -1,0 +1,219 @@
+{
+  "RED": [
+    {
+      "workpatternid": 1,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        "OFF"
+      ],
+      "week_start_date": "2026-03-29",
+      "week_end_date": "2026-04-04",
+      "Mon": {
+        "start": "08:00",
+        "end": "16:00"
+      },
+      "Tue": {
+        "start": "21:00",
+        "end": "05:00"
+      },
+      "Wed": {
+        "start": "21:00",
+        "end": "05:00"
+      },
+      "Thu": {
+        "start": "21:00",
+        "end": "05:00"
+      },
+      "Fri": {
+        "start": "21:00",
+        "end": "05:00"
+      },
+      "Sat": {
+        "start": "21:00",
+        "end": "05:00"
+      },
+      "Sun": "OFF"
+    },
+    {
+      "workpatternid": 2,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        "OFF",
+        8
+      ],
+      "week_start_date": "2026-03-29",
+      "week_end_date": "2026-04-04",
+      "Mon": {
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "Tue": {
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "Wed": {
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "Thu": {
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "Fri": {
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "Sat": "OFF",
+      "Sun": {
+        "start": "21:00",
+        "end": "05:00"
+      }
+    },
+    {
+      "workpatternid": 3,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        8,
+        "OFF",
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "week_start_date": "2026-03-29",
+      "week_end_date": "2026-04-04",
+      "Mon": {
+        "start": "21:00",
+        "end": "05:00"
+      },
+      "Tue": "OFF",
+      "Wed": {
+        "start": "08:00",
+        "end": "16:00"
+      },
+      "Thu": {
+        "start": "08:00",
+        "end": "16:00"
+      },
+      "Fri": {
+        "start": "08:00",
+        "end": "16:00"
+      },
+      "Sat": {
+        "start": "08:00",
+        "end": "16:00"
+      },
+      "Sun": {
+        "start": "08:00",
+        "end": "16:00"
+      }
+    },
+    {
+      "workpatternid": 4,
+      "week_id": "1",
+      "num_employees": 1,
+      "pattern_type": [
+        "OFF",
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "week_start_date": "2026-03-29",
+      "week_end_date": "2026-04-04",
+      "Mon": "OFF",
+      "Tue": {
+        "start": "08:00",
+        "end": "16:00"
+      },
+      "Wed": {
+        "start": "08:00",
+        "end": "16:00"
+      },
+      "Thu": {
+        "start": "08:00",
+        "end": "16:00"
+      },
+      "Fri": {
+        "start": "08:00",
+        "end": "16:00"
+      },
+      "Sat": {
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "Sun": {
+        "start": "14:00",
+        "end": "22:00"
+      }
+    }
+  ],
+  "monthly_summary": {
+    "RED": {
+      "headcount": {
+        "Mar-26": 4
+      },
+      "leave_adjusted_headcount": {
+        "Mar-26": 5
+      },
+      "utilization": {
+        "Mar-26": 1.6927
+      },
+      "coverage_metrics": {
+        "Mar-26": {
+          "demand_weighted_pct": 90.03,
+          "bucket_hit_rate_pct": 90.03
+        },
+        "Apr-26": {
+          "demand_weighted_pct": 100.0,
+          "bucket_hit_rate_pct": 100.0
+        }
+      },
+      "peak_demand": {
+        "Mar-26": 1,
+        "Apr-26": 1
+      }
+    }
+  },
+  "weekly_summary": {
+    "RED": {
+      "utilization_kpis": {
+        "weekly": {
+          "1": 1.6927
+        },
+        "average": 1.6927
+      },
+      "coverage_metrics": {
+        "weeks": [
+          {
+            "week_id": "1",
+            "demand_weighted_pct": 95.73,
+            "bucket_hit_rate_pct": 95.73
+          }
+        ],
+        "overall": {
+          "demand_weighted_pct": 95.73,
+          "bucket_hit_rate_pct": 95.73
+        }
+      }
+    }
+  },
+  "pipeline_errors": {}
+}

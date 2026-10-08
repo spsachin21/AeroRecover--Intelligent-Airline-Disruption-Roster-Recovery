@@ -1,0 +1,116 @@
+{
+  "resources": {
+    "LDR": {
+      "resource": "LDR",
+      "services": ["BBA", "BMA", "RMP"],
+      "group": null
+    },
+    "CLN": {
+      "resource": "CLN",
+      "services": ["CLN"],
+      "group": null
+    },
+    "UTH": {
+      "resource": "LDR",
+      "services": ["BBA", "BMA", "RMP", "CLN"],
+      "group": null
+    },
+    "CLS": {
+      "resource": "CLS",
+      "services": ["CLS"],
+      "group": null
+    },
+    "CLC": {
+      "resource": "CLC",
+      "services": ["CLC"],
+      "group": "supervisors"
+    },
+    "CTL": {
+      "resource": "CTL",
+      "services": ["CTL"],
+      "group": null
+    },
+    "DRA": {
+      "resource": "DRA",
+      "services": ["DRA"],
+      "group": "drivers"
+    },
+    "DRB": {
+      "resource": "DRB",
+      "services": ["DRB"],
+      "group": "drivers"
+    },
+    "DRC": {
+      "resource": "DRC",
+      "services": ["DRC"],
+      "group": "drivers"
+    },
+    "DRD": {
+      "resource": "DRD",
+      "services": ["DRD", "CRD"],
+      "group": "null"
+    },
+    "BBT": {
+      "resource": "BBT",
+      "services": ["BBT"],
+      "group": null
+    },
+    "BMT": {
+      "resource": "BMT",
+      "services": ["BMT"],
+      "group": null
+    },
+    "PDU": {
+      "resource": "PDU",
+      "services": ["PDU"],
+      "group": null
+    },
+    "TRC": {
+      "resource": "TRC",
+      "services": ["TRC"],
+      "group": null
+    },
+    "RED": {
+      "resource": "RED",
+      "services": ["RED"],
+      "group": null
+    }
+  },
+  "crew_teams": [
+    {
+      "crew_id": "CT1",
+      "crew_resources": ["LDR", "RED", "DRD", "DRA", "DRB", "CLN"],
+      "crew_count": [6, 2, 2, 1, 1, 1]
+    },
+    {
+      "crew_id": "CT2",
+      "crew_resources": ["LDR", "RED", "DRD"],
+      "crew_count": [4, 1, 1]
+    }
+  ],
+  "downranking_groups": {
+    "drivers": {
+      "group": "drivers",
+      "resources": ["DRA", "DRB", "DRC"],
+      "matrix": {
+        "DRA": ["DRA", "DRB"],
+        "DRB": ["DRB", "DRC"],
+        "DRC": ["DRC"]      
+      }
+    },
+    "supervisors": {
+      "group": "supervisors",
+      "resources": ["CLC", "RED"],
+      "matrix": {
+        "CLC": ["CLC", "RED"],
+        "RED": ["RED"]
+      }
+    }
+  },
+  "cross_utilization_groups": {
+    "utility_hands": {
+      "group": "utility_hands",
+      "resources": ["LDR", "CLN"]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "PlanningHorizonStart": "2026-06-01T00:00:00",
+  "PlanningHorizonEnd": "2026-06-07T23:55:00",
+  "utilization_type": "NONE",
+  "schedule_type": "IRREGULAR",
+  "leave_accrual_per_month": 2,
+  "resources": [
+    {
+      "resource": "RT1",
+      "resource_tag": "STATIC",
+      "shift_configuration": {
+        "shift_requirements": [
+            { "start_time": "06:00", "end_time": "14:00", "num_employees": 10 },
+            { "start_time": "14:00", "end_time": "22:00", "num_employees": 8 },
+            { "start_time": "22:00", "end_time": "06:00", "num_employees": 7 }
+        ],
+        "shift_policy": {
+          "weekly": {
+            "max_working_hours": 48,
+            "min_days_off": 2,
+            "max_days_off": 3,
+            "minimum_rest_between_consecutive_shifts": 12
+          },
+          "consecutive_day_off": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "PlanningHorizonStart": "2026-06-01T00:00:00",
+  "PlanningHorizonEnd": "2026-06-07T23:55:00",
+  "utilization_type": "NONE",
+  "schedule_type": "IRREGULAR",
+  "leave_accrual_per_month": 2,
+  "resources": [
+    {
+      "resource": "LDR",
+      "resource_tag": "DYNAMIC",
+      "use_downranking": false,
+      "shift_configuration": {
+        "shift_restrictions": {
+          "shift_start_restrictions": [
+            { "start_time": "23:30", "end_time": "05:30" }
+          ],
+          "shift_end_restrictions": [
+            { "start_time": "23:30", "end_time": "04:00" }
+          ]
+        },
+        "shift_policy": {
+          "daily": {
+            "include_30_min_increments": true,
+            "shift_lengths": [9, 10]
+          },
+          "weekly": {
+            "max_working_hours": 48,
+            "min_days_off": 2,
+            "max_days_off": 2,
+            "minimum_rest_between_consecutive_shifts": 12
+          }
+        },
+        "briefing_policy": {
+          "briefing_time_minutes": 0,
+          "debriefing_time_minutes": 0
+        },
+        "consecutive_day_off": false
+      }
+    }
+  ]
+}

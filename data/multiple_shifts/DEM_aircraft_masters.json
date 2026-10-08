@@ -1,0 +1,728 @@
+[
+  {
+    "ACVersion": "A124",
+    "IATACode": "A4F",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Antonov An-124 Ruslan"
+  },
+  {
+    "ACVersion": "A140",
+    "IATACode": "A40",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Antonov An-140"
+  },
+  {
+    "ACVersion": "A148",
+    "IATACode": "A81",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Antonov An-148"
+  },
+  {
+    "ACVersion": "A158",
+    "IATACode": "A58",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Antonov An-158"
+  },
+  {
+    "ACVersion": "A19N",
+    "IATACode": "31N",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Airbus A319neo"
+  },
+  {
+    "ACVersion": "A20N",
+    "IATACode": "32N",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Airbus A320neo"
+  },
+  {
+    "ACVersion": "A21N",
+    "IATACode": "32Q",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Airbus A321neo/LR/XLR"
+  },
+  {
+    "ACVersion": "A225",
+    "IATACode": "A5F",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Antonov An-225 Mriya"
+  },
+  {
+    "ACVersion": "A306",
+    "IATACode": "ABY",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A300-600 Freighter[4]"
+  },
+  {
+    "ACVersion": "A30B",
+    "IATACode": "AB4",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A300B2, A300B4 and A300C4"
+  },
+  {
+    "ACVersion": "A310",
+    "IATACode": "312",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A310-200"
+  },
+  {
+    "ACVersion": "A318",
+    "IATACode": "32C",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Airbus A318 (sharklets)"
+  },
+  {
+    "ACVersion": "A319",
+    "IATACode": "32D",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Airbus A319 (sharklets)"
+  },
+  {
+    "ACVersion": "A320",
+    "IATACode": "32A",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Airbus A320 (sharklets)"
+  },
+  {
+    "ACVersion": "A321",
+    "IATACode": "32B",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Airbus A321 (sharklets)"
+  },
+  {
+    "ACVersion": "A332",
+    "IATACode": "332",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A330-200"
+  },
+  {
+    "ACVersion": "A333",
+    "IATACode": "333",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A330-300"
+  },
+  {
+    "ACVersion": "A338",
+    "IATACode": "338",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A330-800"
+  },
+  {
+    "ACVersion": "A339",
+    "IATACode": "339",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A330-900"
+  },
+  {
+    "ACVersion": "A342",
+    "IATACode": "342",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A340-200"
+  },
+  {
+    "ACVersion": "A343",
+    "IATACode": "343",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A340-300"
+  },
+  {
+    "ACVersion": "A345",
+    "IATACode": "345",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A340-500"
+  },
+  {
+    "ACVersion": "A346",
+    "IATACode": "346",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A340-600"
+  },
+  {
+    "ACVersion": "A359",
+    "IATACode": "359",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A350-900"
+  },
+  {
+    "ACVersion": "A35K",
+    "IATACode": "351",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A350-1000"
+  },
+  {
+    "ACVersion": "A388",
+    "IATACode": "388",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A380-800"
+  },
+  {
+    "ACVersion": "A3ST",
+    "IATACode": "ABB",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Airbus A300-600ST \"Super Transporter\" / \"Beluga\""
+  },
+  {
+    "ACVersion": "A748",
+    "IATACode": "HS7",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Hawker Siddeley HS 748"
+  },
+  {
+    "ACVersion": "AN12",
+    "IATACode": "ANF",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Antonov An-12"
+  },
+  {
+    "ACVersion": "AN24",
+    "IATACode": "AN4",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Antonov An-24"
+  },
+  {
+    "ACVersion": "AN26",
+    "IATACode": "A26",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Antonov An-26"
+  },
+  {
+    "ACVersion": "AN28",
+    "IATACode": "A28",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Antonov An-28"
+  },
+  {
+    "ACVersion": "AN30",
+    "IATACode": "A30",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Antonov An-30"
+  },
+  {
+    "ACVersion": "AN32",
+    "IATACode": "A32",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Antonov An-32"
+  },
+  {
+    "ACVersion": "AN72",
+    "IATACode": "AN7",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Antonov An-72 / An-74"
+  },
+  {
+    "ACVersion": "AT43",
+    "IATACode": "AT4",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Aerospatiale/Alenia ATR 42-300 / 320"
+  },
+  {
+    "ACVersion": "AT45",
+    "IATACode": "AT5",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Aerospatiale/Alenia ATR 42-500"
+  },
+  {
+    "ACVersion": "AT46",
+    "IATACode": "ATR",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Aerospatiale/Alenia ATR 42-600"
+  },
+  {
+    "ACVersion": "AT72",
+    "IATACode": "AT7",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Aerospatiale/Alenia ATR 72-201/-202"
+  },
+  {
+    "ACVersion": "AT73",
+    "IATACode": "ATR",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Aerospatiale/Alenia ATR 72-211/-212"
+  },
+  {
+    "ACVersion": "AT75",
+    "IATACode": "ATR",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Aerospatiale/Alenia ATR 72-212A (500)"
+  },
+  {
+    "ACVersion": "AT76",
+    "IATACode": "ATR",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Aerospatiale/Alenia ATR 72-212A (600)"
+  },
+  {
+    "ACVersion": "B37M",
+    "IATACode": "7M7",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 737 MAX 7"
+  },
+  {
+    "ACVersion": "B38M",
+    "IATACode": "7M8",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 737 MAX 8"
+  },
+  {
+    "ACVersion": "B39M",
+    "IATACode": "7M9",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 737 MAX 9"
+  },
+  {
+    "ACVersion": "B3XM",
+    "IATACode": "7MJ",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 737 MAX 10"
+  },
+  {
+    "ACVersion": "B703",
+    "IATACode": "703",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 707"
+  },
+  {
+    "ACVersion": "B712",
+    "IATACode": "717",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 717"
+  },
+  {
+    "ACVersion": "B720",
+    "IATACode": "B72",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 720B"
+  },
+  {
+    "ACVersion": "B721",
+    "IATACode": "721",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 727-100"
+  },
+  {
+    "ACVersion": "B722",
+    "IATACode": "722",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 727-200"
+  },
+  {
+    "ACVersion": "B732",
+    "IATACode": "732",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 737-200"
+  },
+  {
+    "ACVersion": "B733",
+    "IATACode": "73C",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 737-300 Winglets"
+  },
+  {
+    "ACVersion": "B734",
+    "IATACode": "734",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 737-400"
+  },
+  {
+    "ACVersion": "B735",
+    "IATACode": "735",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 737-500"
+  },
+  {
+    "ACVersion": "B736",
+    "IATACode": "736",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 737-600"
+  },
+  {
+    "ACVersion": "B738",
+    "IATACode": "738",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 737-800"
+  },
+  {
+    "ACVersion": "B739",
+    "IATACode": "739",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Boeing 737-900\u00c2\u00a0/\u00c2\u00a0Boeing 737-900ER"
+  },
+  {
+    "ACVersion": "B741",
+    "IATACode": "74T",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 747-100 Freighter"
+  },
+  {
+    "ACVersion": "B742",
+    "IATACode": "742",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 747-200"
+  },
+  {
+    "ACVersion": "B743",
+    "IATACode": "74D",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 747-300M"
+  },
+  {
+    "ACVersion": "B744",
+    "IATACode": "744",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 747-400\u00c2\u00a0/\u00c2\u00a0Boeing 747-400ER"
+  },
+  {
+    "ACVersion": "B748",
+    "IATACode": "74N",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 747-8F"
+  },
+  {
+    "ACVersion": "B74R",
+    "IATACode": "74V",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 747SR Freighter"
+  },
+  {
+    "ACVersion": "B74S",
+    "IATACode": "74L",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 747SP"
+  },
+  {
+    "ACVersion": "B752",
+    "IATACode": "752",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 757-200"
+  },
+  {
+    "ACVersion": "B753",
+    "IATACode": "753",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 757-300"
+  },
+  {
+    "ACVersion": "B762",
+    "IATACode": "762",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 767-200\u00c2\u00a0/\u00c2\u00a0Boeing 767-200ER"
+  },
+  {
+    "ACVersion": "B763",
+    "IATACode": "763",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 767-300\u00c2\u00a0/\u00c2\u00a0Boeing 767-300ER"
+  },
+  {
+    "ACVersion": "B764",
+    "IATACode": "764",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 767-400ER"
+  },
+  {
+    "ACVersion": "B772",
+    "IATACode": "772",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 777-200\u00c2\u00a0/\u00c2\u00a0Boeing 777-200ER"
+  },
+  {
+    "ACVersion": "B773",
+    "IATACode": "773",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 777-300"
+  },
+  {
+    "ACVersion": "B778",
+    "IATACode": "778",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 777-8"
+  },
+  {
+    "ACVersion": "B779",
+    "IATACode": "779",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 777-9"
+  },
+  {
+    "ACVersion": "B77L",
+    "IATACode": "77L",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 777-200LR"
+  },
+  {
+    "ACVersion": "B77W",
+    "IATACode": "77W",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 777-300ER"
+  },
+  {
+    "ACVersion": "B788",
+    "IATACode": "788",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 787-8"
+  },
+  {
+    "ACVersion": "B789",
+    "IATACode": "789",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 787-9"
+  },
+  {
+    "ACVersion": "B781",
+    "IATACode": "781",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 787-10"
+  },
+  {
+    "ACVersion": "BLCF",
+    "IATACode": "74B",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Boeing 747-400 LCF Dreamlifter"
+  },
+  {
+    "ACVersion": "DC10",
+    "IATACode": "D1Y",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Douglas DC-10-30 / -40 Freighter"
+  },
+  {
+    "ACVersion": "DC85",
+    "IATACode": "D8T",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Douglas DC-8-50"
+  },
+  {
+    "ACVersion": "DC86",
+    "IATACode": "D8L",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Douglas DC-8-62"
+  },
+  {
+    "ACVersion": "DC87",
+    "IATACode": "D8Q",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Douglas DC-8-72"
+  },
+  {
+    "ACVersion": "DC91",
+    "IATACode": "D91",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Douglas DC-9-10"
+  },
+  {
+    "ACVersion": "DC92",
+    "IATACode": "D92",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Douglas DC-9-20"
+  },
+  {
+    "ACVersion": "DC93",
+    "IATACode": "D93",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Douglas DC-9-30"
+  },
+  {
+    "ACVersion": "DC94",
+    "IATACode": "D94",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Douglas DC-9-40"
+  },
+  {
+    "ACVersion": "DC95",
+    "IATACode": "D95",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "Douglas DC-9-50"
+  },
+  {
+    "ACVersion": "DH8A",
+    "IATACode": "DH1",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "De Havilland Canada DHC-8-100 Dash 8 / 8Q"
+  },
+  {
+    "ACVersion": "DH8B",
+    "IATACode": "DH2",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "De Havilland Canada DHC-8-200 Dash 8 / 8Q"
+  },
+  {
+    "ACVersion": "DH8C",
+    "IATACode": "DH3",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "De Havilland Canada DHC-8-300 Dash 8 / 8Q"
+  },
+  {
+    "ACVersion": "DH8D",
+    "IATACode": "DH4",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "De Havilland Canada DHC-8-400 Dash 8Q"
+  },
+  {
+    "ACVersion": "DHC5",
+    "IATACode": "DHC",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "De Havilland Canada DHC-5 Buffalo"
+  },
+  {
+    "ACVersion": "DHC6",
+    "IATACode": "DHT",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "De Havilland Canada DHC-6 Twin Otter"
+  },
+  {
+    "ACVersion": "DHC7",
+    "IATACode": "DH7",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "De Havilland Canada DHC-7 Dash 7"
+  },
+  {
+    "ACVersion": "E110",
+    "IATACode": "EMB",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer EMB 110 Bandeirante"
+  },
+  {
+    "ACVersion": "E120",
+    "IATACode": "EM2",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer EMB 120 Brasilia"
+  },
+  {
+    "ACVersion": "E135",
+    "IATACode": "ER3",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer RJ135"
+  },
+  {
+    "ACVersion": "E145",
+    "IATACode": "ER4",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer RJ145"
+  },
+  {
+    "ACVersion": "E170",
+    "IATACode": "E70",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer 170"
+  },
+  {
+    "ACVersion": "E190",
+    "IATACode": "E90",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer 190\u00c2\u00a0/\u00c2\u00a0Lineage 1000"
+  },
+  {
+    "ACVersion": "E195",
+    "IATACode": "E95",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer 195"
+  },
+  {
+    "ACVersion": "E290",
+    "IATACode": "290",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer E190-E2"
+  },
+  {
+    "ACVersion": "E295",
+    "IATACode": "295",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer E195-E2"
+  },
+  {
+    "ACVersion": "E35L",
+    "IATACode": "ER3",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer Legacy 600 / Legacy 650"
+  },
+  {
+    "ACVersion": "E50P",
+    "IATACode": "EP1",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer Phenom 100"
+  },
+  {
+    "ACVersion": "E55P",
+    "IATACode": "EP3",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer Phenom 300"
+  },
+  {
+    "ACVersion": "E75L",
+    "IATACode": "E7W",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer 175 (long wing)"
+  },
+  {
+    "ACVersion": "E75S",
+    "IATACode": "E75",
+    "ACType": "REGIONAL",
+    "AircraftTypeDescription": "Embraer 175 (short wing)"
+  },
+  {
+    "ACVersion": "IL76",
+    "IATACode": "IL76",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Ilyushin Il-76"
+  },
+  {
+    "ACVersion": "IL86",
+    "IATACode": "ILW",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Ilyushin Il-86"
+  },
+  {
+    "ACVersion": "IL96",
+    "IATACode": "I93",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Ilyushin Il-96"
+  },
+  {
+    "ACVersion": "MD11",
+    "IATACode": "M1F",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "McDonnell Douglas MD-11F"
+  },
+  {
+    "ACVersion": "MD81",
+    "IATACode": "M81",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "McDonnell Douglas MD-81"
+  },
+  {
+    "ACVersion": "MD82",
+    "IATACode": "M82",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "McDonnell Douglas MD-82"
+  },
+  {
+    "ACVersion": "MD83",
+    "IATACode": "M83",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "McDonnell Douglas MD-83"
+  },
+  {
+    "ACVersion": "MD87",
+    "IATACode": "M87",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "McDonnell Douglas MD-87"
+  },
+  {
+    "ACVersion": "MD88",
+    "IATACode": "M88",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "McDonnell Douglas MD-88"
+  },
+  {
+    "ACVersion": "MD90",
+    "IATACode": "M90",
+    "ACType": "NARROW",
+    "AircraftTypeDescription": "McDonnell Douglas MD-90"
+  },
+    {
+    "ACVersion": "B777",
+    "IATACode": "b77",
+    "ACType": "WIDE",
+    "AircraftTypeDescription": "Triple Seven"
+  }
+]

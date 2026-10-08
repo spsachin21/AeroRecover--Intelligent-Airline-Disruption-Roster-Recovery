@@ -1,0 +1,293 @@
+{
+  "RED": {
+    "total_tasks_present": 28,
+    "completely_covered_tasks_by_RED": 23,
+    "partially_covered_tasks_by_RED": 0,
+    "unassigned_tasks": 5,
+    "completely covered tasks": [
+      {
+        "source_task_id": 3,
+        "turn_id": "ET640/611",
+        "unique_turn_id": 4,
+        "date": "2026-04-01",
+        "start_time": "01:50",
+        "end_time": "04:15",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 3,
+        "turn_id": "ET640/611",
+        "unique_turn_id": 5,
+        "date": "2026-04-02",
+        "start_time": "01:50",
+        "end_time": "04:15",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 3,
+        "turn_id": "ET640/611",
+        "unique_turn_id": 6,
+        "date": "2026-04-03",
+        "start_time": "01:50",
+        "end_time": "04:15",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 3,
+        "turn_id": "ET640/611",
+        "unique_turn_id": 7,
+        "date": "2026-04-04",
+        "start_time": "01:50",
+        "end_time": "04:15",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 6,
+        "turn_id": "EK504/505",
+        "unique_turn_id": 8,
+        "date": "2026-03-29",
+        "start_time": "08:00",
+        "end_time": "10:25",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 6,
+        "turn_id": "EK504/505",
+        "unique_turn_id": 9,
+        "date": "2026-03-30",
+        "start_time": "08:00",
+        "end_time": "10:25",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 6,
+        "turn_id": "EK504/505",
+        "unique_turn_id": 10,
+        "date": "2026-03-31",
+        "start_time": "08:00",
+        "end_time": "10:25",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 6,
+        "turn_id": "EK504/505",
+        "unique_turn_id": 11,
+        "date": "2026-04-01",
+        "start_time": "08:00",
+        "end_time": "10:25",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 6,
+        "turn_id": "EK504/505",
+        "unique_turn_id": 12,
+        "date": "2026-04-02",
+        "start_time": "08:00",
+        "end_time": "10:25",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 6,
+        "turn_id": "EK504/505",
+        "unique_turn_id": 13,
+        "date": "2026-04-03",
+        "start_time": "08:00",
+        "end_time": "10:25",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 6,
+        "turn_id": "EK504/505",
+        "unique_turn_id": 14,
+        "date": "2026-04-04",
+        "start_time": "08:00",
+        "end_time": "10:25",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 9,
+        "turn_id": "EK506/507",
+        "unique_turn_id": 15,
+        "date": "2026-03-29",
+        "start_time": "14:00",
+        "end_time": "16:10",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 9,
+        "turn_id": "EK506/507",
+        "unique_turn_id": 16,
+        "date": "2026-03-30",
+        "start_time": "14:00",
+        "end_time": "16:10",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 9,
+        "turn_id": "EK506/507",
+        "unique_turn_id": 17,
+        "date": "2026-03-31",
+        "start_time": "14:00",
+        "end_time": "16:10",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 9,
+        "turn_id": "EK506/507",
+        "unique_turn_id": 18,
+        "date": "2026-04-01",
+        "start_time": "14:00",
+        "end_time": "16:10",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 9,
+        "turn_id": "EK506/507",
+        "unique_turn_id": 19,
+        "date": "2026-04-02",
+        "start_time": "14:00",
+        "end_time": "16:10",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 9,
+        "turn_id": "EK506/507",
+        "unique_turn_id": 20,
+        "date": "2026-04-03",
+        "start_time": "14:00",
+        "end_time": "16:10",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 9,
+        "turn_id": "EK506/507",
+        "unique_turn_id": 21,
+        "date": "2026-04-04",
+        "start_time": "14:00",
+        "end_time": "16:10",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 12,
+        "turn_id": "G9401/9402",
+        "unique_turn_id": 24,
+        "date": "2026-03-31",
+        "start_time": "21:00",
+        "end_time": "22:05",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 12,
+        "turn_id": "G9401/9402",
+        "unique_turn_id": 25,
+        "date": "2026-04-01",
+        "start_time": "21:00",
+        "end_time": "22:05",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 12,
+        "turn_id": "G9401/9402",
+        "unique_turn_id": 26,
+        "date": "2026-04-02",
+        "start_time": "21:00",
+        "end_time": "22:05",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 12,
+        "turn_id": "G9401/9402",
+        "unique_turn_id": 27,
+        "date": "2026-04-03",
+        "start_time": "21:00",
+        "end_time": "22:05",
+        "resources_required": 1,
+        "num_covered": 1
+      },
+      {
+        "source_task_id": 12,
+        "turn_id": "G9401/9402",
+        "unique_turn_id": 28,
+        "date": "2026-04-04",
+        "start_time": "21:00",
+        "end_time": "22:05",
+        "resources_required": 1,
+        "num_covered": 1
+      }
+    ],
+    "partially covered tasks": [],
+    "unassigned tasks": [
+      {
+        "source_task_id": 3,
+        "turn_id": "ET640/611",
+        "unique_turn_id": 1,
+        "date": "2026-03-29",
+        "start_time": "01:50",
+        "end_time": "04:15",
+        "resources_required": 1,
+        "num_covered": 0
+      },
+      {
+        "source_task_id": 3,
+        "turn_id": "ET640/611",
+        "unique_turn_id": 2,
+        "date": "2026-03-30",
+        "start_time": "01:50",
+        "end_time": "04:15",
+        "resources_required": 1,
+        "num_covered": 0
+      },
+      {
+        "source_task_id": 3,
+        "turn_id": "ET640/611",
+        "unique_turn_id": 3,
+        "date": "2026-03-31",
+        "start_time": "01:50",
+        "end_time": "04:15",
+        "resources_required": 1,
+        "num_covered": 0
+      },
+      {
+        "source_task_id": 12,
+        "turn_id": "G9401/9402",
+        "unique_turn_id": 22,
+        "date": "2026-03-29",
+        "start_time": "21:00",
+        "end_time": "22:05",
+        "resources_required": 1,
+        "num_covered": 0
+      },
+      {
+        "source_task_id": 12,
+        "turn_id": "G9401/9402",
+        "unique_turn_id": 23,
+        "date": "2026-03-30",
+        "start_time": "21:00",
+        "end_time": "22:05",
+        "resources_required": 1,
+        "num_covered": 0
+      }
+    ]
+  }
+}

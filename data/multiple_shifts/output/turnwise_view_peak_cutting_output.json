@@ -1,0 +1,4199 @@
+{
+  "PlanningHorizon": {
+    "PlanningHorizonStart": "2026-09-07T00:00:00",
+    "PlanningHorizonEnd": "2026-09-20T23:55:00"
+  },
+  "Turnarounds": [
+    {
+      "UniqueTurnID": 1,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-12T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-12T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 2,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-19T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-19T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 3,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-07T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-07T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 4,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-14T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-14T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 5,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-10T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-10T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 6,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-17T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-17T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 7,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-09T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-09T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 8,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-16T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-16T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 9,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-11T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-11T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 10,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-18T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-18T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 11,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-08T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-08T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 12,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-15T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-15T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 13,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-13T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-13T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 14,
+      "TurnID": "SG802/803",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG802",
+      "ScheduledArrivalTime": "2026-09-20T00:50:00",
+      "DepartureFlightNumber": "SG803",
+      "ScheduledDepartureTime": "2026-09-20T01:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        1
+      ]
+    },
+    {
+      "UniqueTurnID": 15,
+      "TurnID": "SG369/252",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG369",
+      "ScheduledArrivalTime": "2026-09-12T02:35:00",
+      "DepartureFlightNumber": "SG252",
+      "ScheduledDepartureTime": "2026-09-12T06:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        2
+      ]
+    },
+    {
+      "UniqueTurnID": 16,
+      "TurnID": "SG369/252",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG369",
+      "ScheduledArrivalTime": "2026-09-19T02:35:00",
+      "DepartureFlightNumber": "SG252",
+      "ScheduledDepartureTime": "2026-09-19T06:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        2
+      ]
+    },
+    {
+      "UniqueTurnID": 17,
+      "TurnID": "SG369/252",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG369",
+      "ScheduledArrivalTime": "2026-09-10T02:35:00",
+      "DepartureFlightNumber": "SG252",
+      "ScheduledDepartureTime": "2026-09-10T06:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        2
+      ]
+    },
+    {
+      "UniqueTurnID": 18,
+      "TurnID": "SG369/252",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG369",
+      "ScheduledArrivalTime": "2026-09-17T02:35:00",
+      "DepartureFlightNumber": "SG252",
+      "ScheduledDepartureTime": "2026-09-17T06:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        2
+      ]
+    },
+    {
+      "UniqueTurnID": 19,
+      "TurnID": "SG369/252",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG369",
+      "ScheduledArrivalTime": "2026-09-11T02:35:00",
+      "DepartureFlightNumber": "SG252",
+      "ScheduledDepartureTime": "2026-09-11T06:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        2
+      ]
+    },
+    {
+      "UniqueTurnID": 20,
+      "TurnID": "SG369/252",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG369",
+      "ScheduledArrivalTime": "2026-09-18T02:35:00",
+      "DepartureFlightNumber": "SG252",
+      "ScheduledDepartureTime": "2026-09-18T06:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        2
+      ]
+    },
+    {
+      "UniqueTurnID": 21,
+      "TurnID": "SG369/252",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG369",
+      "ScheduledArrivalTime": "2026-09-09T02:35:00",
+      "DepartureFlightNumber": "SG252",
+      "ScheduledDepartureTime": "2026-09-09T06:20:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        2
+      ]
+    },
+    {
+      "UniqueTurnID": 22,
+      "TurnID": "SG369/252",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG369",
+      "ScheduledArrivalTime": "2026-09-16T02:35:00",
+      "DepartureFlightNumber": "SG252",
+      "ScheduledDepartureTime": "2026-09-16T06:20:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        2
+      ]
+    },
+    {
+      "UniqueTurnID": 23,
+      "TurnID": "SG369/252",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG369",
+      "ScheduledArrivalTime": "2026-09-08T02:35:00",
+      "DepartureFlightNumber": "SG252",
+      "ScheduledDepartureTime": "2026-09-08T06:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        2
+      ]
+    },
+    {
+      "UniqueTurnID": 24,
+      "TurnID": "SG369/252",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG369",
+      "ScheduledArrivalTime": "2026-09-15T02:35:00",
+      "DepartureFlightNumber": "SG252",
+      "ScheduledDepartureTime": "2026-09-15T06:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        2
+      ]
+    },
+    {
+      "UniqueTurnID": 25,
+      "TurnID": "SG369/252",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG369",
+      "ScheduledArrivalTime": "2026-09-13T02:35:00",
+      "DepartureFlightNumber": "SG252",
+      "ScheduledDepartureTime": "2026-09-13T06:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        2
+      ]
+    },
+    {
+      "UniqueTurnID": 26,
+      "TurnID": "SG369/252",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG369",
+      "ScheduledArrivalTime": "2026-09-20T02:35:00",
+      "DepartureFlightNumber": "SG252",
+      "ScheduledDepartureTime": "2026-09-20T06:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        2
+      ]
+    },
+    {
+      "UniqueTurnID": 27,
+      "TurnID": "SG5114/5113",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5114",
+      "ScheduledArrivalTime": "2026-09-07T02:50:00",
+      "DepartureFlightNumber": "SG5113",
+      "ScheduledDepartureTime": "2026-09-07T12:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        3
+      ]
+    },
+    {
+      "UniqueTurnID": 28,
+      "TurnID": "SG5114/5113",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5114",
+      "ScheduledArrivalTime": "2026-09-14T02:50:00",
+      "DepartureFlightNumber": "SG5113",
+      "ScheduledDepartureTime": "2026-09-14T12:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        3
+      ]
+    },
+    {
+      "UniqueTurnID": 29,
+      "TurnID": "SG5114/5060",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5114",
+      "ScheduledArrivalTime": "2026-09-10T02:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-10T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        4
+      ]
+    },
+    {
+      "UniqueTurnID": 30,
+      "TurnID": "SG5114/5060",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5114",
+      "ScheduledArrivalTime": "2026-09-17T02:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-17T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        4
+      ]
+    },
+    {
+      "UniqueTurnID": 31,
+      "TurnID": "SG5114/5060",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5114",
+      "ScheduledArrivalTime": "2026-09-09T02:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-09T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        4
+      ]
+    },
+    {
+      "UniqueTurnID": 32,
+      "TurnID": "SG5114/5060",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5114",
+      "ScheduledArrivalTime": "2026-09-16T02:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-16T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        4
+      ]
+    },
+    {
+      "UniqueTurnID": 33,
+      "TurnID": "SG5114/5060",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5114",
+      "ScheduledArrivalTime": "2026-09-11T02:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-11T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        4
+      ]
+    },
+    {
+      "UniqueTurnID": 34,
+      "TurnID": "SG5114/5060",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5114",
+      "ScheduledArrivalTime": "2026-09-18T02:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-18T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        4
+      ]
+    },
+    {
+      "UniqueTurnID": 35,
+      "TurnID": "SG5114/5060",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5114",
+      "ScheduledArrivalTime": "2026-09-13T02:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-13T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        4
+      ]
+    },
+    {
+      "UniqueTurnID": 36,
+      "TurnID": "SG5114/5060",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5114",
+      "ScheduledArrivalTime": "2026-09-20T02:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-20T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        4
+      ]
+    },
+    {
+      "UniqueTurnID": 37,
+      "TurnID": "SG5114/5060",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5114",
+      "ScheduledArrivalTime": "2026-09-12T02:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-12T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        4
+      ]
+    },
+    {
+      "UniqueTurnID": 38,
+      "TurnID": "SG5114/5060",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5114",
+      "ScheduledArrivalTime": "2026-09-19T02:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-19T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        4
+      ]
+    },
+    {
+      "UniqueTurnID": 39,
+      "TurnID": "SG510/681",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-11T06:15:00",
+      "DepartureFlightNumber": "SG681",
+      "ScheduledDepartureTime": "2026-09-11T07:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        5
+      ]
+    },
+    {
+      "UniqueTurnID": 40,
+      "TurnID": "SG510/681",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-18T06:15:00",
+      "DepartureFlightNumber": "SG681",
+      "ScheduledDepartureTime": "2026-09-18T07:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        5
+      ]
+    },
+    {
+      "UniqueTurnID": 41,
+      "TurnID": "SG510/681",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-13T06:15:00",
+      "DepartureFlightNumber": "SG681",
+      "ScheduledDepartureTime": "2026-09-13T07:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        5
+      ]
+    },
+    {
+      "UniqueTurnID": 42,
+      "TurnID": "SG510/681",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-20T06:15:00",
+      "DepartureFlightNumber": "SG681",
+      "ScheduledDepartureTime": "2026-09-20T07:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        5
+      ]
+    },
+    {
+      "UniqueTurnID": 43,
+      "TurnID": "SG510/681",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-08T06:15:00",
+      "DepartureFlightNumber": "SG681",
+      "ScheduledDepartureTime": "2026-09-08T07:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        5
+      ]
+    },
+    {
+      "UniqueTurnID": 44,
+      "TurnID": "SG510/681",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-15T06:15:00",
+      "DepartureFlightNumber": "SG681",
+      "ScheduledDepartureTime": "2026-09-15T07:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        5
+      ]
+    },
+    {
+      "UniqueTurnID": 45,
+      "TurnID": "SG510/681",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-12T06:15:00",
+      "DepartureFlightNumber": "SG681",
+      "ScheduledDepartureTime": "2026-09-12T07:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        5
+      ]
+    },
+    {
+      "UniqueTurnID": 46,
+      "TurnID": "SG510/681",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-19T06:15:00",
+      "DepartureFlightNumber": "SG681",
+      "ScheduledDepartureTime": "2026-09-19T07:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        5
+      ]
+    },
+    {
+      "UniqueTurnID": 47,
+      "TurnID": "SG510/5060",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-07T06:15:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-07T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        6
+      ]
+    },
+    {
+      "UniqueTurnID": 48,
+      "TurnID": "SG510/5060",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-14T06:15:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-14T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        6
+      ]
+    },
+    {
+      "UniqueTurnID": 49,
+      "TurnID": "SG510/681",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-09T06:15:00",
+      "DepartureFlightNumber": "SG681",
+      "ScheduledDepartureTime": "2026-09-09T07:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        5
+      ]
+    },
+    {
+      "UniqueTurnID": 50,
+      "TurnID": "SG510/681",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-16T06:15:00",
+      "DepartureFlightNumber": "SG681",
+      "ScheduledDepartureTime": "2026-09-16T07:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        5
+      ]
+    },
+    {
+      "UniqueTurnID": 51,
+      "TurnID": "SG510/681",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-10T06:15:00",
+      "DepartureFlightNumber": "SG681",
+      "ScheduledDepartureTime": "2026-09-10T07:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        5
+      ]
+    },
+    {
+      "UniqueTurnID": 52,
+      "TurnID": "SG510/681",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG510",
+      "ScheduledArrivalTime": "2026-09-17T06:15:00",
+      "DepartureFlightNumber": "SG681",
+      "ScheduledDepartureTime": "2026-09-17T07:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        5
+      ]
+    },
+    {
+      "UniqueTurnID": 53,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-09T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-09T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 54,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-16T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-16T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 55,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-12T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-12T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 56,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-19T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-19T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 57,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-10T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-10T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 58,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-17T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-17T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 59,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-07T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-07T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 60,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-14T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-14T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 61,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-13T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-13T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 62,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-20T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-20T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 63,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-08T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-08T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 64,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-15T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-15T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 65,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-11T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-11T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 66,
+      "TurnID": "SG115/115",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG115",
+      "ScheduledArrivalTime": "2026-09-18T06:55:00",
+      "DepartureFlightNumber": "SG115",
+      "ScheduledDepartureTime": "2026-09-18T07:40:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        7
+      ]
+    },
+    {
+      "UniqueTurnID": 67,
+      "TurnID": "SG9610/9605",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG9610",
+      "ScheduledArrivalTime": "2026-09-09T08:40:00",
+      "DepartureFlightNumber": "SG9605",
+      "ScheduledDepartureTime": "2026-09-09T10:10:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        8
+      ]
+    },
+    {
+      "UniqueTurnID": 68,
+      "TurnID": "SG9610/9605",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG9610",
+      "ScheduledArrivalTime": "2026-09-16T08:40:00",
+      "DepartureFlightNumber": "SG9605",
+      "ScheduledDepartureTime": "2026-09-16T10:10:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        8
+      ]
+    },
+    {
+      "UniqueTurnID": 69,
+      "TurnID": "SG5023/5113",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-11T08:50:00",
+      "DepartureFlightNumber": "SG5113",
+      "ScheduledDepartureTime": "2026-09-11T12:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        9
+      ]
+    },
+    {
+      "UniqueTurnID": 70,
+      "TurnID": "SG5023/5113",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-18T08:50:00",
+      "DepartureFlightNumber": "SG5113",
+      "ScheduledDepartureTime": "2026-09-18T12:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        9
+      ]
+    },
+    {
+      "UniqueTurnID": 71,
+      "TurnID": "SG5023/5113",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-09T08:50:00",
+      "DepartureFlightNumber": "SG5113",
+      "ScheduledDepartureTime": "2026-09-09T12:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        9
+      ]
+    },
+    {
+      "UniqueTurnID": 72,
+      "TurnID": "SG5023/5113",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-16T08:50:00",
+      "DepartureFlightNumber": "SG5113",
+      "ScheduledDepartureTime": "2026-09-16T12:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        9
+      ]
+    },
+    {
+      "UniqueTurnID": 73,
+      "TurnID": "SG5023/5113",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-12T08:50:00",
+      "DepartureFlightNumber": "SG5113",
+      "ScheduledDepartureTime": "2026-09-12T12:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        9
+      ]
+    },
+    {
+      "UniqueTurnID": 74,
+      "TurnID": "SG5023/5113",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-19T08:50:00",
+      "DepartureFlightNumber": "SG5113",
+      "ScheduledDepartureTime": "2026-09-19T12:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        9
+      ]
+    },
+    {
+      "UniqueTurnID": 75,
+      "TurnID": "SG5023/9606",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-13T08:50:00",
+      "DepartureFlightNumber": "SG9606",
+      "ScheduledDepartureTime": "2026-09-14T08:15:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        10
+      ]
+    },
+    {
+      "UniqueTurnID": 76,
+      "TurnID": "SG5023/9606",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-20T08:50:00",
+      "DepartureFlightNumber": "SG9606",
+      "ScheduledDepartureTime": "2026-09-21T08:15:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        10
+      ]
+    },
+    {
+      "UniqueTurnID": 77,
+      "TurnID": "SG5023/5113",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-08T08:50:00",
+      "DepartureFlightNumber": "SG5113",
+      "ScheduledDepartureTime": "2026-09-08T12:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        9
+      ]
+    },
+    {
+      "UniqueTurnID": 78,
+      "TurnID": "SG5023/5113",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-15T08:50:00",
+      "DepartureFlightNumber": "SG5113",
+      "ScheduledDepartureTime": "2026-09-15T12:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        9
+      ]
+    },
+    {
+      "UniqueTurnID": 79,
+      "TurnID": "SG5023/9401",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-10T08:50:00",
+      "DepartureFlightNumber": "SG9401",
+      "ScheduledDepartureTime": "2026-09-10T09:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        11
+      ]
+    },
+    {
+      "UniqueTurnID": 80,
+      "TurnID": "SG5023/9401",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-17T08:50:00",
+      "DepartureFlightNumber": "SG9401",
+      "ScheduledDepartureTime": "2026-09-17T09:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        11
+      ]
+    },
+    {
+      "UniqueTurnID": 81,
+      "TurnID": "SG5023/5113",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-13T08:50:00",
+      "DepartureFlightNumber": "SG5113",
+      "ScheduledDepartureTime": "2026-09-13T12:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        9
+      ]
+    },
+    {
+      "UniqueTurnID": 82,
+      "TurnID": "SG5023/5113",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG5023",
+      "ScheduledArrivalTime": "2026-09-20T08:50:00",
+      "DepartureFlightNumber": "SG5113",
+      "ScheduledDepartureTime": "2026-09-20T12:50:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        9
+      ]
+    },
+    {
+      "UniqueTurnID": 83,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-08T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-08T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 84,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-15T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-15T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 85,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-12T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-12T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 86,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-19T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-19T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 87,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-13T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-13T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 88,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-20T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-20T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 89,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-09T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-09T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 90,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-16T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-16T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 91,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-11T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-11T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 92,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-18T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-18T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 93,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-07T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-07T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 94,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-14T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-14T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 95,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-10T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-10T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 96,
+      "TurnID": "SG815/815",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG815",
+      "ScheduledArrivalTime": "2026-09-17T11:25:00",
+      "DepartureFlightNumber": "SG815",
+      "ScheduledDepartureTime": "2026-09-17T12:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        12
+      ]
+    },
+    {
+      "UniqueTurnID": 97,
+      "TurnID": "SG682/811",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG682",
+      "ScheduledArrivalTime": "2026-09-07T12:40:00",
+      "DepartureFlightNumber": "SG811",
+      "ScheduledDepartureTime": "2026-09-07T13:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        13
+      ]
+    },
+    {
+      "UniqueTurnID": 98,
+      "TurnID": "SG682/811",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG682",
+      "ScheduledArrivalTime": "2026-09-14T12:40:00",
+      "DepartureFlightNumber": "SG811",
+      "ScheduledDepartureTime": "2026-09-14T13:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        13
+      ]
+    },
+    {
+      "UniqueTurnID": 99,
+      "TurnID": "SG682/811",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG682",
+      "ScheduledArrivalTime": "2026-09-10T12:40:00",
+      "DepartureFlightNumber": "SG811",
+      "ScheduledDepartureTime": "2026-09-10T13:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        13
+      ]
+    },
+    {
+      "UniqueTurnID": 100,
+      "TurnID": "SG682/811",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG682",
+      "ScheduledArrivalTime": "2026-09-17T12:40:00",
+      "DepartureFlightNumber": "SG811",
+      "ScheduledDepartureTime": "2026-09-17T13:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        13
+      ]
+    },
+    {
+      "UniqueTurnID": 101,
+      "TurnID": "SG682/811",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG682",
+      "ScheduledArrivalTime": "2026-09-11T12:40:00",
+      "DepartureFlightNumber": "SG811",
+      "ScheduledDepartureTime": "2026-09-11T13:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        13
+      ]
+    },
+    {
+      "UniqueTurnID": 102,
+      "TurnID": "SG682/811",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG682",
+      "ScheduledArrivalTime": "2026-09-18T12:40:00",
+      "DepartureFlightNumber": "SG811",
+      "ScheduledDepartureTime": "2026-09-18T13:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        13
+      ]
+    },
+    {
+      "UniqueTurnID": 103,
+      "TurnID": "SG682/811",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG682",
+      "ScheduledArrivalTime": "2026-09-08T12:40:00",
+      "DepartureFlightNumber": "SG811",
+      "ScheduledDepartureTime": "2026-09-08T13:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        13
+      ]
+    },
+    {
+      "UniqueTurnID": 104,
+      "TurnID": "SG682/811",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG682",
+      "ScheduledArrivalTime": "2026-09-15T12:40:00",
+      "DepartureFlightNumber": "SG811",
+      "ScheduledDepartureTime": "2026-09-15T13:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        13
+      ]
+    },
+    {
+      "UniqueTurnID": 105,
+      "TurnID": "SG682/811",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG682",
+      "ScheduledArrivalTime": "2026-09-12T12:40:00",
+      "DepartureFlightNumber": "SG811",
+      "ScheduledDepartureTime": "2026-09-12T13:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        13
+      ]
+    },
+    {
+      "UniqueTurnID": 106,
+      "TurnID": "SG682/811",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG682",
+      "ScheduledArrivalTime": "2026-09-19T12:40:00",
+      "DepartureFlightNumber": "SG811",
+      "ScheduledDepartureTime": "2026-09-19T13:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        13
+      ]
+    },
+    {
+      "UniqueTurnID": 107,
+      "TurnID": "SG682/811",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG682",
+      "ScheduledArrivalTime": "2026-09-13T12:40:00",
+      "DepartureFlightNumber": "SG811",
+      "ScheduledDepartureTime": "2026-09-13T13:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        13
+      ]
+    },
+    {
+      "UniqueTurnID": 108,
+      "TurnID": "SG682/811",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG682",
+      "ScheduledArrivalTime": "2026-09-20T12:40:00",
+      "DepartureFlightNumber": "SG811",
+      "ScheduledDepartureTime": "2026-09-20T13:25:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        13
+      ]
+    },
+    {
+      "UniqueTurnID": 109,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-09T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-09T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 110,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-16T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-16T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 111,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-11T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-11T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 112,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-18T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-18T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 113,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-12T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-12T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 114,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-19T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-19T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 115,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-13T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-13T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 116,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-20T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-20T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 117,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-08T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-08T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 118,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-15T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-15T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 119,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-10T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-10T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 120,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-17T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-17T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 121,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-07T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-07T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 122,
+      "TurnID": "SG116/553",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG116",
+      "ScheduledArrivalTime": "2026-09-14T13:35:00",
+      "DepartureFlightNumber": "SG553",
+      "ScheduledDepartureTime": "2026-09-14T14:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        14
+      ]
+    },
+    {
+      "UniqueTurnID": 123,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-11T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-11T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 124,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-18T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-18T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 125,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-08T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-08T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 126,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-15T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-15T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 127,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-09T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-09T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 128,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-16T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-16T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 129,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-10T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-10T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 130,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-17T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-17T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 131,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-07T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-07T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 132,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-14T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-14T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 133,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-12T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-12T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 134,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-19T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-19T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 135,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-13T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-13T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 136,
+      "TurnID": "SG816/816",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG816",
+      "ScheduledArrivalTime": "2026-09-20T15:15:00",
+      "DepartureFlightNumber": "SG816",
+      "ScheduledDepartureTime": "2026-09-20T15:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        15
+      ]
+    },
+    {
+      "UniqueTurnID": 137,
+      "TurnID": "SG812/813",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG812",
+      "ScheduledArrivalTime": "2026-09-13T16:35:00",
+      "DepartureFlightNumber": "SG813",
+      "ScheduledDepartureTime": "2026-09-13T17:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        16
+      ]
+    },
+    {
+      "UniqueTurnID": 138,
+      "TurnID": "SG812/813",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG812",
+      "ScheduledArrivalTime": "2026-09-20T16:35:00",
+      "DepartureFlightNumber": "SG813",
+      "ScheduledDepartureTime": "2026-09-20T17:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        16
+      ]
+    },
+    {
+      "UniqueTurnID": 139,
+      "TurnID": "SG812/813",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG812",
+      "ScheduledArrivalTime": "2026-09-12T16:35:00",
+      "DepartureFlightNumber": "SG813",
+      "ScheduledDepartureTime": "2026-09-12T17:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        16
+      ]
+    },
+    {
+      "UniqueTurnID": 140,
+      "TurnID": "SG812/813",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG812",
+      "ScheduledArrivalTime": "2026-09-19T16:35:00",
+      "DepartureFlightNumber": "SG813",
+      "ScheduledDepartureTime": "2026-09-19T17:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        16
+      ]
+    },
+    {
+      "UniqueTurnID": 141,
+      "TurnID": "SG812/813",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG812",
+      "ScheduledArrivalTime": "2026-09-11T16:35:00",
+      "DepartureFlightNumber": "SG813",
+      "ScheduledDepartureTime": "2026-09-11T17:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        16
+      ]
+    },
+    {
+      "UniqueTurnID": 142,
+      "TurnID": "SG812/813",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG812",
+      "ScheduledArrivalTime": "2026-09-18T16:35:00",
+      "DepartureFlightNumber": "SG813",
+      "ScheduledDepartureTime": "2026-09-18T17:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        16
+      ]
+    },
+    {
+      "UniqueTurnID": 143,
+      "TurnID": "SG812/813",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG812",
+      "ScheduledArrivalTime": "2026-09-10T16:35:00",
+      "DepartureFlightNumber": "SG813",
+      "ScheduledDepartureTime": "2026-09-10T17:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        16
+      ]
+    },
+    {
+      "UniqueTurnID": 144,
+      "TurnID": "SG812/813",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG812",
+      "ScheduledArrivalTime": "2026-09-17T16:35:00",
+      "DepartureFlightNumber": "SG813",
+      "ScheduledDepartureTime": "2026-09-17T17:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        16
+      ]
+    },
+    {
+      "UniqueTurnID": 145,
+      "TurnID": "SG812/813",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG812",
+      "ScheduledArrivalTime": "2026-09-07T16:35:00",
+      "DepartureFlightNumber": "SG813",
+      "ScheduledDepartureTime": "2026-09-07T17:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        16
+      ]
+    },
+    {
+      "UniqueTurnID": 146,
+      "TurnID": "SG812/813",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG812",
+      "ScheduledArrivalTime": "2026-09-14T16:35:00",
+      "DepartureFlightNumber": "SG813",
+      "ScheduledDepartureTime": "2026-09-14T17:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        16
+      ]
+    },
+    {
+      "UniqueTurnID": 147,
+      "TurnID": "SG812/813",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG812",
+      "ScheduledArrivalTime": "2026-09-08T16:35:00",
+      "DepartureFlightNumber": "SG813",
+      "ScheduledDepartureTime": "2026-09-08T17:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        16
+      ]
+    },
+    {
+      "UniqueTurnID": 148,
+      "TurnID": "SG812/813",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG812",
+      "ScheduledArrivalTime": "2026-09-15T16:35:00",
+      "DepartureFlightNumber": "SG813",
+      "ScheduledDepartureTime": "2026-09-15T17:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        16
+      ]
+    },
+    {
+      "UniqueTurnID": 149,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-10T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-10T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 150,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-17T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-17T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 151,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-07T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-07T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 152,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-14T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-14T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 153,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-12T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-12T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 154,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-19T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-19T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 155,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-11T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-11T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 156,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-18T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-18T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 157,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-09T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-09T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 158,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-16T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-16T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 159,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-13T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-13T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 160,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-20T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-20T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 161,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-08T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-08T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 162,
+      "TurnID": "SG808/809",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG808",
+      "ScheduledArrivalTime": "2026-09-15T17:05:00",
+      "DepartureFlightNumber": "SG809",
+      "ScheduledDepartureTime": "2026-09-15T17:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        17
+      ]
+    },
+    {
+      "UniqueTurnID": 163,
+      "TurnID": "SG555/555",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG555",
+      "ScheduledArrivalTime": "2026-09-13T20:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-13T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        18
+      ]
+    },
+    {
+      "UniqueTurnID": 164,
+      "TurnID": "SG555/555",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG555",
+      "ScheduledArrivalTime": "2026-09-20T20:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-20T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        18
+      ]
+    },
+    {
+      "UniqueTurnID": 165,
+      "TurnID": "SG555/555",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG555",
+      "ScheduledArrivalTime": "2026-09-09T20:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-09T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        18
+      ]
+    },
+    {
+      "UniqueTurnID": 166,
+      "TurnID": "SG555/555",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG555",
+      "ScheduledArrivalTime": "2026-09-16T20:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-16T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        18
+      ]
+    },
+    {
+      "UniqueTurnID": 167,
+      "TurnID": "SG555/555",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG555",
+      "ScheduledArrivalTime": "2026-09-11T20:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-11T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        18
+      ]
+    },
+    {
+      "UniqueTurnID": 168,
+      "TurnID": "SG555/555",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG555",
+      "ScheduledArrivalTime": "2026-09-18T20:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-18T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        18
+      ]
+    },
+    {
+      "UniqueTurnID": 169,
+      "TurnID": "SG555/555",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG555",
+      "ScheduledArrivalTime": "2026-09-08T20:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-08T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        18
+      ]
+    },
+    {
+      "UniqueTurnID": 170,
+      "TurnID": "SG555/555",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG555",
+      "ScheduledArrivalTime": "2026-09-15T20:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-15T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        18
+      ]
+    },
+    {
+      "UniqueTurnID": 171,
+      "TurnID": "SG555/555",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG555",
+      "ScheduledArrivalTime": "2026-09-07T20:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-07T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        18
+      ]
+    },
+    {
+      "UniqueTurnID": 172,
+      "TurnID": "SG555/555",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG555",
+      "ScheduledArrivalTime": "2026-09-14T20:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-14T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        18
+      ]
+    },
+    {
+      "UniqueTurnID": 173,
+      "TurnID": "SG555/555",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG555",
+      "ScheduledArrivalTime": "2026-09-10T20:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-10T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        18
+      ]
+    },
+    {
+      "UniqueTurnID": 174,
+      "TurnID": "SG555/555",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG555",
+      "ScheduledArrivalTime": "2026-09-17T20:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-17T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        18
+      ]
+    },
+    {
+      "UniqueTurnID": 175,
+      "TurnID": "SG814/511",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG814",
+      "ScheduledArrivalTime": "2026-09-08T21:05:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-08T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        19
+      ]
+    },
+    {
+      "UniqueTurnID": 176,
+      "TurnID": "SG814/511",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG814",
+      "ScheduledArrivalTime": "2026-09-15T21:05:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-15T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        19
+      ]
+    },
+    {
+      "UniqueTurnID": 177,
+      "TurnID": "SG814/511",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG814",
+      "ScheduledArrivalTime": "2026-09-12T21:05:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-12T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        19
+      ]
+    },
+    {
+      "UniqueTurnID": 178,
+      "TurnID": "SG814/511",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG814",
+      "ScheduledArrivalTime": "2026-09-19T21:05:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-19T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        19
+      ]
+    },
+    {
+      "UniqueTurnID": 179,
+      "TurnID": "SG814/511",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG814",
+      "ScheduledArrivalTime": "2026-09-13T21:05:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-13T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        19
+      ]
+    },
+    {
+      "UniqueTurnID": 180,
+      "TurnID": "SG814/511",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG814",
+      "ScheduledArrivalTime": "2026-09-20T21:05:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-20T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        19
+      ]
+    },
+    {
+      "UniqueTurnID": 181,
+      "TurnID": "SG814/511",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG814",
+      "ScheduledArrivalTime": "2026-09-07T21:05:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-07T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        19
+      ]
+    },
+    {
+      "UniqueTurnID": 182,
+      "TurnID": "SG814/511",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG814",
+      "ScheduledArrivalTime": "2026-09-14T21:05:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-14T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        19
+      ]
+    },
+    {
+      "UniqueTurnID": 183,
+      "TurnID": "SG814/511",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG814",
+      "ScheduledArrivalTime": "2026-09-10T21:05:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-10T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        19
+      ]
+    },
+    {
+      "UniqueTurnID": 184,
+      "TurnID": "SG814/511",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG814",
+      "ScheduledArrivalTime": "2026-09-17T21:05:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-17T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        19
+      ]
+    },
+    {
+      "UniqueTurnID": 185,
+      "TurnID": "SG814/511",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG814",
+      "ScheduledArrivalTime": "2026-09-11T21:05:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-11T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        19
+      ]
+    },
+    {
+      "UniqueTurnID": 186,
+      "TurnID": "SG814/511",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG814",
+      "ScheduledArrivalTime": "2026-09-18T21:05:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-18T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        19
+      ]
+    },
+    {
+      "UniqueTurnID": 187,
+      "TurnID": "SG476/511",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-09T21:15:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-09T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        20
+      ]
+    },
+    {
+      "UniqueTurnID": 188,
+      "TurnID": "SG476/511",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-16T21:15:00",
+      "DepartureFlightNumber": "SG511",
+      "ScheduledDepartureTime": "2026-09-16T22:30:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        20
+      ]
+    },
+    {
+      "UniqueTurnID": 189,
+      "TurnID": "SG476/476",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-11T21:15:00",
+      "DepartureFlightNumber": "SG476",
+      "ScheduledDepartureTime": "2026-09-11T22:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        21
+      ]
+    },
+    {
+      "UniqueTurnID": 190,
+      "TurnID": "SG476/476",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-18T21:15:00",
+      "DepartureFlightNumber": "SG476",
+      "ScheduledDepartureTime": "2026-09-18T22:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        21
+      ]
+    },
+    {
+      "UniqueTurnID": 191,
+      "TurnID": "SG476/476",
+      "DemandDate": "2026-09-08",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-08T21:15:00",
+      "DepartureFlightNumber": "SG476",
+      "ScheduledDepartureTime": "2026-09-08T22:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        21
+      ]
+    },
+    {
+      "UniqueTurnID": 192,
+      "TurnID": "SG476/476",
+      "DemandDate": "2026-09-15",
+      "DemandDay": "TUE",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-15T21:15:00",
+      "DepartureFlightNumber": "SG476",
+      "ScheduledDepartureTime": "2026-09-15T22:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        21
+      ]
+    },
+    {
+      "UniqueTurnID": 193,
+      "TurnID": "SG476/476",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-12T21:15:00",
+      "DepartureFlightNumber": "SG476",
+      "ScheduledDepartureTime": "2026-09-12T22:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        21
+      ]
+    },
+    {
+      "UniqueTurnID": 194,
+      "TurnID": "SG476/476",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-19T21:15:00",
+      "DepartureFlightNumber": "SG476",
+      "ScheduledDepartureTime": "2026-09-19T22:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        21
+      ]
+    },
+    {
+      "UniqueTurnID": 195,
+      "TurnID": "SG476/476",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-07T21:15:00",
+      "DepartureFlightNumber": "SG476",
+      "ScheduledDepartureTime": "2026-09-07T22:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        21
+      ]
+    },
+    {
+      "UniqueTurnID": 196,
+      "TurnID": "SG476/476",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-14T21:15:00",
+      "DepartureFlightNumber": "SG476",
+      "ScheduledDepartureTime": "2026-09-14T22:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        21
+      ]
+    },
+    {
+      "UniqueTurnID": 197,
+      "TurnID": "SG476/476",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-13T21:15:00",
+      "DepartureFlightNumber": "SG476",
+      "ScheduledDepartureTime": "2026-09-13T22:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        21
+      ]
+    },
+    {
+      "UniqueTurnID": 198,
+      "TurnID": "SG476/476",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-20T21:15:00",
+      "DepartureFlightNumber": "SG476",
+      "ScheduledDepartureTime": "2026-09-20T22:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        21
+      ]
+    },
+    {
+      "UniqueTurnID": 199,
+      "TurnID": "SG476/476",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-10T21:15:00",
+      "DepartureFlightNumber": "SG476",
+      "ScheduledDepartureTime": "2026-09-10T22:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        21
+      ]
+    },
+    {
+      "UniqueTurnID": 200,
+      "TurnID": "SG476/476",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG476",
+      "ScheduledArrivalTime": "2026-09-17T21:15:00",
+      "DepartureFlightNumber": "SG476",
+      "ScheduledDepartureTime": "2026-09-17T22:00:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        21
+      ]
+    },
+    {
+      "UniqueTurnID": 201,
+      "TurnID": "SG9731/555",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG9731",
+      "ScheduledArrivalTime": "2026-09-11T21:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-12T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        22
+      ]
+    },
+    {
+      "UniqueTurnID": 202,
+      "TurnID": "SG9731/555",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG9731",
+      "ScheduledArrivalTime": "2026-09-18T21:50:00",
+      "DepartureFlightNumber": "SG555",
+      "ScheduledDepartureTime": "2026-09-19T21:35:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B739",
+      "LoadType": "PAX",
+      "Tasks": [
+        22
+      ]
+    },
+    {
+      "UniqueTurnID": 203,
+      "TurnID": "SG162/164",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG162",
+      "ScheduledArrivalTime": "2026-09-09T22:30:00",
+      "DepartureFlightNumber": "SG164",
+      "ScheduledDepartureTime": "2026-09-09T23:15:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        23
+      ]
+    },
+    {
+      "UniqueTurnID": 204,
+      "TurnID": "SG162/164",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG162",
+      "ScheduledArrivalTime": "2026-09-16T22:30:00",
+      "DepartureFlightNumber": "SG164",
+      "ScheduledDepartureTime": "2026-09-16T23:15:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        23
+      ]
+    },
+    {
+      "UniqueTurnID": 205,
+      "TurnID": "SG162/164",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG162",
+      "ScheduledArrivalTime": "2026-09-11T22:30:00",
+      "DepartureFlightNumber": "SG164",
+      "ScheduledDepartureTime": "2026-09-11T23:15:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        23
+      ]
+    },
+    {
+      "UniqueTurnID": 206,
+      "TurnID": "SG162/164",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG162",
+      "ScheduledArrivalTime": "2026-09-18T22:30:00",
+      "DepartureFlightNumber": "SG164",
+      "ScheduledDepartureTime": "2026-09-18T23:15:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        23
+      ]
+    },
+    {
+      "UniqueTurnID": 207,
+      "TurnID": "SG162/164",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG162",
+      "ScheduledArrivalTime": "2026-09-13T22:30:00",
+      "DepartureFlightNumber": "SG164",
+      "ScheduledDepartureTime": "2026-09-13T23:15:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        23
+      ]
+    },
+    {
+      "UniqueTurnID": 208,
+      "TurnID": "SG162/164",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG162",
+      "ScheduledArrivalTime": "2026-09-20T22:30:00",
+      "DepartureFlightNumber": "SG164",
+      "ScheduledDepartureTime": "2026-09-20T23:15:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        23
+      ]
+    },
+    {
+      "UniqueTurnID": 209,
+      "TurnID": "SG162/164",
+      "DemandDate": "2026-09-10",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG162",
+      "ScheduledArrivalTime": "2026-09-10T22:30:00",
+      "DepartureFlightNumber": "SG164",
+      "ScheduledDepartureTime": "2026-09-10T23:15:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "A320",
+      "LoadType": "PAX",
+      "Tasks": [
+        23
+      ]
+    },
+    {
+      "UniqueTurnID": 210,
+      "TurnID": "SG162/164",
+      "DemandDate": "2026-09-17",
+      "DemandDay": "THU",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG162",
+      "ScheduledArrivalTime": "2026-09-17T22:30:00",
+      "DepartureFlightNumber": "SG164",
+      "ScheduledDepartureTime": "2026-09-17T23:15:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "A320",
+      "LoadType": "PAX",
+      "Tasks": [
+        23
+      ]
+    },
+    {
+      "UniqueTurnID": 211,
+      "TurnID": "SG162/164",
+      "DemandDate": "2026-09-12",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG162",
+      "ScheduledArrivalTime": "2026-09-12T22:30:00",
+      "DepartureFlightNumber": "SG164",
+      "ScheduledDepartureTime": "2026-09-12T23:15:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        23
+      ]
+    },
+    {
+      "UniqueTurnID": 212,
+      "TurnID": "SG162/164",
+      "DemandDate": "2026-09-19",
+      "DemandDay": "SAT",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG162",
+      "ScheduledArrivalTime": "2026-09-19T22:30:00",
+      "DepartureFlightNumber": "SG164",
+      "ScheduledDepartureTime": "2026-09-19T23:15:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B38M",
+      "LoadType": "PAX",
+      "Tasks": [
+        23
+      ]
+    },
+    {
+      "UniqueTurnID": 213,
+      "TurnID": "SG800/801",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG800",
+      "ScheduledArrivalTime": "2026-09-13T22:55:00",
+      "DepartureFlightNumber": "SG801",
+      "ScheduledDepartureTime": "2026-09-13T23:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        24
+      ]
+    },
+    {
+      "UniqueTurnID": 214,
+      "TurnID": "SG800/801",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG800",
+      "ScheduledArrivalTime": "2026-09-20T22:55:00",
+      "DepartureFlightNumber": "SG801",
+      "ScheduledDepartureTime": "2026-09-20T23:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        24
+      ]
+    },
+    {
+      "UniqueTurnID": 215,
+      "TurnID": "SG800/801",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG800",
+      "ScheduledArrivalTime": "2026-09-09T22:55:00",
+      "DepartureFlightNumber": "SG801",
+      "ScheduledDepartureTime": "2026-09-09T23:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        24
+      ]
+    },
+    {
+      "UniqueTurnID": 216,
+      "TurnID": "SG800/801",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG800",
+      "ScheduledArrivalTime": "2026-09-16T22:55:00",
+      "DepartureFlightNumber": "SG801",
+      "ScheduledDepartureTime": "2026-09-16T23:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        24
+      ]
+    },
+    {
+      "UniqueTurnID": 217,
+      "TurnID": "SG800/801",
+      "DemandDate": "2026-09-07",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG800",
+      "ScheduledArrivalTime": "2026-09-07T22:55:00",
+      "DepartureFlightNumber": "SG801",
+      "ScheduledDepartureTime": "2026-09-07T23:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        24
+      ]
+    },
+    {
+      "UniqueTurnID": 218,
+      "TurnID": "SG800/801",
+      "DemandDate": "2026-09-14",
+      "DemandDay": "MON",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG800",
+      "ScheduledArrivalTime": "2026-09-14T22:55:00",
+      "DepartureFlightNumber": "SG801",
+      "ScheduledDepartureTime": "2026-09-14T23:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        24
+      ]
+    },
+    {
+      "UniqueTurnID": 219,
+      "TurnID": "SG800/801",
+      "DemandDate": "2026-09-11",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG800",
+      "ScheduledArrivalTime": "2026-09-11T22:55:00",
+      "DepartureFlightNumber": "SG801",
+      "ScheduledDepartureTime": "2026-09-11T23:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        24
+      ]
+    },
+    {
+      "UniqueTurnID": 220,
+      "TurnID": "SG800/801",
+      "DemandDate": "2026-09-18",
+      "DemandDay": "FRI",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG800",
+      "ScheduledArrivalTime": "2026-09-18T22:55:00",
+      "DepartureFlightNumber": "SG801",
+      "ScheduledDepartureTime": "2026-09-18T23:45:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        24
+      ]
+    },
+    {
+      "UniqueTurnID": 221,
+      "TurnID": "SG9091/678",
+      "DemandDate": "2026-09-09",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG9091",
+      "ScheduledArrivalTime": "2026-09-09T23:15:00",
+      "DepartureFlightNumber": "SG678",
+      "ScheduledDepartureTime": "2026-09-09T23:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        25
+      ]
+    },
+    {
+      "UniqueTurnID": 222,
+      "TurnID": "SG9091/678",
+      "DemandDate": "2026-09-16",
+      "DemandDay": "WED",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG9091",
+      "ScheduledArrivalTime": "2026-09-16T23:15:00",
+      "DepartureFlightNumber": "SG678",
+      "ScheduledDepartureTime": "2026-09-16T23:55:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        25
+      ]
+    },
+    {
+      "UniqueTurnID": 223,
+      "TurnID": "SG9601/5060",
+      "DemandDate": "2026-09-06",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG9601",
+      "ScheduledArrivalTime": "2026-09-06T23:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-07T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        26
+      ]
+    },
+    {
+      "UniqueTurnID": 224,
+      "TurnID": "SG9601/5060",
+      "DemandDate": "2026-09-13",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG9601",
+      "ScheduledArrivalTime": "2026-09-13T23:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-14T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        26
+      ]
+    },
+    {
+      "UniqueTurnID": 225,
+      "TurnID": "SG9601/5060",
+      "DemandDate": "2026-09-20",
+      "DemandDay": "SUN",
+      "AirlineCode": "SG",
+      "ArrivalFlightNumber": "SG9601",
+      "ScheduledArrivalTime": "2026-09-20T23:50:00",
+      "DepartureFlightNumber": "SG5060",
+      "ScheduledDepartureTime": "2026-09-21T09:05:00",
+      "ACType": "NARROW",
+      "AircraftVersion": "B738",
+      "LoadType": "PAX",
+      "Tasks": [
+        26
+      ]
+    }
+  ],
+  "Tasks": [
+    {
+      "Id": 1,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "00:45",
+      "End": "01:00",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 2,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "02:30",
+      "End": "02:45",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 3,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "02:45",
+      "End": "03:15",
+      "DurationMinutes": 30,
+      "NumResources": 1,
+      "Service_Duration": 30,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 4,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "02:45",
+      "End": "03:15",
+      "DurationMinutes": 30,
+      "NumResources": 1,
+      "Service_Duration": 30,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 5,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "06:10",
+      "End": "06:25",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 6,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "06:10",
+      "End": "06:40",
+      "DurationMinutes": 30,
+      "NumResources": 1,
+      "Service_Duration": 30,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 7,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "06:50",
+      "End": "07:05",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 8,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "08:35",
+      "End": "09:05",
+      "DurationMinutes": 30,
+      "NumResources": 1,
+      "Service_Duration": 30,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 9,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "08:45",
+      "End": "09:15",
+      "DurationMinutes": 30,
+      "NumResources": 1,
+      "Service_Duration": 30,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 10,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "08:45",
+      "End": "09:15",
+      "DurationMinutes": 30,
+      "NumResources": 1,
+      "Service_Duration": 30,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 11,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "08:45",
+      "End": "09:15",
+      "DurationMinutes": 30,
+      "NumResources": 1,
+      "Service_Duration": 30,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 12,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "11:20",
+      "End": "11:35",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 13,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "12:35",
+      "End": "12:50",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 14,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "13:30",
+      "End": "13:45",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 15,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "15:10",
+      "End": "15:25",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 16,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "16:30",
+      "End": "16:45",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 17,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "17:00",
+      "End": "17:15",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 18,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "20:45",
+      "End": "21:00",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 19,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "21:00",
+      "End": "21:15",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 20,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "21:10",
+      "End": "21:25",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 21,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "21:10",
+      "End": "21:25",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 22,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "21:45",
+      "End": "22:00",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 23,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "22:25",
+      "End": "22:40",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 24,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "22:50",
+      "End": "23:05",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 25,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "23:10",
+      "End": "23:25",
+      "DurationMinutes": 15,
+      "NumResources": 1,
+      "Service_Duration": 15,
+      "Qualifications": null,
+      "ActNumResources": 1
+    },
+    {
+      "Id": 26,
+      "TurnID": null,
+      "Resource": "CTL",
+      "Service": "CTL",
+      "DemandDateDelta": 0,
+      "Start": "23:45",
+      "End": "00:15",
+      "DurationMinutes": 30,
+      "NumResources": 1,
+      "Service_Duration": 30,
+      "Qualifications": null,
+      "ActNumResources": 1
+    }
+  ]
+}

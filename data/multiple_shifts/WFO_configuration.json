@@ -1,0 +1,49 @@
+{
+  "PlanningHorizonStart": "2026-09-07T00:00:00",
+  "PlanningHorizonEnd": "2026-09-20T23:55:00",
+  "utilization_type": "NONE",
+  "schedule_type": "IRREGULAR",
+  "annual_leave_accrual": 24,
+  "absenteeism_percentage": 10,
+  "use_downranking": false,
+  "resources": [
+    {
+      "resource": "CTL",
+      "resource_tag": "DYNAMIC",
+      "rostering_mode": "FREE",
+      "shift_configuration": {
+        "shift_restrictions": {
+          "shift_start_restrictions": [
+            { "start_time": "23:30", "end_time": "05:30" }
+          ],
+          "shift_end_restrictions": [
+            { "start_time": "23:30", "end_time": "04:00" }
+          ]
+        },
+        "shift_policy": {
+          "daily": {
+            "include_30_min_increments": true,
+            "shift_lengths": [9, 10]
+          },
+          "weekly": {
+            "max_working_hours": 48,
+            "min_days_off": 2,
+            "max_days_off": 2,
+            "minimum_rest_between_consecutive_shifts": 12
+          }
+        },
+        "overtime_policy": {
+            "ot_max_per_day": 4,
+            "ot_max_per_week": 8,
+            "max_working_hours_with_ot": 12
+        },
+        "briefing_policy": {
+          "briefing_time_minutes": 0,
+          "debriefing_time_minutes": 0
+        },
+        "consecutive_day_off": false,
+        "enable_calendar_day_off": false
+      }
+    }
+  ]
+}

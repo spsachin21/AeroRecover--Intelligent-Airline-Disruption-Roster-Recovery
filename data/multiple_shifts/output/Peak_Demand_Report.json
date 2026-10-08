@@ -1,0 +1,9 @@
+{
+  "resource_peak_demand": {
+    "CTL": {
+      "Original_Peak_Demand": 2,
+      "max_resource_lowest_duration_Peak_Demand": 2,
+      "max_resource_lowest_duration_Peak_Reduction_Percentage": 0.0
+    }
+  }
+}
