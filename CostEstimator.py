@@ -244,6 +244,87 @@ class EmployeeCostEstimator:
     # Assignment mode
     # ========================================================
 
+    # def _determine_assignment_mode(
+    #     self,
+    #     employee,
+    #     task,
+    #     neighborhood
+    # ) -> str:
+
+    #     if getattr(task, "blocked_employee", None) == employee.employee_id:
+    #         print(f"{employee.employee_id}: blocked")
+    #         return "infeasible"
+
+    #     # ----------------------------------------------------
+    #     # Employee currently on leave
+    #     # ----------------------------------------------------
+
+    #     if self._is_on_leave(employee):
+
+    #         if neighborhood.recall_enabled:
+
+    #             return "recall"
+
+    #         print(f"{employee.employee_id}: on leave")
+    #         return "infeasible"
+
+    #     # ----------------------------------------------------
+    #     # Normal employee
+    #     # ----------------------------------------------------
+
+    #     if self._fits_normal_shift(employee, task):
+
+    #         return "regular"
+
+    #     # ----------------------------------------------------
+    #     # Assignment requires extended shift
+    #     # ----------------------------------------------------
+
+    #     if neighborhood.overtime_enabled:
+
+    #         if self._can_work_overtime(employee, task):
+
+    #             return "overtime"
+    #     # ----------------------------------------------------
+    #     # Recall: OFF employee
+    #     # ----------------------------------------------------
+  
+    #     try:
+    #         shift = employee.rosters[task.date].shift
+    #     except KeyError:
+    #         return "infeasible"
+
+    #     if shift is None and neighborhood.recall_enabled:
+    #         return "recall"   
+
+    #     # ----------------------------------------------------
+    #     # No allowed relaxation
+    #     # ----------------------------------------------------  
+        
+    #     try:
+    #         shift = employee.rosters[task.date].shift
+    #     except KeyError:
+    #         print(f"{employee.employee_id}: no roster for {task.date}")
+    #         return "infeasible"
+
+    #     if shift is None:
+    #         print(f"{employee.employee_id}: OFF day")
+    #         return "infeasible"
+
+    #     if task.start < shift.start:
+    #         minutes = (shift.start.hour*60 + shift.start.minute) - (task.start.hour*60 + task.start.minute)
+    #         print(f"{employee.employee_id}: task starts {minutes} min before shift ({shift.start.strftime('%H:%M')})")
+
+    #     elif task.end > shift.end:
+    #         minutes = (task.end.hour*60 + task.end.minute) - (shift.end.hour*60 + shift.end.minute)
+    #         print(f"{employee.employee_id}: task ends {minutes} min after shift ({shift.end.strftime('%H:%M')})")
+
+    #     else:
+    #         print(f"{employee.employee_id}: task does not fit scheduled shift")
+
+    #     return "infeasible"
+
+
     def _determine_assignment_mode(
         self,
         employee,
@@ -251,79 +332,266 @@ class EmployeeCostEstimator:
         neighborhood
     ) -> str:
 
+        # =========================================================
+        # BLOCKED EMPLOYEE
+        # =========================================================
+
         if getattr(task, "blocked_employee", None) == employee.employee_id:
-            print(f"{employee.employee_id}: blocked")
+
+            print(
+                f"{employee.employee_id}: blocked"
+            )
+
             return "infeasible"
 
-        # ----------------------------------------------------
-        # Employee currently on leave
-        # ----------------------------------------------------
+
+        # =========================================================
+        # EMPLOYEE ON LEAVE
+        # =========================================================
 
         if self._is_on_leave(employee):
 
             if neighborhood.recall_enabled:
-
                 return "recall"
 
-            print(f"{employee.employee_id}: on leave")
+            print(
+                f"{employee.employee_id}: on leave"
+            )
+
             return "infeasible"
 
-        # ----------------------------------------------------
-        # Normal employee
-        # ----------------------------------------------------
 
-        if self._fits_normal_shift(employee, task):
+        # =========================================================
+        # GET SHIFT
+        # =========================================================
+
+        try:
+
+            roster = employee.rosters[task.date]
+            shift = roster.shift
+
+        except KeyError:
+
+            print(
+                f"{employee.employee_id}: "
+                f"no roster for {task.date}"
+            )
+
+            return "infeasible"
+
+
+        # =========================================================
+        # OFF DAY
+        # =========================================================
+
+        if shift is None:
+
+            if neighborhood.recall_enabled:
+                return "recall"
+
+            print(
+                f"{employee.employee_id}: OFF day"
+            )
+
+            return "infeasible"
+
+
+        # =========================================================
+        # CONVERT HH:MM / datetime.time TO MINUTES
+        # =========================================================
+
+        shift_start = (
+            shift.start.hour * 60
+            + shift.start.minute
+        )
+
+        shift_end = (
+            shift.end.hour * 60
+            + shift.end.minute
+        )
+
+        task_start = (
+            task.start.hour * 60
+            + task.start.minute
+        )
+
+        task_end = (
+            task.end.hour * 60
+            + task.end.minute
+        )
+
+
+        # =========================================================
+        # HANDLE CROSS-MIDNIGHT SHIFT
+        #
+        # Example:
+        #     22:00 -> 06:00
+        #
+        # Since:
+        #     06:00 <= 22:00
+        #
+        # shift_end becomes:
+        #     06:00 + 1440 = 1500
+        #
+        # =========================================================
+
+        shift_crosses_midnight = (
+            shift_end <= shift_start
+        )
+
+        if shift_crosses_midnight:
+
+            shift_end += 24 * 60
+
+
+        # =========================================================
+        # HANDLE CROSS-MIDNIGHT TASK
+        #
+        # Example:
+        #     23:00 -> 01:00
+        #
+        # =========================================================
+
+        task_crosses_midnight = (
+            task_end <= task_start
+        )
+
+        if task_crosses_midnight:
+
+            task_end += 24 * 60
+
+
+        # =========================================================
+        # IMPORTANT:
+        #
+        # If the shift crosses midnight, a task occurring after
+        # midnight may also need to be moved onto the next day.
+        #
+        # Example:
+        #
+        # Shift:
+        #       22:00 -> 06:00
+        #
+        # Task:
+        #       01:00 -> 02:00
+        #
+        # Raw:
+        #       shift = 1320 -> 1800
+        #       task  = 0060 -> 0120
+        #
+        # The task must become:
+        #       1500 -> 1560
+        #
+        # =========================================================
+
+        if shift_crosses_midnight:
+
+            # Task is on the after-midnight portion
+            if task_start < (
+                shift_end - 24 * 60
+            ):
+
+                task_start += 24 * 60
+                task_end += 24 * 60
+
+
+        # =========================================================
+        # NORMAL SHIFT FIT
+        # =========================================================
+
+        if (
+            task_start >= shift_start
+            and
+            task_end <= shift_end
+        ):
 
             return "regular"
 
-        # ----------------------------------------------------
-        # Assignment requires extended shift
-        # ----------------------------------------------------
+
+        # =========================================================
+        # OVERTIME
+        # =========================================================
 
         if neighborhood.overtime_enabled:
 
-            if self._can_work_overtime(employee, task):
+            if self._can_work_overtime(
+                employee,
+                task
+            ):
 
                 return "overtime"
-        # ----------------------------------------------------
-        # Recall: OFF employee
-        # ----------------------------------------------------
-  
-        try:
-            shift = employee.rosters[task.date].shift
-        except KeyError:
-            return "infeasible"
 
-        if shift is None and neighborhood.recall_enabled:
-            return "recall"   
 
-        # ----------------------------------------------------
-        # No allowed relaxation
-        # ----------------------------------------------------  
-        
-        try:
-            shift = employee.rosters[task.date].shift
-        except KeyError:
-            print(f"{employee.employee_id}: no roster for {task.date}")
-            return "infeasible"
+        # =========================================================
+        # RECALL
+        # =========================================================
+        #
+        # Recall applies to an OFF employee.
+        #
+        # The OFF case is already handled above, but we keep the
+        # fallback here for compatibility with your existing logic.
+        # =========================================================
 
         if shift is None:
-            print(f"{employee.employee_id}: OFF day")
+
+            if neighborhood.recall_enabled:
+                return "recall"
+
             return "infeasible"
 
-        if task.start < shift.start:
-            minutes = (shift.start.hour*60 + shift.start.minute) - (task.start.hour*60 + task.start.minute)
-            print(f"{employee.employee_id}: task starts {minutes} min before shift ({shift.start.strftime('%H:%M')})")
 
-        elif task.end > shift.end:
-            minutes = (task.end.hour*60 + task.end.minute) - (shift.end.hour*60 + shift.end.minute)
-            print(f"{employee.employee_id}: task ends {minutes} min after shift ({shift.end.strftime('%H:%M')})")
+        # =========================================================
+        # TASK STARTS BEFORE SHIFT
+        # =========================================================
 
-        else:
-            print(f"{employee.employee_id}: task does not fit scheduled shift")
+        if task_start < shift_start:
+
+            minutes = (
+                shift_start
+                - task_start
+            )
+
+            print(
+                f"{employee.employee_id}: "
+                f"task starts {minutes} min before shift "
+                f"({shift.start.strftime('%H:%M')})"
+            )
+
+            return "infeasible"
+
+
+        # =========================================================
+        # TASK ENDS AFTER SHIFT
+        # =========================================================
+
+        if task_end > shift_end:
+
+            minutes = (
+                task_end
+                - shift_end
+            )
+
+            print(
+                f"{employee.employee_id}: "
+                f"task ends {minutes} min after shift "
+                f"({shift.end.strftime('%H:%M')})"
+            )
+
+            return "infeasible"
+
+
+        # =========================================================
+        # DOES NOT FIT
+        # =========================================================
+
+        print(
+            f"{employee.employee_id}: "
+            f"task does not fit scheduled shift"
+        )
 
         return "infeasible"
-        
+
+            
 
     # ========================================================
     # Feasibility
