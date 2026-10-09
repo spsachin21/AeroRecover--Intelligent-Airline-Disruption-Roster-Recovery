@@ -27,7 +27,7 @@ simulator = DisruptionSimulator.DisruptionSimulator(
 # ============================================================
 
 employee_id = "A"
-date = "2026-09-07"
+date = "2026-09-08"
 
 employee = schedule_data.employees[employee_id]
 

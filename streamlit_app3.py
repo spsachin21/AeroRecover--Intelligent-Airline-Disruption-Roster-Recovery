@@ -24,6 +24,27 @@ import JobRepairingAssigner
 import InputClasses
 
 # ==========================================
+# DISRUPTION MODES, STATUS LABELS & CONSTANTS  (NEW)
+# ==========================================
+MODE_EMPLOYEE = "👤 Employee Disruption (remove tasks)"
+MODE_DELAY = "⏱️ Task Delay (shift start/end later)"
+
+STATUS_ORIGINAL = "Original Assignment"
+STATUS_REASSIGNED = "Reassigned (Recovered)"
+STATUS_UNASSIGNED = "Unassigned / Disrupted"
+STATUS_DELAY_SAME = "Delayed (Same Employee)"
+STATUS_DELAY_REASSIGNED = "Delayed (Reassigned)"
+
+# statuses meaning "a different employee ended up with the task"
+RECOVERED_STATUSES = {STATUS_REASSIGNED, STATUS_DELAY_REASSIGNED}
+
+# small tie-break cost so a delayed task prefers its original employee
+PREFER_ORIGINAL_COST = 10.0
+
+# Recovery level at which results go to the dedicated "Level 5" table
+FINAL_LEVEL = 5
+
+# ==========================================
 # STREAMLIT UI CONFIGURATION (LIGHT THEME)
 # ==========================================
 st.set_page_config(
@@ -130,6 +151,18 @@ if "unassigned_pool" not in st.session_state:
 if "intermediate_offduty_assignments" not in st.session_state:
     st.session_state.intermediate_offduty_assignments = []
 
+# NEW: assignments that were only resolved at the final level (Level 5) + their cost
+if "level5_assignments" not in st.session_state:
+    st.session_state.level5_assignments = []
+
+# NEW: what-if Level-5 results for tasks that were actually solved BEFORE level 5
+if "level5_whatif" not in st.session_state:
+    st.session_state.level5_whatif = []
+
+# NEW: summary of the last run
+if "last_run" not in st.session_state:
+    st.session_state.last_run = {}
+
 
 # ==========================================
 # DYNAMIC CURRENT OFF-DUTY CALCULATOR
@@ -142,13 +175,27 @@ def get_current_offduty_employees(schedule_data, target_date):
             current_off.add(e_id)
     return current_off
 
-
+ 
 # ==========================================
 # SIDEBAR CONTROLS (MULTI-EMPLOYEE SUPPORT)
 # ==========================================
 st.sidebar.title("🎛️ Simulation Setup")
 
 schedule_data = st.session_state.schedule_data
+
+# NEW: disruption type
+disruption_mode = st.sidebar.radio(
+    "Disruption Type",
+    [MODE_EMPLOYEE, MODE_DELAY],
+    help=(
+        "Employee Disruption: selected tasks are removed and the original employee "
+        "is blocked from taking them back.\n\n"
+        "Task Delay: selected tasks keep existing but start/end later by the chosen "
+        "delay. Nobody is blocked - the original employee is simply no longer "
+        "pre-assigned and recovery decides who can take the delayed task."
+    )
+)
+is_delay_mode = disruption_mode == MODE_DELAY
 
 # Date Selection First
 all_available_dates = sorted(list({d for e in schedule_data.employees.values() for d in e.rosters.keys()}))
@@ -171,26 +218,60 @@ st.sidebar.markdown(f"**Current Off-Duty Staff ({selected_date}):** `{', '.join(
 st.sidebar.markdown("---")
 temporal_window = st.sidebar.slider("Temporal Window (minutes)", min_value=10, max_value=120, value=30, step=5)
 
-# Gather tasks scheduled across ALL selected employees for this date
+# NEW: delay-specific controls
+delay_minutes = 0
+prefer_original = False
+pick_from_all = False
+
+if is_delay_mode:
+    delay_minutes = st.sidebar.slider(
+        "Delay Amount (minutes)", min_value=5, max_value=240, value=30, step=5,
+        help="Start AND end time of every selected task move later by this amount "
+             "(measured from the task's original time; clamped at 23:59)."
+    )
+    prefer_original = st.sidebar.checkbox(
+        "Prefer original employee when feasible",
+        value=True,
+        help="Adds a small cost when a delayed task goes to somebody else, so the "
+             "original employee keeps it whenever the delayed time still works."
+    )
+    pick_from_all = st.sidebar.checkbox(
+        "Choose delayed tasks from ALL employees",
+        value=False,
+        help="By default only tasks of the selected employees are listed."
+    )
+
+# Gather tasks scheduled across the relevant employees for this date
 combined_task_options = []
 task_to_owner_map = {}
+task_to_window = {}
 
-for emp_id in selected_emp_ids:
+pool_ids = emp_list if (is_delay_mode and pick_from_all) else selected_emp_ids
+for emp_id in pool_ids:
     e_obj = schedule_data.employees.get(emp_id)
     if e_obj and selected_date in e_obj.rosters:
         for t in e_obj.rosters[selected_date].tasks:
             combined_task_options.append(t.task_key)
             task_to_owner_map[t.task_key] = emp_id
+            task_to_window[t.task_key] = f"{t.start_time}-{t.end_time}"
 
 # Deduplicate task keys while preserving order
 combined_task_options = list(dict.fromkeys(combined_task_options))
 
+# default selection = tasks of the selected employees only
+default_task_keys = [k for k in combined_task_options if task_to_owner_map.get(k) in selected_emp_ids]
+
 selected_task_keys = st.sidebar.multiselect(
-    "Select Tasks to Disrupt",
+    "Select Tasks to Delay" if is_delay_mode else "Select Tasks to Disrupt",
     options=combined_task_options,
-    default=combined_task_options,
-    format_func=lambda k: f"{k} (Emp: {task_to_owner_map.get(k, '?')})",
-    help="Selected tasks will be removed in Stage 4, blocked from their respective original owners, and sequentially recovered."
+    default=default_task_keys,
+    format_func=lambda k: f"{k} (Emp: {task_to_owner_map.get(k, '?')}) · {task_to_window.get(k, '')}",
+    help=(
+        "Selected tasks will be delayed, lifted from their rosters and re-solved by the "
+        "recovery engine. The original employee is NOT blocked."
+        if is_delay_mode else
+        "Selected tasks will be removed in Stage 4, blocked from their respective original owners, and sequentially recovered."
+    )
 )
 
 run_recovery_btn = st.sidebar.button("🚀 Run Disruption & Recovery", use_container_width=True, type="primary")
@@ -217,6 +298,9 @@ if st.sidebar.button("🔄 Reset Original Schedule", use_container_width=True):
     st.session_state.recovery_metadata = {}
     st.session_state.unassigned_pool = []
     st.session_state.intermediate_offduty_assignments = []
+    st.session_state.level5_assignments = []
+    st.session_state.level5_whatif = []
+    st.session_state.last_run = {}
     st.rerun()
 
 
@@ -238,13 +322,23 @@ def extract_roster_dataframe(schedule_data, target_date=None, target_employees=N
             for t in roster.tasks:
                 task_k = getattr(t, "task_key", "N/A")
                 m = meta.get(task_k, {})
+                status = m.get("status", STATUS_ORIGINAL)
                 
                 if emp_id in baseline_off_today:
                     duty_state = "Off-Duty (Recalled)"
-                elif m.get("status") == "Reassigned (Recovered)":
+                elif status in RECOVERED_STATUSES:
                     duty_state = "On-Duty (Reassigned)"
+                elif status == STATUS_DELAY_SAME:
+                    duty_state = "On-Duty (Delayed Task)"
                 else:
                     duty_state = "On-Duty (Scheduled)"
+
+                # NEW: delay information carried on the task object
+                delay = getattr(t, "delay_minutes", 0) or 0
+                if delay:
+                    orig_window = f"{getattr(t, 'original_start_time', '?')} - {getattr(t, 'original_end_time', '?')}"
+                else:
+                    orig_window = "—"
 
                 rows.append({
                     "Employee ID": emp_id,
@@ -255,8 +349,10 @@ def extract_roster_dataframe(schedule_data, target_date=None, target_employees=N
                     "Start Time": getattr(t, "start_time", "N/A"),
                     "End Time": getattr(t, "end_time", "N/A"),
                     "Shift Window": f"{getattr(t, 'start_time', '')} - {getattr(t, 'end_time', '')}",
+                    "Delay (min)": delay,
+                    "Original Window": orig_window,
                     "Required Skill": getattr(t, "required_skill", getattr(t, "skill", "General")),
-                    "Assignment Status": m.get("status", "Original Assignment"),
+                    "Assignment Status": status,
                     "Recovery Level": m.get("level", "—"),
                     "Original (Blocked) Resource": m.get("original_employee", "—")
                 })
@@ -281,7 +377,7 @@ def recover_task_levels(schedule_recovery, task, employees):
     baseline_off_today = st.session_state.master_daily_offduty.get(task.date, set())
     intermediate_assigned_map = {}
 
-    for level in range(6):
+    for level in range(FINAL_LEVEL + 1):
         neighborhood = schedule_recovery.neighborhood_manager.create_next_neighborhood(
             level=level,
             seed_tasks=seed_tasks,
@@ -315,7 +411,8 @@ def recover_task_levels(schedule_recovery, task, employees):
                 "employee": assignment["employee"],
                 "task": task_assigned,
                 "level": level,
-                "level_name": neighborhood.name
+                "level_name": neighborhood.name,
+                "cost": assignment.get("cost", 0.0)          # NEW: keep cost for the Level-5 table
             }
 
             if emp_assigned_id in baseline_off_today:
@@ -331,7 +428,10 @@ def recover_task_levels(schedule_recovery, task, employees):
                     "Required Skill": getattr(task_assigned, "required_skill", getattr(task_assigned, "skill", "General")),
                     "Assignment Status": "Reassigned (Intermediate Lvl)",
                     "Recovery Level": f"Level {level} ({neighborhood.name})",
-                    "Original (Blocked) Resource": getattr(task, "blocked_employee", "Unknown")
+                    "Original (Blocked) Resource": (
+                        getattr(task, "blocked_employee", None)
+                        or getattr(task, "original_employee", "Unknown")
+                    )
                 })
 
         trace_entry = {
@@ -373,6 +473,63 @@ def recover_task_levels(schedule_recovery, task, employees):
 
 
 # ==========================================
+# NEW: LEVEL-5 WHAT-IF PROBE (READ-ONLY)
+# ==========================================
+def probe_final_level(schedule_recovery, task, employees):
+    """
+    Solve the task directly at the final level (Level 5) WITHOUT applying anything,
+    so we can show what the assignment/cost would have been had recovery gone that far.
+    Any tasks the neighborhood temporarily removed are restored afterwards.
+    """
+    neighborhood = None
+    try:
+        neighborhood = schedule_recovery.neighborhood_manager.create_next_neighborhood(
+            level=FINAL_LEVEL,
+            seed_tasks=[task],
+            employees=employees,
+            assigned_employees=set()
+        )
+        if neighborhood is None:
+            return {"error": "Level 5 neighborhood could not be created"}
+
+        assigner = JobRepairingAssigner.JobAssigner(
+            scheduleData=schedule_recovery.schedule_data,
+            unassigned_tasks=neighborhood.tasks,
+            estimator=schedule_recovery.cost_estimator
+        )
+        result = assigner.assign_jobs(
+            employees=neighborhood.candidate_employees,
+            tasks=neighborhood.tasks,
+            neighborhood=neighborhood
+        )
+        return {
+            "feasible": result.feasible,
+            "total_cost": getattr(result, "total_cost", 0.0),
+            "bundle_size": len(neighborhood.tasks),
+            "neighborhood_name": neighborhood.name,
+            "assignments": [
+                {
+                    "task_key": a["task"].task_key,
+                    "employee_id": a["employee"].employee_id,
+                    "cost": a.get("cost", 0.0),
+                    "window": f"{a['task'].start_time} - {a['task'].end_time}"
+                }
+                for a in result.assignments
+            ],
+            "unassigned_keys": [t.task_key for t in result.unassigned_tasks],
+        }
+    except Exception as e:
+        return {"error": str(e)}
+    finally:
+        # always leave the rosters exactly as we found them
+        try:
+            if neighborhood is not None and neighborhood.temporal_destruction and neighborhood.removed_assignments:
+                schedule_recovery.neighborhood_manager._restore_tasks_to_rosters(neighborhood.removed_assignments)
+        except Exception:
+            pass
+
+
+# ==========================================
 # SIMULATION ORCHESTRATION PIPELINE
 # ==========================================
 if run_recovery_btn:
@@ -387,26 +544,65 @@ if run_recovery_btn:
                 schedule_data=schedule_data,
                 temporal_window=temporal_window
             )
-            cost_estimator = CostEstimator.EmployeeCostEstimator()
+            # NEW: optional small cost so delayed tasks prefer their original employee
+            if is_delay_mode and prefer_original:
+                cost_estimator = CostEstimator.EmployeeCostEstimator(
+                    CostEstimator.CostConfig(reassignment_cost=PREFER_ORIGINAL_COST)
+                )
+            else:
+                cost_estimator = CostEstimator.EmployeeCostEstimator()
             schedule_recovery = ScheduleRecovery.ScheduleRecovery(
                 schedule_data=schedule_data,
                 neighborhood_manager=neighborhood_manager,
                 cost_estimator=cost_estimator
             )
 
-            # Stage 4: Batch disruption & owner blocking across all selected employees
-            disrupted_tasks = []
+            # Stage 4: Batch disruption across all selected tasks
+            #   - Employee mode: remove task + block original owner (unchanged)
+            #   - Delay mode:    shift task later, nobody is blocked (NEW)
+            disrupted_tasks = []   # (task_obj, original_emp, effective_delay)
+            run_notes = []
             for task_key in selected_task_keys:
-                task_obj, original_emp = simulator.remove_task(task_key)
-                task_obj.blocked_employee = original_emp.employee_id
-                disrupted_tasks.append((task_obj, original_emp))
+                if is_delay_mode:
+                    owner_id = task_to_owner_map.get(task_key)
+                    task_obj, original_emp, eff_delay = simulator.delay_task(
+                        task_key, delay_minutes, employee_id=owner_id
+                    )
+                    task_obj.original_employee = original_emp.employee_id
+                    if eff_delay < delay_minutes:
+                        run_notes.append(
+                            f"Task {task_key}: delay clamped to {eff_delay} min (cannot run past 23:59)."
+                        )
+                else:
+                    task_obj, original_emp = simulator.remove_task(task_key)
+                    task_obj.blocked_employee = original_emp.employee_id
+                    eff_delay = 0
+                disrupted_tasks.append((task_obj, original_emp, eff_delay))
+
+            # tasks re-run now are no longer in the old unassigned pool
+            seed_keys = {t.task_key for t, _, _ in disrupted_tasks}
+            st.session_state.unassigned_pool = [
+                p for p in st.session_state.unassigned_pool if p["task_key"] not in seed_keys
+            ]
 
             # Stage 5: Sequential recovery
             all_employees_list = list(schedule_data.employees.values())
             st.session_state.task_recovery_traces = []
             st.session_state.intermediate_offduty_assignments = []
+            st.session_state.level5_assignments = []
+            st.session_state.level5_whatif = []
 
-            for task_obj, original_emp in disrupted_tasks:
+            for task_obj, original_emp, eff_delay in disrupted_tasks:
+                original_id = original_emp.employee_id if original_emp is not None else None
+                original_window = (
+                    f"{getattr(task_obj, 'original_start_time', task_obj.start_time)}-"
+                    f"{getattr(task_obj, 'original_end_time', task_obj.end_time)}"
+                    if is_delay_mode else f"{task_obj.start_time}-{task_obj.end_time}"
+                )
+
+                # NEW: read-only Level-5 what-if (state is restored afterwards)
+                whatif = probe_final_level(schedule_recovery, task_obj, all_employees_list)
+
                 final_res, traces, solved_lvl, inter_map = recover_task_levels(
                     schedule_recovery=schedule_recovery,
                     task=task_obj,
@@ -416,20 +612,24 @@ if run_recovery_btn:
                 is_feasible = final_res.feasible if final_res else False
                 verification = []
 
+                # (employee, task, level, level_name, cost)
                 assignments_to_apply = []
                 if is_feasible and final_res.assignments:
                     assignments_to_apply = [
-                        (a["employee"], a["task"], solved_lvl, traces[solved_lvl]["neighborhood_name"])
+                        (a["employee"], a["task"], solved_lvl, traces[solved_lvl]["neighborhood_name"], a.get("cost", 0.0))
                         for a in final_res.assignments
                     ]
                 elif task_obj.task_key in inter_map:
                     entry = inter_map[task_obj.task_key]
                     assignments_to_apply = [
-                        (entry["employee"], entry["task"], entry["level"], entry["level_name"])
+                        (entry["employee"], entry["task"], entry["level"], entry["level_name"], entry.get("cost", 0.0))
                     ]
 
+                new_emp_id = None
+                seed_cost = None
+
                 if assignments_to_apply:
-                    for assigned_emp, assigned_t, lvl_num, lvl_name in assignments_to_apply:
+                    for assigned_emp, assigned_t, lvl_num, lvl_name, a_cost in assignments_to_apply:
                         task_date = getattr(assigned_t, "date", selected_date)
                         
                         # Prune this task from all other employee rosters to guarantee unique ownership
@@ -462,12 +662,39 @@ if run_recovery_btn:
                             "stored_in_roster": is_stored
                         })
 
+                        is_seed = assigned_t.task_key == task_obj.task_key
+                        if is_seed:
+                            new_emp_id = assigned_emp.employee_id
+                            seed_cost = a_cost
+                            if is_delay_mode:
+                                status = STATUS_DELAY_SAME if new_emp_id == original_id else STATUS_DELAY_REASSIGNED
+                            else:
+                                status = STATUS_REASSIGNED
+                        else:
+                            status = STATUS_REASSIGNED
+
                         st.session_state.recovery_metadata[assigned_t.task_key] = {
-                            "status": "Reassigned (Recovered)",
+                            "status": status,
                             "level": f"Level {lvl_num} ({lvl_name})",
-                            "original_employee": task_obj.blocked_employee,
+                            "original_employee": original_id,
                             "new_employee": assigned_emp.employee_id
                         }
+
+                        # NEW: anything that needed the FINAL level goes to its own table with cost
+                        if lvl_num == FINAL_LEVEL:
+                            st.session_state.level5_assignments.append({
+                                "Task Key": assigned_t.task_key,
+                                "Role": "Disrupted Task" if is_seed else "Displaced Neighbour Task",
+                                "Triggered By": task_obj.task_key,
+                                "Date": task_date,
+                                "Window": f"{getattr(assigned_t, 'start_time', '')} - {getattr(assigned_t, 'end_time', '')}",
+                                "Original Employee": original_id if is_seed else "—",
+                                "Assigned Employee": assigned_emp.employee_id,
+                                "Off-Duty Recalled": assigned_emp.employee_id in st.session_state.master_daily_offduty.get(task_date, set()),
+                                "Recovery Level": f"Level {lvl_num} ({lvl_name})",
+                                "Assignment Cost": a_cost,
+                                "Level Total Cost": traces[-1]["total_cost"] if traces else 0.0,
+                            })
                 else:
                     # Genuinely unassigned across all levels
                     orig_roster = original_emp.rosters.get(task_obj.date, None)
@@ -478,28 +705,66 @@ if run_recovery_btn:
                         "task_key": task_obj.task_key,
                         "date": task_obj.date,
                         "window": f"{task_obj.start_time} - {task_obj.end_time}",
-                        "original_employee": task_obj.blocked_employee,
-                        "status": "Unassigned / Disrupted"
+                        "original_employee": original_id,
+                        "status": STATUS_UNASSIGNED
                     })
 
                     st.session_state.recovery_metadata[task_obj.task_key] = {
-                        "status": "Unassigned / Disrupted",
+                        "status": STATUS_UNASSIGNED,
                         "level": "Failed Across All Levels",
-                        "original_employee": task_obj.blocked_employee,
+                        "original_employee": original_id,
                         "new_employee": "None"
                     }
 
                 was_recovered = len(assignments_to_apply) > 0
+                lvl_txt = solved_lvl if solved_lvl is not None else inter_map.get(task_obj.task_key, {}).get("level", "—")
+
+                # NEW: recovered BEFORE Level 5 -> keep the "what if it had gone to Level 5" result
+                seed_lvl = solved_lvl if solved_lvl is not None else inter_map.get(task_obj.task_key, {}).get("level")
+                if was_recovered and isinstance(seed_lvl, int) and seed_lvl < FINAL_LEVEL:
+                    st.session_state.level5_whatif.append({
+                        "task_key": task_obj.task_key,
+                        "original_employee": original_id,
+                        "actual_level": seed_lvl,
+                        "actual_employee": new_emp_id,
+                        "actual_cost": seed_cost,
+                        "actual_level_total_cost": traces[solved_lvl]["total_cost"] if solved_lvl is not None else None,
+                        "whatif": whatif,
+                    })
+
+                if not was_recovered:
+                    outcome = "Failed Across All Levels"
+                elif is_delay_mode and new_emp_id == original_id:
+                    outcome = f"Handled by the ORIGINAL employee {new_emp_id} at Level {lvl_txt}"
+                elif is_delay_mode:
+                    outcome = f"Delayed task reassigned to Employee {new_emp_id} at Level {lvl_txt}"
+                else:
+                    outcome = f"Successfully Recovered at Level {lvl_txt}"
 
                 st.session_state.task_recovery_traces.append({
                     "task_key": task_obj.task_key,
-                    "blocked_employee": task_obj.blocked_employee,
+                    "mode": "delay" if is_delay_mode else "employee",
+                    "delay_minutes": eff_delay,
+                    "original_window": original_window,
+                    "blocked_employee": original_id if not is_delay_mode else "— (not blocked)",
+                    "original_employee": original_id,
+                    "new_employee": new_emp_id,
                     "time_window": f"{task_obj.date} {task_obj.start_time}-{task_obj.end_time}",
                     "feasible": was_recovered,
-                    "solved_level": solved_lvl if solved_lvl is not None else inter_map.get(task_obj.task_key, {}).get("level", "—"),
+                    "solved_level": lvl_txt,
+                    "outcome": outcome,
                     "levels": traces,
                     "verification": verification
                 })
+
+            st.session_state.last_run = {
+                "mode": "delay" if is_delay_mode else "employee",
+                "employees": list(selected_emp_ids),
+                "date": selected_date,
+                "delay_minutes": delay_minutes,
+                "task_count": len(disrupted_tasks),
+                "notes": run_notes,
+            }
 
             elapsed = time.time() - start_t
             st.toast(f"Evaluated all tasks in {elapsed:.2f}s!", icon="✅")
@@ -526,7 +791,7 @@ with tab_roster:
 
     # Filter strictly for baseline off-duty employees who got a task
     baseline_off_today = st.session_state.master_daily_offduty.get(selected_date, set())
-    df_offduty_recalled = df_all_today[df_all_today["Employee ID"].isin(baseline_off_today)]
+    df_offduty_recalled = df_all_today[df_all_today["Employee ID"].isin(baseline_off_today)] if not df_all_today.empty else df_all_today
 
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Active Staff Today", df_all_today["Employee ID"].nunique() if not df_all_today.empty else 0)
@@ -551,6 +816,11 @@ with tab_roster:
     else:
         display_df = df_all_today
 
+    # Tasks that needed Level 5 are shown in their own table below, not in the main table.
+    level5_keys = {r["Task Key"] for r in st.session_state.level5_assignments}
+    if level5_keys and not display_df.empty:
+        display_df = display_df[~display_df["Task Key"].isin(level5_keys)]
+
     if not display_df.empty:
         st.dataframe(
             display_df,
@@ -558,13 +828,88 @@ with tab_roster:
                 "Staff Duty State": st.column_config.TextColumn("Staff Duty State", width="medium"),
                 "Assignment Status": st.column_config.TextColumn("Status", width="medium"),
                 "Recovery Level": st.column_config.TextColumn("Recovery Level", width="medium"),
-                "Original (Blocked) Resource": st.column_config.TextColumn("Original Resource", width="small")
+                "Original (Blocked) Resource": st.column_config.TextColumn("Original Resource", width="small"),
+                "Delay (min)": st.column_config.NumberColumn("Delay (min)", width="small")
             },
             use_container_width=True,
             height=420
         )
     else:
         st.info("No matching roster records found for the chosen display scope.")
+
+    # NEW: Level-5 assignment table with cost
+    if st.session_state.level5_assignments:
+        st.markdown(f"#### 🔴 Level {FINAL_LEVEL} Assignments & Cost")
+        st.caption(
+            f"Tasks that could only be resolved at Level {FINAL_LEVEL} (the widest neighborhood). "
+            "Includes neighbouring tasks displaced by the repair bundle."
+        )
+        df_l5 = pd.DataFrame(st.session_state.level5_assignments)
+        l1, l2, l3 = st.columns(3)
+        l1.metric("Level-5 Assignments", len(df_l5))
+        l2.metric("Total Assignment Cost", f"{df_l5['Assignment Cost'].sum():,.2f}")
+        l3.metric("Off-Duty Staff Recalled", int(df_l5["Off-Duty Recalled"].sum()))
+        st.dataframe(
+            df_l5,
+            column_config={
+                "Assignment Cost": st.column_config.NumberColumn("Assignment Cost", format="%.2f"),
+                "Level Total Cost": st.column_config.NumberColumn("Level Total Cost", format="%.2f"),
+            },
+            use_container_width=True
+        )
+
+    # NEW: what-if table for tasks that were recovered BEFORE Level 5
+    if st.session_state.level5_whatif:
+        st.markdown(f"#### 🔮 What-If: Had Recovery Gone to Level {FINAL_LEVEL}")
+        st.caption(
+            f"For tasks recovered before Level {FINAL_LEVEL}: the assignment and cost Level {FINAL_LEVEL} "
+            "would have produced, next to what was actually applied. Nothing here changes the roster."
+        )
+        wi_rows, wi_detail = [], []
+        for w in st.session_state.level5_whatif:
+            wf = w["whatif"] or {}
+            seed_wf = next((a for a in wf.get("assignments", []) if a["task_key"] == w["task_key"]), None)
+            wf_cost = seed_wf["cost"] if seed_wf else None
+            act_cost = w["actual_cost"]
+            wi_rows.append({
+                "Disrupted Task": w["task_key"],
+                "Original Employee": w["original_employee"] or "—",
+                "Actual Level": w["actual_level"],
+                "Actual Employee": w["actual_employee"],
+                "Actual Cost": act_cost,
+                f"Level {FINAL_LEVEL} Employee": seed_wf["employee_id"] if seed_wf else ("—" if "error" not in wf else "n/a"),
+                f"Level {FINAL_LEVEL} Cost": wf_cost,
+                "Cost Difference": (wf_cost - act_cost) if (wf_cost is not None and act_cost is not None) else None,
+                f"Level {FINAL_LEVEL} Feasible": wf.get("feasible", False),
+                f"Level {FINAL_LEVEL} Bundle Total Cost": wf.get("total_cost"),
+                "Note": wf.get("error", ""),
+            })
+            for a in wf.get("assignments", []):
+                wi_detail.append({
+                    "Disrupted Task": w["task_key"],
+                    "Task Key": a["task_key"],
+                    "Role": "Disrupted Task" if a["task_key"] == w["task_key"] else "Displaced Neighbour Task",
+                    "Assigned Employee": a["employee_id"],
+                    "Window": a["window"],
+                    "Cost": a["cost"],
+                })
+        st.dataframe(
+            pd.DataFrame(wi_rows),
+            column_config={
+                "Actual Cost": st.column_config.NumberColumn(format="%.2f"),
+                f"Level {FINAL_LEVEL} Cost": st.column_config.NumberColumn(format="%.2f"),
+                "Cost Difference": st.column_config.NumberColumn(format="%.2f"),
+                f"Level {FINAL_LEVEL} Bundle Total Cost": st.column_config.NumberColumn(format="%.2f"),
+            },
+            use_container_width=True
+        )
+        if wi_detail:
+            with st.expander(f"Full Level {FINAL_LEVEL} what-if bundle assignments"):
+                st.dataframe(
+                    pd.DataFrame(wi_detail),
+                    column_config={"Cost": st.column_config.NumberColumn(format="%.2f")},
+                    use_container_width=True
+                )
 
     if st.session_state.unassigned_pool:
         st.markdown("#### ⚠️ Unassigned Tasks Pool")
@@ -583,23 +928,67 @@ with tab_levels:
     if not traces:
         st.info("No disruptions executed yet. Run disruption from the sidebar.")
     else:
+        last_run = st.session_state.last_run
+        if last_run:
+            if last_run["mode"] == "delay":
+                st.caption(
+                    f"Last run: **Task Delay** of {last_run['delay_minutes']} min on {last_run['task_count']} task(s) · "
+                    f"{last_run['date']}. Original employees were not blocked."
+                )
+            else:
+                st.caption(
+                    f"Last run: **Employee Disruption** of {last_run['task_count']} task(s) from "
+                    f"{', '.join(last_run['employees'])} · {last_run['date']}."
+                )
+            for note in last_run.get("notes", []):
+                st.warning(note)
+
+        is_delay_run = traces[0]["mode"] == "delay"
+        n_ok = sum(1 for t in traces if t["feasible"])
+        n_same = sum(1 for t in traces if t["feasible"] and t["new_employee"] == t["original_employee"])
+        s1, s2, s3, s4 = st.columns(4)
+        s1.metric("Disrupted Tasks", len(traces))
+        s2.metric("Recovered", n_ok)
+        s3.metric("Unrecovered", len(traces) - n_ok)
+        s4.metric("Kept by Original Employee", n_same if is_delay_run else "n/a")
+
+        st.dataframe(pd.DataFrame([{
+            "Task": t["task_key"],
+            "Original Employee": t["original_employee"] or "—",
+            "New Employee": t["new_employee"] or "None",
+            "Original Window": t["original_window"],
+            "Current Window": t["time_window"].split(" ", 1)[1],
+            "Delay (min)": t["delay_minutes"],
+            "Outcome": t["outcome"],
+        } for t in traces]), use_container_width=True)
+
         task_tabs = st.tabs([f"🎯 Task: {t['task_key']}" for t in traces])
 
         for t_idx, t_data in enumerate(traces):
             with task_tabs[t_idx]:
                 if t_data["feasible"]:
-                    status_badge = f'<span class="badge-success">Successfully Recovered at Level {t_data["solved_level"]}</span>'
+                    status_badge = f'<span class="badge-success">{t_data["outcome"]}</span>'
                 else:
                     status_badge = '<span class="badge-danger">Failed Across All Levels</span>'
 
-                st.markdown(f"""
-                <div class="metric-card-light">
-                    <b>Task Key:</b> <code>{t_data['task_key']}</code> &nbsp;|&nbsp;
-                    <b>Blocked Employee:</b> <code>{t_data['blocked_employee']}</code> &nbsp;|&nbsp;
-                    <b>Window:</b> <code>{t_data['time_window']}</code> &nbsp;|&nbsp;
-                    <b>Status:</b> {status_badge}
-                </div>
-                """, unsafe_allow_html=True)
+                is_delay_trace = t_data["mode"] == "delay"
+                emp_label = "Original Employee" if is_delay_trace else "Blocked Employee"
+                emp_value = t_data["original_employee"] if is_delay_trace else t_data["blocked_employee"]
+                delay_html = (
+                    f"<b>Delay:</b> <code>+{t_data['delay_minutes']} min (was {t_data['original_window']})</code> &nbsp;|&nbsp;"
+                    if is_delay_trace else ""
+                )
+
+                card_html = (
+                    '<div class="metric-card-light">'
+                    f'<b>Task Key:</b> <code>{t_data["task_key"]}</code> &nbsp;|&nbsp; '
+                    f'<b>{emp_label}:</b> <code>{emp_value}</code> &nbsp;|&nbsp; '
+                    f'<b>Window:</b> <code>{t_data["time_window"]}</code> &nbsp;|&nbsp; '
+                    f'{delay_html}'
+                    f'<b>Status:</b> {status_badge}'
+                    '</div>'
+                )
+                st.markdown(card_html, unsafe_allow_html=True)
 
                 levels_list = t_data["levels"]
                 num_levels = len(levels_list)
@@ -661,7 +1050,7 @@ with tab_levels:
                     fig_trace.update_yaxes(title_text="Tasks & Employees Count", secondary_y=False)
                     fig_trace.update_yaxes(title_text="Cost Delta", secondary_y=True)
 
-                    st.plotly_chart(fig_trace, use_container_width=True)
+                    st.plotly_chart(fig_trace, use_container_width=True, key=f"trace_chart_{t_idx}")
 
                 st.write("##### Search History & Neighborhood Levels")
 
@@ -722,9 +1111,11 @@ with tab_gantt:
 
     if not df_timeline.empty and "Start Time" in df_timeline.columns:
         color_map = {
-            "Original Assignment": "#60A5FA",
-            "Reassigned (Recovered)": "#34D399",
-            "Unassigned / Disrupted": "#F87171"
+            STATUS_ORIGINAL: "#60A5FA",
+            STATUS_REASSIGNED: "#34D399",
+            STATUS_UNASSIGNED: "#F87171",
+            STATUS_DELAY_SAME: "#FBBF24",
+            STATUS_DELAY_REASSIGNED: "#A78BFA"
         }
 
         try:
@@ -738,7 +1129,8 @@ with tab_gantt:
                 y="Employee ID",
                 color="Assignment Status",
                 color_discrete_map=color_map,
-                hover_data=["Task Key", "Shift Window", "Staff Duty State", "Recovery Level", "Original (Blocked) Resource"],
+                hover_data=["Task Key", "Shift Window", "Delay (min)", "Original Window",
+                            "Staff Duty State", "Recovery Level", "Original (Blocked) Resource"],
                 title="Employee Task Execution Gantt (Including Recalled Staff)"
             )
             fig_gantt.update_yaxes(autorange="reversed")

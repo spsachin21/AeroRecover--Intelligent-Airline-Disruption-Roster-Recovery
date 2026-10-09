@@ -37,6 +37,15 @@ class CostConfig:
     max_overtime_minutes: float = 120.0
     recall_cost: float = 1000.0
 
+    # Added to the cost whenever a task that has a known
+    # original employee (task.original_employee) is given to
+    # somebody else. 0.0 (default) keeps the old behaviour.
+    # A small positive value makes the solver prefer to keep a
+    # task with its original employee when that is feasible,
+    # which is what we want for delay disruptions.
+    # --------------------------------------------------------
+    reassignment_cost: float = 0.0
+
     # --------------------------------------------------------
     # Feasibility
     # --------------------------------------------------------

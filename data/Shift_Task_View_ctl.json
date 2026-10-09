@@ -3504,9 +3504,7 @@
             {
               "date": "2026-09-08",
               "day": "Tue",
-              "shift_id": "10H_2100",
-              "task_list": [],
-              "ot_hours": 0
+              "shift_id": "OFF"
             },
             {
               "date": "2026-09-09",
