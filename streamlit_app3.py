@@ -159,6 +159,14 @@ if "level5_assignments" not in st.session_state:
 if "level5_whatif" not in st.session_state:
     st.session_state.level5_whatif = []
 
+# NEW: employees marked off-duty for a whole day -> {date: {employee_id, ...}} (persists across runs)
+if "offduty_blocked" not in st.session_state:
+    st.session_state.offduty_blocked = {}
+
+# NEW: bumping this resets the "mark off-duty" picker after it has been applied
+if "offduty_widget_ver" not in st.session_state:
+    st.session_state.offduty_widget_ver = 0
+
 # NEW: summary of the last run
 if "last_run" not in st.session_state:
     st.session_state.last_run = {}
@@ -174,6 +182,12 @@ def get_current_offduty_employees(schedule_data, target_date):
         if r is None or len(r.tasks) == 0:
             current_off.add(e_id)
     return current_off
+
+
+def eligible_employees(all_employees, date):
+    """Employees that may receive work on `date` (whole-day off-duty ones are excluded)."""
+    blocked = st.session_state.offduty_blocked.get(date, set())
+    return [e for e in all_employees if e.employee_id not in blocked]
 
  
 # ==========================================
@@ -213,8 +227,23 @@ selected_emp_ids = st.sidebar.multiselect(
 )
 
 # Compute dynamic CURRENT off-duty staff
-current_offduty = get_current_offduty_employees(schedule_data, selected_date)
+blocked_today = st.session_state.offduty_blocked.get(selected_date, set())
+current_offduty = get_current_offduty_employees(schedule_data, selected_date) | set(blocked_today)
 st.sidebar.markdown(f"**Current Off-Duty Staff ({selected_date}):** `{', '.join(sorted(list(current_offduty))) if current_offduty else 'None'}`")
+if blocked_today:
+    st.sidebar.markdown(f"🛌 **Marked off-duty (blocked all day):** `{', '.join(sorted(blocked_today))}`")
+
+offduty_pick = st.sidebar.multiselect(
+    f"🛌 Mark Employees Off-Duty ({selected_date})",
+    options=[e for e in emp_list if e not in blocked_today],
+    default=[],
+    key=f"offduty_pick_{st.session_state.offduty_widget_ver}",
+    help="Marked employees lose all their tasks for this date (recovered by others) and stay blocked "
+         "from EVERY task that day in all later disruptions. Use 'Reset Original Schedule' to undo."
+)
+run_offduty_btn = st.sidebar.button(
+    "🛌 Mark Off-Duty & Recover", use_container_width=True, disabled=not offduty_pick
+)
 st.sidebar.markdown("---")
 temporal_window = st.sidebar.slider("Temporal Window (minutes)", min_value=10, max_value=120, value=30, step=5)
 
@@ -300,6 +329,7 @@ if st.sidebar.button("🔄 Reset Original Schedule", use_container_width=True):
     st.session_state.intermediate_offduty_assignments = []
     st.session_state.level5_assignments = []
     st.session_state.level5_whatif = []
+    st.session_state.offduty_blocked = {}
     st.session_state.last_run = {}
     st.rerun()
 
@@ -532,14 +562,40 @@ def probe_final_level(schedule_recovery, task, employees):
 # ==========================================
 # SIMULATION ORCHESTRATION PIPELINE
 # ==========================================
-if run_recovery_btn:
+run_mode = "delay" if is_delay_mode else "employee"
+run_emp_ids = list(selected_emp_ids)
+
+if run_offduty_btn:
+    # lock the chosen employees out for the whole selected day (persists for later runs)
+    offduty_task_keys = []
+    for emp_id in offduty_pick:
+        st.session_state.offduty_blocked.setdefault(selected_date, set()).add(emp_id)
+        roster_today = schedule_data.employees[emp_id].rosters.get(selected_date)
+        if roster_today is not None:
+            offduty_task_keys.extend(t.task_key for t in roster_today.tasks)
+    st.session_state.offduty_widget_ver += 1
+    is_delay_mode = False
+    selected_task_keys = offduty_task_keys
+    run_emp_ids = list(offduty_pick)
+    run_mode = "offduty"
+
+if run_recovery_btn or run_offduty_btn:
     if not selected_task_keys:
-        st.sidebar.warning("No tasks selected for disruption.")
+        if run_offduty_btn:
+            st.rerun()      # nothing to recover - they are simply marked off-duty now
+        else:
+            st.sidebar.warning("No tasks selected for disruption.")
     else:
         with st.spinner("Executing disruption & multi-level recovery..."):
             start_t = time.time()
 
             simulator = DisruptionSimulator.DisruptionSimulator(schedule_data)
+
+            # re-apply every persistent whole-day off-duty block on the (new) simulator
+            for b_date, b_emps in st.session_state.offduty_blocked.items():
+                for b_emp in b_emps:
+                    if hasattr(simulator, "mark_absent"):
+                        simulator.mark_absent(b_emp, b_date)
             neighborhood_manager = NeighborhoodManager.NeighborhoodManager(
                 schedule_data=schedule_data,
                 temporal_window=temporal_window
@@ -562,6 +618,13 @@ if run_recovery_btn:
             #   - Delay mode:    shift task later, nobody is blocked (NEW)
             disrupted_tasks = []   # (task_obj, original_emp, effective_delay)
             run_notes = []
+            if run_mode == "offduty":
+                for emp_id in run_emp_ids:
+                    run_notes.append(
+                        f"Employee {emp_id} marked OFF-DUTY for {selected_date} → all their tasks were "
+                        f"recovered by others and they stay blocked from ALL tasks that day in every later run."
+                    )
+
             for task_key in selected_task_keys:
                 if is_delay_mode:
                     owner_id = task_to_owner_map.get(task_key)
@@ -601,12 +664,13 @@ if run_recovery_btn:
                 )
 
                 # NEW: read-only Level-5 what-if (state is restored afterwards)
-                whatif = probe_final_level(schedule_recovery, task_obj, all_employees_list)
+                emps_for_task = eligible_employees(all_employees_list, task_obj.date)
+                whatif = probe_final_level(schedule_recovery, task_obj, emps_for_task)
 
                 final_res, traces, solved_lvl, inter_map = recover_task_levels(
                     schedule_recovery=schedule_recovery,
                     task=task_obj,
-                    employees=all_employees_list
+                    employees=emps_for_task
                 )
 
                 is_feasible = final_res.feasible if final_res else False
@@ -758,8 +822,8 @@ if run_recovery_btn:
                 })
 
             st.session_state.last_run = {
-                "mode": "delay" if is_delay_mode else "employee",
-                "employees": list(selected_emp_ids),
+                "mode": run_mode,
+                "employees": run_emp_ids,
                 "date": selected_date,
                 "delay_minutes": delay_minutes,
                 "task_count": len(disrupted_tasks),
@@ -934,6 +998,11 @@ with tab_levels:
                 st.caption(
                     f"Last run: **Task Delay** of {last_run['delay_minutes']} min on {last_run['task_count']} task(s) · "
                     f"{last_run['date']}. Original employees were not blocked."
+                )
+            elif last_run["mode"] == "offduty":
+                st.caption(
+                    f"Last run: **Employee Off-Duty (whole day)** for {', '.join(last_run['employees'])} · "
+                    f"{last_run['date']} · {last_run['task_count']} task(s) removed."
                 )
             else:
                 st.caption(
