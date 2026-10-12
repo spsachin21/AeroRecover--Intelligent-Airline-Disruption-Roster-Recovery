@@ -57,7 +57,7 @@ class NeighborhoodManager:
         if level == 0:
 
             candidates = self._get_candidate_employees(
-                tasks=local_tasks,
+                tasks=seed_tasks,
                 employees=employees,
                 recall=False
             )
