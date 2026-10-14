@@ -8,13 +8,15 @@ class NeighborhoodManager:
         self,
         schedule_data,
         temporal_window=30,
-        physical_radius=1.0
+        physical_radius=1.0,
+        now_line_time="06:00"
     ):
 
         self.schedule_data = schedule_data
 
         self.temporal_window = temporal_window
         self.physical_radius = physical_radius
+        self.now_line_time = now_line_time
 
     # =========================================================
     # MAIN METHOD
@@ -67,7 +69,7 @@ class NeighborhoodManager:
                 name="N0-Regular",
 
                 seed_tasks=list(seed_tasks),
-                tasks=local_tasks,
+                tasks=seed_tasks,
                 released_tasks=[],
 
                 candidate_employees=candidates,
@@ -92,6 +94,8 @@ class NeighborhoodManager:
                     employees
                 )
             )
+
+            
 
             # candidates = self._get_candidate_employees(
             #     tasks=local_tasks,
@@ -405,88 +409,140 @@ class NeighborhoodManager:
 
 
     #     return self._unique_tasks(released)
-
-    def _get_temporally_overlapping_tasks(
-    self,
-    local_tasks,
-    employees
-):
+    
+    def _get_temporally_overlapping_tasks(self, local_tasks, employees):
         released = []
 
         if not local_tasks:
             return released
 
+        # Convert now-line time into a comparable time object
+        now_time = datetime.strptime(
+            self.now_line_time, "%H:%M"
+        ).time()
+
         local_task_keys = {
-            task.task_key
-            for task in local_tasks
+            task.task_key for task in local_tasks
         }
 
         get_date = local_tasks[-1].date
-        get_tasks= self._get_all_tasks_on_day(list(local_tasks))
-        # get_tasks_keys= {task.task_key for task in get_tasks}
+        get_tasks = self._get_all_tasks_on_day(list(local_tasks))
 
         for task in get_tasks:
+
+            # Skip tasks already in the local neighbourhood
             if task.task_key in local_task_keys:
                 continue
+
+            # Check whether the task has already started
+            task_start_time = datetime.strptime(
+                task.start_time, "%H:%M"
+            ).time()
+
+            if task_start_time < now_time:
+                print(
+                    f"Task already started: {task.task_key} "
+                    f"(start={task.start_time}, "
+                    f"now_line_time={self.now_line_time})"
+                )
+                continue
+
+            # Only consider tasks that overlap local tasks
             for local_task in local_tasks:
-                 if self._tasks_overlap(task,local_task):
+                if self._tasks_overlap(task, local_task):
                     released.append(task)
                     break
 
-
-        print("LOCAL TASKS:", len(local_tasks))
-        print("LOCAL KEYS:", local_task_keys)
-        print("TARGET DATE:", get_date)
-        print("EMPLOYEES:", len(employees))
-
-#         # for employee in employees:
-#         #     print("EMPLOYEE:", employee)
-
-#         #     for roster in employee.rosters.values():
-#         #         print("ROSTER TASKS:", len(roster.tasks))
-
-#         #         for existing_task in roster.tasks:
-
-#         #             print(
-#         #                 "CHECKING:",
-#         #                 existing_task.task_key,
-#         #                 "date=", existing_task.date
-#         #             )
-
-#         #             if existing_task.date != get_date:
-#         #                 print("  -> SKIP: date mismatch")
-#         #                 continue
-
-#         #             if existing_task.task_key in local_task_keys:
-#         #                 print("  -> SKIP: already local task")
-#         #                 continue
-
-#         #             for local_task in local_tasks:
-
-#         #                 overlap = self._tasks_overlap(
-#         #                     existing_task,
-#         #                     local_task
-#         #                 )
-
-#         #                 print(
-#         #                     "  OVERLAP:",
-#         #                     existing_task.task_key,
-#         #                     local_task.task_key,
-#         #                     overlap
-#         #                 )
-
-#         #                 if overlap:
-#         #                     print("  -> APPENDING:", existing_task.task_key)
-
-#         #                     released.append(existing_task)
-#         #                     break
-
         result = self._unique_tasks(released)
 
+        print("LOCAL TASKS:", len(local_tasks))
+        print("TARGET DATE:", get_date)
         print("RELEASED BEFORE UNIQUE:", len(released))
         print("FINAL RESULT:", len(result))
 
         return result
+
+#     def _get_temporally_overlapping_tasks(
+#     self,
+#     local_tasks,
+#     employees
+# ):
+#         released = []
+
+#         if not local_tasks:
+#             return released
+
+#         local_task_keys = {
+#             task.task_key
+#             for task in local_tasks
+#         }
+
+#         get_date = local_tasks[-1].date
+#         get_tasks= self._get_all_tasks_on_day(list(local_tasks))
+#         # get_tasks_keys= {task.task_key for task in get_tasks}
+
+#         for task in get_tasks:
+#             if task.task_key in local_task_keys:
+#                 continue
+#             for local_task in local_tasks:
+#                  if self._tasks_overlap(task,local_task):
+#                     released.append(task)
+#                     break
+
+
+#         print("LOCAL TASKS:", len(local_tasks))
+#         print("LOCAL KEYS:", local_task_keys)
+#         print("TARGET DATE:", get_date)
+#         print("EMPLOYEES:", len(employees))
+
+# #         # for employee in employees:
+# #         #     print("EMPLOYEE:", employee)
+
+# #         #     for roster in employee.rosters.values():
+# #         #         print("ROSTER TASKS:", len(roster.tasks))
+
+# #         #         for existing_task in roster.tasks:
+
+# #         #             print(
+# #         #                 "CHECKING:",
+# #         #                 existing_task.task_key,
+# #         #                 "date=", existing_task.date
+# #         #             )
+
+# #         #             if existing_task.date != get_date:
+# #         #                 print("  -> SKIP: date mismatch")
+# #         #                 continue
+
+# #         #             if existing_task.task_key in local_task_keys:
+# #         #                 print("  -> SKIP: already local task")
+# #         #                 continue
+
+# #         #             for local_task in local_tasks:
+
+# #         #                 overlap = self._tasks_overlap(
+# #         #                     existing_task,
+# #         #                     local_task
+# #         #                 )
+
+# #         #                 print(
+# #         #                     "  OVERLAP:",
+# #         #                     existing_task.task_key,
+# #         #                     local_task.task_key,
+# #         #                     overlap
+# #         #                 )
+
+# #         #                 if overlap:
+# #         #                     print("  -> APPENDING:", existing_task.task_key)
+
+# #         #                     released.append(existing_task)
+# #         #                     break
+
+#         result = self._unique_tasks(released)
+
+#         print("RELEASED BEFORE UNIQUE:", len(released))
+#         print("FINAL RESULT:", len(result))
+
+#         return result
 
     def _release_tasks_from_rosters(self,released_tasks,employees):
    

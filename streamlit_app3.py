@@ -261,8 +261,9 @@ if is_delay_mode:
     prefer_original = st.sidebar.checkbox(
         "Prefer original employee when feasible",
         value=True,
-        help="Adds a small cost when a delayed task goes to somebody else, so the "
-             "original employee keeps it whenever the delayed time still works."
+        help="Ticked: adds a small cost when a delayed task goes to somebody else, so the "
+             "original employee keeps it whenever the delayed time still works.\n\n"
+             "Unticked: the original employee is BLOCKED from their delayed task, so it must go to someone else."
     )
     pick_from_all = st.sidebar.checkbox(
         "Choose delayed tasks from ALL employees",
@@ -395,6 +396,42 @@ def extract_roster_dataframe(schedule_data, target_date=None, target_employees=N
 
 
 # ==========================================
+# NEW: ENFORCE "BLOCKED EMPLOYEE" AT SOLVE TIME (ENGINE-INDEPENDENT)
+# ==========================================
+def assign_with_block(schedule_recovery, neighborhood, task):
+    """
+    Run the normal assignment. If the task carries a blocked employee and the engine
+    still handed the task to them, re-solve with that employee removed from the
+    candidates so the block is guaranteed.
+    """
+    def _solve(candidates):
+        assigner = JobRepairingAssigner.JobAssigner(
+            scheduleData=schedule_recovery.schedule_data,
+            unassigned_tasks=neighborhood.tasks,
+            estimator=schedule_recovery.cost_estimator
+        )
+        return assigner.assign_jobs(
+            employees=candidates,
+            tasks=neighborhood.tasks,
+            neighborhood=neighborhood
+        )
+
+    result = _solve(neighborhood.candidate_employees)
+
+    blocked_id = getattr(task, "blocked_employee", None)
+    if blocked_id and any(
+        a["task"].task_key == task.task_key and a["employee"].employee_id == blocked_id
+        for a in result.assignments
+    ):
+        st.session_state.setdefault("block_guard_events", []).append(
+            f"Task {task.task_key}: engine picked blocked employee {blocked_id}; "
+            f"re-solved without them (block enforced)."
+        )
+        result = _solve([e for e in neighborhood.candidate_employees if e.employee_id != blocked_id])
+    return result
+
+
+# ==========================================
 # MULTI-LEVEL ENGINE TRACER WITH INTERMEDIATE LOGGING
 # ==========================================
 def recover_task_levels(schedule_recovery, task, employees):
@@ -420,17 +457,7 @@ def recover_task_levels(schedule_recovery, task, employees):
 
         local_tasks_count = len(neighborhood.tasks) - len(neighborhood.released_tasks)
 
-        assigner = JobRepairingAssigner.JobAssigner(
-            scheduleData=schedule_recovery.schedule_data,
-            unassigned_tasks=neighborhood.tasks,
-            estimator=schedule_recovery.cost_estimator
-        )
-
-        result = assigner.assign_jobs(
-            employees=neighborhood.candidate_employees,
-            tasks=neighborhood.tasks,
-            neighborhood=neighborhood
-        )
+        result = assign_with_block(schedule_recovery, neighborhood, task)
 
         for assignment in result.assignments:
             assigned_employees.add(assignment["employee"].employee_id)
@@ -522,16 +549,7 @@ def probe_final_level(schedule_recovery, task, employees):
         if neighborhood is None:
             return {"error": "Level 5 neighborhood could not be created"}
 
-        assigner = JobRepairingAssigner.JobAssigner(
-            scheduleData=schedule_recovery.schedule_data,
-            unassigned_tasks=neighborhood.tasks,
-            estimator=schedule_recovery.cost_estimator
-        )
-        result = assigner.assign_jobs(
-            employees=neighborhood.candidate_employees,
-            tasks=neighborhood.tasks,
-            neighborhood=neighborhood
-        )
+        result = assign_with_block(schedule_recovery, neighborhood, task)
         return {
             "feasible": result.feasible,
             "total_cost": getattr(result, "total_cost", 0.0),
@@ -632,6 +650,9 @@ if run_recovery_btn or run_offduty_btn:
                         task_key, delay_minutes, employee_id=owner_id
                     )
                     task_obj.original_employee = original_emp.employee_id
+                    if not prefer_original:
+                        # unticked -> original employee is blocked from this delayed task
+                        task_obj.blocked_employee = original_emp.employee_id
                     if eff_delay < delay_minutes:
                         run_notes.append(
                             f"Task {task_key}: delay clamped to {eff_delay} min (cannot run past 23:59)."
@@ -654,6 +675,7 @@ if run_recovery_btn or run_offduty_btn:
             st.session_state.intermediate_offduty_assignments = []
             st.session_state.level5_assignments = []
             st.session_state.level5_whatif = []
+            st.session_state.block_guard_events = []
 
             for task_obj, original_emp, eff_delay in disrupted_tasks:
                 original_id = original_emp.employee_id if original_emp is not None else None
@@ -810,7 +832,8 @@ if run_recovery_btn or run_offduty_btn:
                     "mode": "delay" if is_delay_mode else "employee",
                     "delay_minutes": eff_delay,
                     "original_window": original_window,
-                    "blocked_employee": original_id if not is_delay_mode else "— (not blocked)",
+                    "blocked_employee": original_id if (not is_delay_mode or not prefer_original) else "— (not blocked)",
+                    "original_blocked": bool(is_delay_mode and not prefer_original),
                     "original_employee": original_id,
                     "new_employee": new_emp_id,
                     "time_window": f"{task_obj.date} {task_obj.start_time}-{task_obj.end_time}",
@@ -821,11 +844,15 @@ if run_recovery_btn or run_offduty_btn:
                     "verification": verification
                 })
 
+            for ev in dict.fromkeys(st.session_state.get("block_guard_events", [])):
+                run_notes.append(ev)
+
             st.session_state.last_run = {
                 "mode": run_mode,
                 "employees": run_emp_ids,
                 "date": selected_date,
                 "delay_minutes": delay_minutes,
+                "prefer_original": prefer_original,
                 "task_count": len(disrupted_tasks),
                 "notes": run_notes,
             }
@@ -997,7 +1024,9 @@ with tab_levels:
             if last_run["mode"] == "delay":
                 st.caption(
                     f"Last run: **Task Delay** of {last_run['delay_minutes']} min on {last_run['task_count']} task(s) · "
-                    f"{last_run['date']}. Original employees were not blocked."
+                    f"{last_run['date']}. "
+                    + ("Original employees were not blocked." if last_run.get("prefer_original", True)
+                       else "Original employees were BLOCKED from their delayed tasks.")
                 )
             elif last_run["mode"] == "offduty":
                 st.caption(
@@ -1041,7 +1070,10 @@ with tab_levels:
                     status_badge = '<span class="badge-danger">Failed Across All Levels</span>'
 
                 is_delay_trace = t_data["mode"] == "delay"
-                emp_label = "Original Employee" if is_delay_trace else "Blocked Employee"
+                emp_label = (
+                    "Original Employee (blocked)" if t_data.get("original_blocked")
+                    else "Original Employee" if is_delay_trace else "Blocked Employee"
+                )
                 emp_value = t_data["original_employee"] if is_delay_trace else t_data["blocked_employee"]
                 delay_html = (
                     f"<b>Delay:</b> <code>+{t_data['delay_minutes']} min (was {t_data['original_window']})</code> &nbsp;|&nbsp;"
