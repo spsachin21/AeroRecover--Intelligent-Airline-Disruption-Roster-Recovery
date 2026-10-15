@@ -165,7 +165,7 @@ class NeighborhoodManager:
         elif level == 2:
 
             candidates = self._get_candidate_employees(
-                tasks=local_tasks,
+                tasks=seed_tasks,
                 employees=employees,
                 recall=False
             )
@@ -175,7 +175,7 @@ class NeighborhoodManager:
                 name="N2-Overtime",
 
                 seed_tasks=list(seed_tasks),
-                tasks=local_tasks,
+                tasks=seed_tasks,
                 released_tasks=[],
 
                 candidate_employees=candidates,
@@ -245,7 +245,7 @@ class NeighborhoodManager:
         elif level == 4:
 
             candidates = self._get_candidate_employees(
-                tasks=local_tasks,
+                tasks=seed_tasks,
                 employees=employees,
                 recall=True
             )
@@ -255,7 +255,7 @@ class NeighborhoodManager:
                 name="N4-Recall",
 
                 seed_tasks=list(seed_tasks),
-                tasks=local_tasks,
+                tasks=seed_tasks,
                 released_tasks=[],
 
                 candidate_employees=candidates,
