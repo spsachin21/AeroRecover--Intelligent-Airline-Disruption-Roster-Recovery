@@ -1,0 +1,6 @@
+plotly
+numpy
+pandas
+time
+os 
+sys
